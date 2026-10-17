@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Нагорна та партнери</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Адвокатське об’єднання «Нагорна та партнери»: кримінальні, адміністративні, господарські, митні та цивільні справи. Безкоштовна консультація в SMS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Onest:wght@400;500;600&display=swap">
+<style>
+/* Layout: a dark screening room. A framed film opens the page (scales of justice, three chapters), then a running ticker,
+   flip cards, a draggable shelf of studio objects that opens a detail panel, a stats band with the seal film, the SMS phone,
+   certificates, contacts and a large wordmark. Wine + warm porcelain; Forum for display, Onest for everything else. */
+:root{
+  --bg:#120D10; --raised:#1C1418; --raised-2:#241A1F; --line:#33272C; --ink:#F3ECE6; --muted:#A99DA0;
+  --accent:#E07A8B; --accent-ink:#1A0B10; --wine:#8E2639; --glow:rgba(224,122,139,.34); --glow0:rgba(224,122,139,0); --shade:rgba(0,0,0,.55);
+  --film-ink:#F3ECE6; --film-muted:rgba(243,236,230,.72); --film-bg:#120D10; --film-accent:#E07A8B; --film-accent-ink:#1A0B10;
+  --studio-a:#2A1F24; --studio-b:#1C1418;
+  --paper:#EFE7DE; --paper-ink:#3A2B30; --paper-line:#D9CCC1; --paper-edge:rgba(0,0,0,0); --seal-ink:#8E2639; --seal-hi:#B23A50;
+  --accent-hi:#F0A0AD; --btn-hi:rgba(255,255,255,.38); --glow-soft:rgba(224,122,139,.07);
+  --back-a:#9A2A40; --back-b:#3E0F1B; --back-ink:#F7EEE9; --back-muted:rgba(247,238,233,.78); --back-line:rgba(247,238,233,.16);
+  --spot:rgba(224,122,139,.14); --notch:#0A0709; --glass:rgba(255,255,255,.08); --backdrop:rgba(10,4,6,.62);
+  --f-display:"Forum","Times New Roman",Georgia,serif;
+  --f-body:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1240px; --ease:cubic-bezier(.2,.75,.2,1); --ease-io:cubic-bezier(.65,0,.35,1);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --bg:#F5F0EC; --raised:#FFFFFF; --raised-2:#FBF7F4; --line:#E3D9D4; --ink:#1C1418; --muted:#66595C;
+  --accent:#8E2639; --accent-ink:#FFFFFF; --glow:rgba(142,38,57,.22); --glow0:rgba(142,38,57,0); --shade:rgba(40,10,15,.16);
+  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#F5F0EC; --raised:#FFFFFF; --raised-2:#FBF7F4; --line:#E3D9D4; --ink:#1C1418; --muted:#66595C;
+  --accent:#8E2639; --accent-ink:#FFFFFF; --glow:rgba(142,38,57,.22); --glow0:rgba(142,38,57,0); --shade:rgba(40,10,15,.16);
+  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+main,footer{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .4s,color .4s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--bg)}
+a{color:inherit}
+button{font:inherit;color:inherit}
+a,button,[role=button]{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+img,video{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.06;text-wrap:balance;margin:0}
+p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 15px/1 var(--f-body);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s,transform .3s var(--ease),box-shadow .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-accent{background:linear-gradient(180deg,var(--accent-hi),var(--accent) 62%);color:var(--accent-ink);box-shadow:inset 0 1px 0 var(--btn-hi),0 10px 28px -14px var(--glow)}
+.btn-accent:hover{box-shadow:inset 0 1px 0 var(--btn-hi),0 16px 38px -10px var(--glow)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-line{border-color:var(--line);background:transparent}
+.btn-line:hover{border-color:var(--ink)}
+.pulse::after{content:"";position:absolute;inset:-1px;border-radius:inherit;animation:pulse 2.6s var(--ease) infinite;pointer-events:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--glow)}70%{box-shadow:0 0 0 18px var(--glow0)}100%{box-shadow:0 0 0 0 var(--glow0)}}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.top.solid{background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand-mark{width:40px;height:40px;flex:none;color:var(--accent)}
+.brand-name{font-family:var(--f-display);font-size:21px;line-height:1.05;white-space:nowrap}
+.brand-sub{display:block;font-size:12px;color:var(--muted);line-height:1.3}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a.nl{position:relative;padding:8px 12px;text-decoration:none;font-size:15px;color:var(--muted);transition:color .2s}
+.nav a.nl::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.nav a.nl:hover,.nav a.nl.on{color:var(--ink)}
+.nav a.nl:hover::after,.nav a.nl.on::after{transform:scaleX(1)}
+.icon-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;display:grid;place-items:center;transition:border-color .2s,transform .4s var(--ease);flex:none}
+.icon-btn:hover{border-color:var(--ink)}
+.icon-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+#theme .moon{display:none}
+:root[data-theme="dark"] #theme .moon{display:block} :root[data-theme="dark"] #theme .sun{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #theme .moon{display:block} :root:not([data-theme="light"]) #theme .sun{display:none}}
+.nav .btn{min-height:44px;padding:0 20px;font-size:14px;margin-left:8px}
+.nav #theme{margin-left:8px}
+.burger{display:none;position:relative}
+.burger i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--ink);transition:transform .4s var(--ease),opacity .2s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:21px}.burger i:nth-child(3){top:26px}
+.menu-open .burger i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.menu-open .burger i:nth-child(2){opacity:0}
+.menu-open .burger i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+@media (max-width:940px){.nav .nl,.nav .btn{display:none}.burger{display:block}.nav{gap:8px}}
+
+.mmenu{position:fixed;inset:0;z-index:55;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:4px;
+  padding:calc(96px + env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(24px,env(safe-area-inset-left,0px));
+  clip-path:circle(0 at calc(100% - 44px) 40px);transition:clip-path .7s var(--ease-io),visibility 0s .7s;visibility:hidden}
+.menu-open .mmenu{clip-path:circle(150% at calc(100% - 44px) 40px);visibility:visible;transition:clip-path .7s var(--ease-io)}
+.mmenu a{font-family:var(--f-display);font-size:clamp(40px,11vw,56px);line-height:1.15;text-decoration:none;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .6s var(--ease)}
+.menu-open .mmenu a{opacity:1;transform:none;transition-delay:calc(.2s + var(--i)*.07s)}
+.mmenu .btn{font-family:var(--f-body);font-size:16px;margin-top:28px;align-self:flex-start}
+.menu-open{overflow:hidden}
+
+/* Hero film */
+.hero{padding-top:8px}
+.film{position:relative;height:min(86vh,760px);min-height:580px;border-radius:32px;overflow:hidden;background:radial-gradient(70% 80% at 68% 42%,var(--studio-a) 0%,var(--film-bg) 70%);color:var(--film-ink);isolation:isolate;box-shadow:0 40px 90px -40px var(--shade)}
+.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:18% 50%;z-index:0;transform-origin:62% 45%}
+.film .fb{position:absolute;inset:0;z-index:0;display:flex;align-items:center;justify-content:flex-end;padding-right:4%}
+.film .fb svg{height:92%;width:auto;max-width:48%}
+.film.has-video .fb{display:none}
+.film::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(to top,color-mix(in srgb,var(--film-bg) 94%,transparent) 0%,color-mix(in srgb,var(--film-bg) 62%,transparent) 34%,transparent 62%),linear-gradient(to right,color-mix(in srgb,var(--film-bg) 70%,transparent) 0%,transparent 55%),linear-gradient(to bottom,color-mix(in srgb,var(--film-bg) 55%,transparent) 0%,transparent 22%)}
+.film-copy{position:absolute;z-index:2;left:clamp(22px,4vw,56px);right:clamp(22px,4vw,56px);bottom:clamp(26px,4.5vw,56px);max-width:700px}
+.kicker{font-size:15px;color:var(--film-muted)}
+.film h1{font-size:clamp(52px,7.4vw,104px);letter-spacing:-.012em;margin-top:10px;line-height:.98}
+.film h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.film h1 .ln>span{display:block}
+.film .lead{font-size:clamp(16px,1.6vw,19px);line-height:1.6;color:var(--film-muted);max-width:36em;margin-top:22px}
+.lead a{color:var(--film-ink);font-weight:600;text-decoration:none;cursor:pointer;transition:color .25s;border-radius:3px}
+.lead a:hover,.lead a:focus-visible,.lead a.hit{color:var(--film-accent)}
+.film .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.film .btn-accent{background:var(--film-accent);color:var(--film-accent-ink)}
+.film .btn-line{border-color:color-mix(in srgb,var(--film-ink) 35%,transparent);color:var(--film-ink)}
+.film .btn-line:hover{border-color:var(--film-ink)}
+.chapters{position:absolute;z-index:2;top:clamp(22px,3.4vw,40px);left:clamp(22px,4vw,56px);width:min(360px,calc(100% - 40px))}
+.bars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.bar{position:relative;height:20px;padding:0;border:0;background:none;cursor:pointer}
+.bar::before,.bar i{content:"";position:absolute;left:0;right:0;top:8px;height:3px;border-radius:3px}
+.bar::before{background:color-mix(in srgb,var(--film-ink) 22%,transparent);transition:background .2s}
+.bar:hover::before{background:color-mix(in srgb,var(--film-ink) 45%,transparent)}
+.bar i{display:block;background:var(--film-ink);transform-origin:left;transform:scaleX(var(--p,0))}
+.film{cursor:pointer}
+.film-copy,.chapters .cap{cursor:auto}
+.film-tools{position:absolute;z-index:3;right:clamp(16px,2.4vw,26px);bottom:clamp(16px,2.4vw,26px);display:flex;gap:10px;align-items:center}
+.film-tools .film-ctl{position:static}
+.snd-pill{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 16px 0 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--film-ink) 30%,transparent);background:color-mix(in srgb,var(--film-bg) 45%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--film-ink);font:500 13.5px/1 var(--f-body);cursor:pointer;transition:border-color .2s,background .2s}
+.snd-pill:hover{border-color:var(--film-ink)}
+.snd-pill .spk{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.snd-pill .eq{display:none}
+.snd-on .snd-pill .eq{display:flex}.snd-on .snd-pill .spk{display:none}
+.eq{display:flex;align-items:flex-end;gap:2px;height:14px;width:16px}
+.eq i{flex:1;height:30%;border-radius:1px;background:currentColor;transition:height .3s}
+.snd-on .eq i{animation:eq 1s ease-in-out infinite}
+.snd-on .eq i:nth-child(2){animation-delay:-.35s}.snd-on .eq i:nth-child(3){animation-delay:-.7s}.snd-on .eq i:nth-child(4){animation-delay:-.2s}
+@keyframes eq{0%,100%{height:25%}50%{height:100%}}
+#sound .on,.mm-tools .js-sound .on{display:none}
+.snd-on .js-sound .on{display:block}.snd-on .js-sound .off{display:none}
+.nav #sound{margin-left:6px}
+.lang{display:inline-flex;align-items:center;height:44px;padding:4px;gap:2px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font:600 12.5px/1 var(--f-body);flex:none;margin-left:8px}
+.lang span{display:grid;place-items:center;height:34px;min-width:36px;padding:0 8px;border-radius:999px;color:var(--muted);transition:background .35s var(--ease),color .3s}
+.lang span.on{background:var(--ink);color:var(--bg)}
+.lang:hover span:not(.on){color:var(--ink)}
+.mm-tools{display:flex;gap:10px;margin-top:26px;opacity:0;transform:translateY(20px);transition:opacity .5s,transform .6s var(--ease)}
+.menu-open .mm-tools{opacity:1;transform:none;transition-delay:.62s}
+.i18n-swap{animation:i18n .5s var(--ease)}
+@keyframes i18n{from{opacity:.25;filter:blur(3px)}to{opacity:1;filter:none}}
+@media (max-width:940px){.nav .js-sound,.nav .js-theme{display:none}}
+@media (max-width:400px){.brand-sub{display:none}.brand-name{font-size:19px}.lang span{min-width:30px;padding:0 6px}}
+
+.cap{position:relative;margin-top:16px;min-height:3.2em}
+.cap p{position:absolute;inset:0 0 auto 0;font-family:var(--f-display);font-size:clamp(20px,2vw,26px);line-height:1.2;color:var(--film-ink);opacity:0;transform:translateY(-8px);transition:opacity .3s ease,transform .4s ease}
+.cap p.on{opacity:1;transform:none;transition:opacity .6s var(--ease) .32s,transform .8s var(--ease) .32s}
+.cap p:not(.on){pointer-events:none}
+.cap small{display:block;font-family:var(--f-body);font-size:13px;color:var(--film-muted);margin-bottom:4px}
+.film-ctl{position:absolute;z-index:3;right:clamp(16px,2.4vw,26px);bottom:clamp(16px,2.4vw,26px);width:44px;height:44px;border-radius:50%;border:1px solid color-mix(in srgb,var(--film-ink) 30%,transparent);background:color-mix(in srgb,var(--film-bg) 45%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--film-ink);cursor:pointer;display:grid;place-items:center}
+.film-ctl svg{width:14px;height:14px;fill:currentColor}
+@media (max-width:820px){
+  .film{height:auto;min-height:0;aspect-ratio:auto;border-radius:26px}
+  .film{height:max(640px,min(calc(100svh - 96px),860px))}
+  .film .fb{justify-content:center;align-items:flex-start;padding:70px 0 0}
+  .film .fb svg{height:auto;width:86%;max-width:none}
+  .film::after{background:linear-gradient(to top,color-mix(in srgb,var(--film-bg) 96%,transparent) 0%,color-mix(in srgb,var(--film-bg) 80%,transparent) 38%,transparent 66%),linear-gradient(to bottom,color-mix(in srgb,var(--film-bg) 60%,transparent) 0%,transparent 20%)}
+  .chapters{left:18px;right:18px;top:18px;width:auto}
+  .cap{margin-top:12px}
+  .film-copy{left:20px;right:20px;bottom:24px}
+  .film .lead{font-size:15.5px;margin-top:14px}
+  .film .actions{margin-top:22px}
+  .film .actions .btn{flex:1 1 auto}
+  .chapters{right:118px}
+  .film-tools{bottom:auto;top:12px;right:12px;gap:8px}
+  .snd-pill{width:44px;padding:0;justify-content:center}
+  .snd-pill .snd-lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+}
+
+/* Ticker */
+.ticker{margin-top:28px;border-block:1px solid var(--line);overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+.ticker-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
+.ticker-set{display:flex;align-items:center;flex:none}
+.ticker button{background:none;border:0;cursor:pointer;padding:22px 26px;font-family:var(--f-display);font-size:clamp(26px,3.4vw,40px);line-height:1;white-space:nowrap;color:var(--ink);transition:color .25s}
+.ticker button:hover{color:var(--accent)}
+.ticker .glyph{width:16px;height:16px;flex:none;color:var(--accent)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Sections */
+.block{padding-block:clamp(96px,10vw,136px)}
+.block.flush{padding-top:0}
+.block.tinted{background:var(--raised-2);position:relative}
+.block.tinted::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 80% 30%,var(--glow-soft),transparent 70%)}
+.block.tinted>.wrap{position:relative}
+.head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px 64px;align-items:end;margin-bottom:56px}
+.head h2{font-size:clamp(40px,5.6vw,74px)}
+.head p{color:var(--muted);max-width:30em;font-size:17px}
+@media (max-width:820px){.block{padding-block:84px}.block.flush{padding-top:0}.head{grid-template-columns:1fr;margin-bottom:36px}.head p{font-size:16px}}
+.mask{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.mask>span{display:block}
+
+/* Flip cards */
+.flips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;perspective:1400px}
+.flip{position:relative;aspect-ratio:3/4;padding:0;border:0;background:none;cursor:pointer;text-align:left;perspective:1200px}
+.flip-in{display:block;position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s var(--ease-io)}
+.flip.on .flip-in{transform:rotateY(180deg)}
+.flip.peek:not(.on) .flip-in{transform:rotateY(-30deg)}
+.face{position:absolute;inset:0;border-radius:24px;border:1px solid var(--line);background:var(--raised);padding:26px;display:flex;flex-direction:column;justify-content:space-between;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.face.back{transform:rotateY(180deg);background:radial-gradient(130% 110% at 100% 0%,var(--back-a) 0%,var(--back-b) 78%);color:var(--back-ink);border-color:var(--back-line);justify-content:flex-end;gap:14px}
+.face.back::before{content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;border:1px solid var(--back-line);box-shadow:0 0 0 22px var(--back-line),0 0 0 23px transparent;opacity:.55}
+.face.back p{color:var(--back-muted)}
+.face.front::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(260px circle at var(--mx,30%) var(--my,0%),var(--spot),transparent 70%);opacity:0;transition:opacity .4s}
+.flip:hover .face.front::after{opacity:1}
+.face.front{padding:0;justify-content:flex-end;background:var(--studio-b);border-color:color-mix(in srgb,var(--film-ink) 8%,transparent);color:var(--film-ink)}
+.fshot{position:absolute;left:0;right:0;top:0;aspect-ratio:1/1;pointer-events:none}
+.fshot img,.fshot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.fshot video{opacity:0;transition:opacity .45s,transform .8s var(--ease)}
+.flip.play .fshot video{opacity:1}
+.flip:hover .fshot img,.flip:hover .fshot video{transform:scale(1.04)}
+.face.front h3{position:relative;z-index:1;padding:0 24px 24px;color:var(--film-ink)}
+.face.front .turn{z-index:1;color:color-mix(in srgb,var(--film-ink) 60%,transparent)}
+.face h3{font-size:27px;line-height:1.12}
+.face .turn{position:absolute;top:22px;right:22px;width:22px;height:22px;color:var(--muted);transition:transform .6s var(--ease)}
+.flip:hover .front .turn{transform:rotate(180deg);color:var(--accent)}
+.face.back h3{font-size:25px;position:relative}
+.face.back p{position:relative}
+.face.back p{font-size:15.5px;line-height:1.55}
+.face.back{justify-content:flex-start;gap:14px}
+.bk-cta{position:relative;margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid var(--back-line);background:color-mix(in srgb,var(--back-ink) 8%,transparent);color:var(--back-ink);font:500 14.5px/1 var(--f-body);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.bk-cta svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;transition:transform .35s var(--ease)}
+.bk-cta:hover{background:var(--back-ink);color:var(--back-b);border-color:var(--back-ink)}
+.bk-cta:hover svg{transform:translate(2px,-2px)}
+.flip:not(.on) .bk-cta{visibility:hidden}
+.flip.on .face.front,.flip:not(.on) .face.back{pointer-events:none}
+.flip.on .face.back{z-index:2}
+.flip:hover .front{border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+@media (max-width:1040px){.flips{grid-template-columns:repeat(2,minmax(0,1fr))}.flip{aspect-ratio:4/5}}
+@media (max-width:720px){.flips{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding:6px max(16px,env(safe-area-inset-left,0px)) 14px;scrollbar-width:none;perspective:none}.flips::-webkit-scrollbar{display:none}.flip{flex:0 0 74%;scroll-snap-align:center}}
+
+/* Practice shelf */
+.shelf{position:relative;overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;padding-block:6px 10px;
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent)}
+.shelf.drag{cursor:grabbing}
+.shelf-track{display:flex;gap:20px;width:max-content;will-change:transform}
+.shelf-set{display:flex;gap:20px;flex:none}
+.obj{width:330px;flex:none;padding:0;border:0;background:none;cursor:inherit;text-align:left;color:inherit}
+.shot{display:block;position:relative;aspect-ratio:1/1;border-radius:28px;overflow:hidden;background:radial-gradient(75% 75% at 50% 42%,var(--studio-a) 0%,var(--studio-b) 100%);box-shadow:0 30px 60px -40px var(--shade);transition:transform .5s var(--ease),box-shadow .4s}
+.obj{transform-origin:50% 60%;will-change:transform,opacity}
+.shot .ico{position:absolute;inset:0;display:grid;place-items:center;color:var(--film-ink);opacity:.85}
+.shot .ico svg{width:34%;height:34%;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.shot .ico path:last-child{stroke:var(--film-accent)}
+.shot img,.shot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;pointer-events:none}
+.shot video{opacity:0;transition:opacity .45s}
+.obj.play .shot video{opacity:1}
+.obj:hover .shot,.obj:focus-visible .shot{transform:translateY(-8px);box-shadow:0 40px 60px -34px var(--shade)}
+.obj:focus-visible{outline:none}
+.obj:focus-visible .shot{outline:2px solid var(--accent);outline-offset:3px}
+.obj.on .shot{box-shadow:0 0 0 2px var(--accent),0 40px 70px -34px var(--glow)}
+.obj-cap{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px 6px 0}
+.obj-cap .mean{font-size:14.5px;color:var(--muted);transition:color .3s}
+.obj:hover .obj-cap .mean,.obj.on .obj-cap .mean{color:var(--accent)}
+.obj-cap .tag{display:none}
+.obj-cap .go{font-size:13px;color:var(--muted);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .4s var(--ease);white-space:nowrap}
+.obj:hover .obj-cap .go,.obj.on .obj-cap .go{opacity:1;transform:none}
+.obj.on .obj-cap .go{color:var(--accent)}
+.obj-cap b{font-family:var(--f-display);font-weight:400;font-size:25px;line-height:1.1}
+.tag{display:inline-block;font-size:12.5px;line-height:1;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.shelf-nav{display:flex;align-items:center;gap:16px;margin-top:26px}
+.shelf-hint{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:14px;margin:0 auto 0 0}
+.shelf-prog{flex:1;max-width:220px;height:2px;border-radius:2px;background:var(--line);overflow:hidden}
+.shelf-prog i{display:block;height:100%;width:16.7%;background:var(--accent);transform:translateX(calc(var(--sp,0)*100%));transition:transform .5s var(--ease)}
+@media (max-width:620px){.shelf-hint{display:none}.shelf-prog{max-width:none}}
+.shelf-hint svg{width:34px;height:14px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;animation:hint 2.4s var(--ease) infinite}
+@keyframes hint{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@media (max-width:620px){.obj{width:252px}.obj-cap b{font-size:21px}.shelf-track,.shelf-set{gap:14px}}
+
+.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s var(--ease-io);margin-top:0}
+.panel.open{grid-template-rows:1fr}
+.panel-in{overflow:hidden;min-height:0}
+.panel-box{margin-top:28px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);padding:clamp(18px,2.5vw,28px);border-radius:30px;border:1px solid var(--line);background:var(--raised);position:relative}
+.panel-media{position:relative;aspect-ratio:1/1;border-radius:22px;overflow:hidden;background:radial-gradient(75% 75% at 50% 42%,var(--studio-a) 0%,var(--studio-b) 100%);color:var(--film-ink)}
+.pm-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:48px 22px 20px;background:linear-gradient(to top,color-mix(in srgb,var(--studio-b) 92%,transparent),transparent);pointer-events:none}
+.pm-bars{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:220px}
+.pm-bars i{position:relative;height:3px;border-radius:3px;background:color-mix(in srgb,var(--film-ink) 22%,transparent);overflow:hidden}
+.pm-bars i::after{content:"";position:absolute;inset:0;background:var(--film-ink);transform-origin:left;transform:scaleX(var(--p,0))}
+.pm-txt{position:relative;margin-top:12px;min-height:1.3em;font-family:var(--f-display);font-size:clamp(20px,2vw,26px);line-height:1.2}
+.pm-txt span{position:absolute;left:0;right:0;bottom:0;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .5s var(--ease)}
+.pm-txt span.on{opacity:1;transform:none}
+.panel-box::before{content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;background:radial-gradient(50% 60% at 25% 0%,var(--glow-soft),transparent 70%)}
+.panel.open .panel-box{box-shadow:0 40px 90px -50px var(--shade)}
+.panel-media .ico{position:absolute;inset:0;display:grid;place-items:center;color:var(--film-ink)}
+.panel-media .ico svg{width:34%;height:34%;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.panel-media .ico path:last-child{stroke:var(--film-accent)}
+.panel-media img,.panel-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel-body{display:flex;flex-direction:column;gap:18px;padding-block:8px;min-width:0}
+.panel-body h3{font-size:clamp(34px,4vw,52px);padding-right:52px}
+.panel-body .desc{color:var(--muted);font-size:17px;max-width:34em}
+.panel-body ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.panel-body li{position:relative;padding-left:26px;font-size:16px;line-height:1.5}
+.panel-body li::before{content:"";position:absolute;left:0;top:.68em;width:12px;height:1px;background:var(--accent)}
+.panel-body .btn{align-self:flex-start;margin-top:6px}
+.panel-body .tag{align-self:flex-start}
+.panel-close{position:absolute;top:18px;right:18px;z-index:2;background:color-mix(in srgb,var(--raised) 82%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.panel-swap{transition:opacity .3s,transform .45s var(--ease)}
+.panel-swap.out{opacity:0;transform:translateY(10px)}
+@media (max-width:820px){.panel-box{grid-template-columns:1fr}.panel-media{aspect-ratio:1/1}.pm-cap{padding:36px 16px 14px}.pm-txt{font-size:19px}}
+#pn-title:focus{outline:none}
+
+/* Seal film + numbers */
+.band{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);align-items:center}
+.band h2{font-size:clamp(38px,4.8vw,64px)}
+.band .sub{color:var(--muted);font-size:17px;max-width:30em;margin-top:18px}
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:36px}
+.num{position:relative;display:block;text-align:left;padding:20px 20px 18px;border-radius:22px;border:1px solid transparent;background:var(--raised);cursor:pointer;transition:border-color .3s,transform .45s var(--ease),background .3s}
+.num:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--line));transform:translateY(-3px)}
+.num b{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(44px,4.6vw,64px);line-height:1;font-variant-numeric:tabular-nums}
+.num b small{font-size:.45em;color:var(--accent);margin-left:6px}
+.num>span{display:block;margin-top:10px;font-size:14.5px;color:var(--muted)}
+.num svg{position:absolute;top:18px;right:18px;width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:1.6;transition:transform .35s var(--ease),stroke .2s}
+.num:hover svg{transform:translate(3px,-3px);stroke:var(--accent)}
+.seal-film{position:relative;aspect-ratio:5/4;border-radius:32px;overflow:hidden;background:var(--film-bg);box-shadow:0 50px 90px -50px var(--shade);isolation:isolate;cursor:pointer}
+.seal-film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;transform:scale(1.22);transform-origin:50% 58%}
+.seal-film .fb{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(80% 90% at 50% 45%,var(--paper) 0%,var(--paper-line) 100%)}
+.seal-film.has-video .fb{display:none}
+.seal-film .fb .imprint{width:46%;color:var(--seal-ink);opacity:0;transform:scale(1.25);animation:imprint 6.5s var(--ease) infinite}
+.seal-film .fb .stamp{position:absolute;left:50%;top:50%;width:30%;transform:translate(-50%,-160%);animation:stamp 6.5s var(--ease-io) infinite}
+@keyframes stamp{0%,8%{transform:translate(-50%,-190%)}30%{transform:translate(-50%,-62%)}36%{transform:translate(-50%,-66%)}56%,100%{transform:translate(-50%,-190%)}}
+@keyframes imprint{0%,30%{opacity:0;transform:scale(1.04)}34%{opacity:.95;transform:scale(1)}80%{opacity:.9;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.replay{position:absolute;right:16px;bottom:16px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--film-ink);background:color-mix(in srgb,var(--film-bg) 45%,transparent);border:1px solid color-mix(in srgb,var(--film-ink) 25%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:transform .6s var(--ease)}
+.replay svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.seal-film:hover .replay{transform:rotate(-180deg)}
+.seal-film.thump{animation:thump .45s var(--ease)}
+@keyframes thump{30%{transform:scale(.985)}}
+@media (max-width:900px){.band{grid-template-columns:1fr}.band .seal-film{order:-1;aspect-ratio:4/3}}
+
+/* SMS */
+.consult{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);grid-template-areas:"head stage" "main stage";grid-template-rows:auto 1fr;column-gap:clamp(36px,6vw,96px);align-items:start}
+.consult .head{grid-area:head;grid-template-columns:1fr;margin-bottom:40px;gap:22px}
+.consult .head h2{font-size:clamp(40px,5vw,68px)}
+.consult-main{grid-area:main}
+.consult .stage{grid-area:stage;align-self:center}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding:22px;border:1px solid var(--line);border-radius:22px;background:var(--raised);cursor:pointer;transition:border-color .45s,transform .5s var(--ease),background .45s}
+.step:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+.phone{cursor:pointer}
+.step.live{border-color:var(--accent);transform:translateX(10px);background:color-mix(in srgb,var(--accent) 7%,var(--raised))}
+.step .n{font-family:var(--f-display);font-size:38px;line-height:1;color:var(--accent)}
+.step h3{font-family:var(--f-body);font-weight:600;font-size:17.5px;line-height:1.35}
+.step p{color:var(--muted);font-size:15px;margin-top:4px}
+.consult .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.stage{perspective:1100px;display:grid;place-items:center;padding-block:10px}
+.phone{width:min(320px,100%);aspect-ratio:9/18;border-radius:48px;border:1px solid var(--line);background:var(--raised-2);padding:13px;position:relative;
+  box-shadow:0 60px 100px -50px var(--shade),inset 0 0 0 6px var(--raised);transform:rotateY(var(--ry,-5deg)) rotateX(var(--rx,2deg));transition:transform .5s var(--ease);transform-style:preserve-3d}
+.phone::before{content:"";position:absolute;top:24px;left:50%;width:88px;height:24px;border-radius:20px;background:var(--notch);transform:translateX(-50%);z-index:2}
+.phone::after{content:"";position:absolute;inset:13px;border-radius:36px;pointer-events:none;background:linear-gradient(125deg,var(--glass) 0%,transparent 38%)}
+.ph-screen{position:relative;height:100%;border-radius:36px;overflow:hidden;display:flex;flex-direction:column;background:var(--bg)}
+.ph-wm{position:absolute;left:50%;top:36%;width:42%;transform:translate(-50%,-50%);color:var(--accent);opacity:.09;pointer-events:none}
+.ph-wm svg{display:block;width:100%;height:auto}
+.chat{position:relative}
+.ph-top{display:flex;align-items:center;gap:10px;padding:60px 16px 14px;border-bottom:1px solid var(--line)}
+.ph-av{width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;flex:none}
+.ph-top b{display:block;font-size:13.5px;font-weight:600;line-height:1.2}
+.ph-top small{font-size:11.5px;color:var(--muted)}
+.chat{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:16px 12px 18px;overflow:hidden;transition:opacity .5s;background:radial-gradient(120% 55% at 50% 0%,var(--glow-soft),transparent 75%)}
+.bub{max-width:86%;padding:10px 13px;border-radius:18px;font-size:13px;line-height:1.45;animation:pop .45s var(--ease) both}
+.bub.me{align-self:flex-end;background:var(--accent);color:var(--accent-ink);border-bottom-right-radius:6px}
+.bub.them{align-self:flex-start;background:var(--raised);border:1px solid var(--line);border-bottom-left-radius:6px}
+.meta{font-size:11px;color:var(--muted);text-align:center;animation:pop .45s var(--ease) both}
+.meta.ok{align-self:center;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:5px 11px;border-radius:999px;display:flex;align-items:center;gap:6px}
+.meta.ok svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2}
+.typing{align-self:flex-start;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:18px;background:var(--raised);border:1px solid var(--line);font-size:12px;color:var(--muted);animation:pop .3s var(--ease) both}
+.typing span{display:flex;gap:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:dot 1.1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.caret::after{content:"";display:inline-block;width:1px;height:1em;background:currentColor;margin-left:1px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes dot{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+@media (max-width:900px){.consult{grid-template-columns:1fr;grid-template-areas:"head" "stage" "main";grid-template-rows:auto}.consult .head{margin-bottom:28px}.consult .stage{margin-bottom:36px}.step.live{transform:none}.phone{width:min(292px,82%)}}
+
+/* Certificates */
+.certs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.cert{position:relative;padding:0;border:0;background:none;cursor:pointer;text-align:left}
+.paper{position:relative;aspect-ratio:3/4;border-radius:14px;background:linear-gradient(165deg,var(--paper) 0%,var(--paper) 60%,var(--paper-line) 160%);color:var(--paper-ink);padding:13% 12% 12%;display:flex;flex-direction:column;gap:7%;border:1px solid var(--paper-edge);box-shadow:0 24px 40px -26px var(--shade);transition:transform .6s var(--ease),box-shadow .6s;overflow:hidden}
+.paper::before{content:"";position:absolute;inset:7px;border:1px solid var(--paper-line);border-radius:9px;pointer-events:none}
+.paper::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,var(--btn-hi) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s var(--ease);pointer-events:none}
+.cert:hover .paper::after,.cert:focus-visible .paper::after{transform:translateX(120%)}
+.cert:hover .paper,.cert:focus-visible .paper{transform:translateY(-8px) rotate(-1.2deg);box-shadow:0 36px 50px -28px var(--shade)}
+.cert:focus-visible{outline:none}
+.cert:focus-visible .paper{outline:2px solid var(--accent);outline-offset:3px}
+.paper .ttl{font-family:var(--f-display);font-size:clamp(13px,1.25vw,17px);line-height:1.1;text-align:center;color:var(--paper-ink);margin-bottom:2%}
+.paper .l{display:block;height:3px;border-radius:2px;background:var(--paper-line)}
+.paper .l.s{width:60%;margin-inline:auto}
+.paper .seal{margin-top:auto;align-self:flex-end;width:34%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 32%,var(--seal-hi),var(--seal-ink) 72%);display:grid;place-items:center;box-shadow:0 4px 10px -4px var(--shade);transform:rotate(-8deg)}
+.paper .seal::after{content:"";width:68%;aspect-ratio:1;border-radius:50%;border:1px dashed var(--paper);opacity:.55}
+.certs.go .paper .seal{animation:sealIn .8s var(--ease) both;animation-delay:calc(.35s + var(--i)*.12s)}
+@keyframes sealIn{0%{opacity:0;transform:scale(1.9) rotate(-28deg)}55%{opacity:1;transform:scale(.9) rotate(-4deg)}100%{opacity:1;transform:rotate(-8deg)}}
+.cert>b{display:block;font-weight:500;font-size:15px;margin-top:16px}
+.cert>span:not(.paper){display:block;font-size:13px;color:var(--muted)}
+@media (max-width:1040px){.certs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.certs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 4px 8px;margin-inline:-4px;scrollbar-width:none}.certs::-webkit-scrollbar{display:none}.cert{flex:0 0 46%;scroll-snap-align:start}}
+
+/* Contacts */
+.contacts{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}
+.call{position:relative;overflow:hidden;border-radius:32px;background:radial-gradient(120% 120% at 100% 0%,var(--back-a) 0%,var(--back-b) 80%);color:var(--back-ink);border:1px solid var(--back-line);box-shadow:0 40px 80px -46px var(--shade);padding:clamp(30px,4vw,52px);display:flex;flex-direction:column;gap:20px;min-width:0;isolation:isolate}
+.call .rings{position:absolute;right:-140px;top:-140px;width:420px;height:420px;z-index:-1}
+.call .rings i{position:absolute;inset:0;border-radius:50%;border:1px solid currentColor;opacity:0;animation:ring 6s var(--ease) infinite}
+.call .rings i:nth-child(2){animation-delay:2s}.call .rings i:nth-child(3){animation-delay:4s}
+@keyframes ring{0%{transform:scale(.4);opacity:.45}100%{transform:scale(1.4);opacity:0}}
+.call .lbl{font-size:15px;color:var(--back-muted)}
+.call .tel{font-family:var(--f-display);font-size:clamp(30px,4.2vw,56px);line-height:1;white-space:nowrap;font-variant-numeric:tabular-nums}
+.call p{color:var(--back-muted);max-width:28em}
+.call .tel{color:var(--back-ink)}
+.call .row{display:flex;flex-wrap:wrap;gap:10px}
+.call .btn{background:var(--back-ink);color:var(--back-b)}
+.call .btn:hover{box-shadow:0 14px 34px -12px var(--shade)}
+.call .btn.ghost{background:transparent;color:var(--back-ink);border-color:var(--back-line)}
+.call .btn.ghost:hover{border-color:var(--back-ink)}
+.soc{list-style:none;margin:0;padding:0;display:grid;grid-auto-rows:1fr;gap:12px}
+.soc li{display:flex}
+.soc li>a{flex:1}
+.soc a{display:flex;align-items:center;gap:18px;padding:20px 22px;border:1px solid var(--line);border-radius:24px;background:var(--raised);text-decoration:none;transition:border-color .3s,transform .45s var(--ease)}
+.soc a:hover{border-color:var(--accent);transform:translateX(6px)}
+.soc .gl{width:52px;height:52px;border-radius:16px;background:var(--raised-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--accent);flex:none}
+.soc .gl svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.soc .nm{font-family:var(--f-display);font-size:28px;line-height:1;flex:1}
+.soc .st{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.soc .arr{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;transition:transform .35s var(--ease)}
+.soc a:hover .arr{transform:translate(3px,-3px);color:var(--accent)}
+@media (max-width:860px){.contacts{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);overflow:hidden}
+.mark{font-family:var(--f-display);font-size:clamp(46px,11.2vw,172px);line-height:.95;letter-spacing:-.02em;padding-top:64px;white-space:nowrap}
+.mark .mask{padding-bottom:.12em}
+.mark{cursor:pointer}
+.mark:hover .mask>span{color:var(--accent);transition:color .4s}
+.mark .mask+.mask{text-align:right}
+footer .meta-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:28px 32px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:36px}
+@media (max-width:620px){.mark{white-space:normal}.mark .mask+.mask{text-align:left}}
+
+/* Mobile quick bar */
+.mbar{display:none}
+@media (max-width:720px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+    padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));transform:translateY(110%);transition:transform .5s var(--ease)}
+  .mbar.show{transform:none}
+  .mbar .btn{min-height:48px;padding:0 10px}
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+}
+
+/* Nudge */
+.nudge{position:fixed;z-index:58;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));width:min(360px,calc(100vw - 32px));background:var(--raised);border:1px solid var(--line);border-radius:24px;box-shadow:0 28px 70px var(--shade);padding:22px;transform:translateY(20px) scale(.97);opacity:0;transition:transform .5s var(--ease),opacity .4s}
+.nudge.show{transform:none;opacity:1}
+.nudge h3{font-family:var(--f-body);font-weight:600;font-size:17px;line-height:1.3;padding-right:44px}
+.nudge p{color:var(--muted);font-size:14.5px;margin-top:8px}
+.nudge .btn{margin-top:16px;width:100%;min-height:46px}
+.x{position:absolute;top:14px;right:14px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:color .2s,border-color .2s,transform .4s var(--ease)}
+.x:hover{color:var(--ink);border-color:var(--ink);transform:rotate(90deg)}
+@media (max-width:720px){.nudge{left:16px;right:16px;width:auto;bottom:calc(84px + env(safe-area-inset-bottom,0px))}}
+
+/* Modals */
+.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:16px;visibility:hidden;pointer-events:none;transition:visibility 0s .5s}
+.modal.open{visibility:visible;pointer-events:auto;transition:none}
+.modal-bg{position:absolute;inset:0;background:var(--backdrop);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .4s}
+.modal.open .modal-bg{opacity:1}
+.sheet{position:relative;width:min(520px,100%);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;border:1px solid var(--line);border-radius:28px;background:var(--raised);color:var(--ink);box-shadow:0 40px 100px -30px var(--shade);opacity:0;transform:translateY(28px) scale(.97);transition:opacity .35s,transform .55s var(--ease)}
+.modal.open .sheet{opacity:1;transform:none}
+.grab{display:none}
+@media (max-width:720px){
+  .modal{place-items:end stretch;padding:0}
+  .sheet{width:100%;max-height:92dvh;border-radius:28px 28px 0 0;border-bottom:0;transform:translateY(100%);opacity:1;padding-bottom:env(safe-area-inset-bottom,0px);transition:transform .55s var(--ease-io)}
+  .sheet.dragging{transition:none}
+  .grab{display:block;width:44px;height:5px;border-radius:5px;background:var(--line);margin:10px auto -14px;touch-action:none}
+}
+.dlg{position:relative;padding:32px 28px 28px;display:grid;gap:16px}
+.dlg h2{font-size:36px;padding-right:44px}
+.dlg p{color:var(--muted);font-size:15px}
+.dlg label{font-weight:500;font-size:14px}
+.dlg textarea{width:100%;min-height:130px;resize:vertical;padding:14px;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:16px}
+.dlg textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:transparent}
+.numrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border:1px dashed var(--line);border-radius:16px;font-size:16px;font-variant-numeric:tabular-nums}
+.numrow button{font:500 13.5px var(--f-body);background:none;border:0;color:var(--accent);cursor:pointer;padding:4px 0}
+.dlg .hint{font-size:13px}
+#cert-dlg .sheet{width:min(460px,100%)}
+#cert-dlg .paper{width:min(300px,70%);margin:6px auto 4px}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  .ticker-track{animation:none}
+  .ticker{overflow-x:auto}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top" id="top-bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Нагорна та партнери, на початок">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="20" cy="20" r="14.5" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1.5 2.2"/><text x="20" y="24.5" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="12.5" fill="currentColor">Н&amp;П</text></svg>
+      <span><span class="brand-name">Нагорна та партнери</span><span class="brand-sub">Адвокатське об’єднання</span></span>
+    </a>
+    <nav class="nav" aria-label="Розділи сайту">
+      <a class="nl" href="#services">Послуги</a>
+      <a class="nl" href="#consult">Консультація</a>
+      <a class="nl" href="#awards">Відзнаки</a>
+      <a class="nl" href="#contacts">Контакти</a>
+      <button class="lang js-lang" type="button" aria-label="Мова сайту"><span data-l="uk">UA</span><span data-l="en">EN</span></button>
+      <button class="icon-btn js-sound" id="sound" type="button" aria-pressed="false" aria-label="Увімкнути звук"><svg class="off" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>
+      <button class="icon-btn js-theme" id="theme" type="button" aria-label="Змінити тему">
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-accent js-tel" href="#">Подзвонити</a>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mmenu"><i></i><i></i><i></i></button>
+    </nav>
+  </div>
+</header>
+
+<nav class="mmenu" id="mmenu" aria-label="Меню">
+  <a href="#services" style="--i:0">Послуги</a>
+  <a href="#why" style="--i:1">Чому ми</a>
+  <a href="#consult" style="--i:2">Консультація</a>
+  <a href="#awards" style="--i:3">Відзнаки</a>
+  <a href="#contacts" style="--i:4">Контакти</a>
+  <a class="btn btn-accent js-tel" href="#" style="--i:5">Подзвонити</a>
+  <div class="mm-tools"><button class="icon-btn js-sound" type="button" aria-label="Увімкнути звук"><svg class="off" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></button><button class="icon-btn js-theme" type="button" aria-label="Змінити тему"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button></div>
+</nav>
+
+<main id="top">
+  <section class="hero" aria-label="Про об’єднання">
+    <div class="wrap">
+      <div class="film" id="film">
+        <video id="hero-video" muted loop playsinline preload="auto" aria-hidden="true"></video>
+        <div class="fb" aria-hidden="true">
+          <svg viewBox="0 0 600 640" id="fb-scales">
+            <defs><radialGradient id="fbg" cx="50%" cy="40%" r="50%"><stop offset="0" stop-color="#E07A8B" stop-opacity=".18"/><stop offset="1" stop-color="#E07A8B" stop-opacity="0"/></radialGradient></defs>
+            <circle cx="300" cy="260" r="260" fill="url(#fbg)"/>
+            <g fill="none" stroke="#F3ECE6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M300 150V560" stroke-width="2.4"/>
+              <path d="M222 560h156M252 546h96" stroke-width="2.4"/>
+              <circle cx="300" cy="136" r="10" stroke-width="2"/>
+              <line id="fb-beam" x1="130" y1="160" x2="470" y2="160" stroke-width="3"/>
+              <g id="fb-panL"><path d="M0 0L-62 170M0 0L62 170" stroke-width="1.2" opacity=".7"/><path d="M-70 170Q0 222 70 170Z" stroke="#E07A8B" stroke-width="2.6"/>
+                <rect id="fb-weight" x="-30" y="128" width="60" height="44" rx="4" fill="#3A2C31" stroke="#8C7B80" stroke-width="1.4"/></g>
+              <g id="fb-panR"><path d="M0 0L-62 170M0 0L62 170" stroke-width="1.2" opacity=".7"/><path d="M-70 170Q0 222 70 170Z" stroke="#E07A8B" stroke-width="2.6"/>
+                <g id="fb-docs" fill="#8E2639" stroke="#E07A8B" stroke-width="1"><rect class="d" x="-34" y="160" width="68" height="9" rx="2"/><rect class="d" x="-30" y="150" width="62" height="9" rx="2"/><rect class="d" x="-32" y="140" width="64" height="9" rx="2"/></g></g>
+            </g>
+            <circle cx="300" cy="160" r="5" fill="#E07A8B"/>
+          </svg>
+        </div>
+
+        <div class="chapters" id="chapters" aria-live="polite">
+          <div class="bars"><button class="bar" type="button" data-ch="0" aria-label="Розділ 1"><i></i></button><button class="bar" type="button" data-ch="1" aria-label="Розділ 2"><i></i></button><button class="bar" type="button" data-ch="2" aria-label="Розділ 3"><i></i></button></div>
+          <div class="cap" id="cap"></div>
+        </div>
+        <div class="film-tools"><button class="snd-pill js-sound" type="button" aria-pressed="false"><svg class="spk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="snd-lbl">Увімкнути звук</span></button><button class="film-ctl" id="film-ctl" type="button" aria-label="Зупинити відео"><svg viewBox="0 0 14 14" id="film-ico"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg></button></div>
+
+        <div class="film-copy">
+          <p class="kicker hl">Адвокатське об’єднання</p>
+          <h1 aria-label="Нагорна та партнери"><span class="ln"><span>Нагорна</span></span><span class="ln"><span>та партнери</span></span></h1>
+          <p class="lead hl">Ведемо <a href="#s-crim" data-open="crim">кримінальні</a>, <a href="#s-admin" data-open="admin">адміністративні</a>, <a href="#s-biz" data-open="biz">господарські</a>, <a href="#s-customs" data-open="customs">митні</a> та <a href="#s-civil" data-open="civil">цивільні</a> справи, а також <a href="#s-enforce" data-open="enforce">виконавче провадження</a>. Представляємо клієнтів у судах відповідної юрисдикції.</p>
+          <div class="actions hl">
+            <button class="btn btn-accent pulse js-ask" type="button">Безкоштовна консультація</button>
+            <a class="btn btn-line js-tel" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Подзвонити</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ticker" aria-label="Напрями практики">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+  </section>
+
+  <section class="block" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="why-title" class="rv-title"><span class="mask"><span>Чому нам</span></span><span class="mask"><span>довіряють</span></span></h2>
+        <p class="rv">Натисніть на картку, щоб дізнатися більше.</p>
+      </div>
+      <div class="flips" id="flips">
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <span class="flip-in">
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-sms.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-sms.mp4"></video></span><h3>Безкоштовна консультація в SMS</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Безкоштовна консультація в SMS</h3><p>Опишіть ситуацію кількома реченнями. Перша оцінка справи нічого не коштує.</p><button class="bk-cta js-ask" type="button">Написати питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+          </span>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <span class="flip-in">
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-hour.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-hour.mp4"></video></span><h3>Відповідь протягом години</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Відповідь протягом години</h3><p>Співробітник об’єднання відповідає SMS з коротким описом, що робити далі.</p><button class="bk-cta" type="button" data-go="consult">Як це працює<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+          </span>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <span class="flip-in">
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-gavel.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-gavel.mp4"></video></span><h3>Від першої інстанції до Верховного Суду</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Усі судові інстанції</h3><p>Супроводжуємо справу в місцевих та апеляційних судах і у Верховному Суді.</p><button class="bk-cta" type="button" data-go="services">Напрями практики<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+          </span>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <span class="flip-in">
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-secret.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-secret.mp4"></video></span><h3>Адвокатська таємниця</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Адвокатська таємниця</h3><p>Усе, що ви розповідаєте адвокату, захищене законом: ст. 22 ЗУ «Про адвокатуру та адвокатську діяльність».</p><button class="bk-cta js-ask" type="button">Поставити питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block flush" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="services-title" class="rv-title"><span class="mask"><span>Напрями</span></span><span class="mask"><span>практики</span></span></h2>
+        <p class="rv">Потягніть стрічку або натисніть на напрям, щоб побачити, з чим ми допомагаємо. Супроводжуємо справу від аналізу документів до рішення Верховного Суду.</p>
+      </div>
+    </div>
+    <div class="shelf" id="shelf" aria-label="Напрями практики, потягніть убік">
+      <div class="shelf-track" id="shelf-track"></div>
+    </div>
+    <div class="wrap">
+      <div class="shelf-nav"><p class="shelf-hint" aria-hidden="true"><svg viewBox="0 0 34 14"><path d="M1 7h30M25 1l6 6-6 6"/></svg>Потягніть, щоб гортати</p><div class="shelf-prog" aria-hidden="true"><i></i></div><button class="icon-btn" id="sh-prev" type="button" aria-label="Попередній напрям"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button class="icon-btn" id="sh-next" type="button" aria-label="Наступний напрям"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>
+      <div class="panel" id="svc-panel">
+        <div class="panel-in">
+          <div class="panel-box" role="region" aria-labelledby="pn-title" id="pn-box">
+            <div class="panel-media panel-swap" id="pn-media"></div>
+            <div class="panel-body panel-swap" id="pn-body">
+              <span class="tag" id="pn-tag"></span>
+              <h3 id="pn-title" tabindex="-1"></h3>
+              <p class="desc" id="pn-desc"></p>
+              <ul id="pn-list"></ul>
+              <button class="btn btn-accent js-ask" type="button">Запитати про свою справу</button>
+            </div>
+            <button class="icon-btn panel-close" id="pn-close" type="button" aria-label="Згорнути опис"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block flush" id="facts" aria-labelledby="facts-title">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2 id="facts-title" class="rv-title"><span class="mask"><span>Ставимо печатку</span></span><span class="mask"><span>під результатом</span></span></h2>
+          <p class="sub rv">Шість напрямів практики, усі судові інстанції і відповідь на SMS протягом години.</p>
+          <div class="nums">
+            <button class="num" type="button" data-go="services"><b><span data-count="6">6</span></b><span>напрямів практики</span><svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button>
+            <button class="num" type="button" data-go="why"><b><span data-count="3">3</span></b><span>судові інстанції</span><svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button>
+            <button class="num" type="button" data-go="consult"><b><span data-count="60">60</span><small>хв</small></b><span>відповідь на SMS</span><svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button>
+            <button class="num js-ask" type="button"><b>0<small>₴</small></b><span>консультація в SMS</span><svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button>
+          </div>
+        </div>
+        <div class="seal-film" id="seal-film" role="button" tabindex="0" aria-label="Відео: печатка об’єднання. Натисніть, щоб поставити ще раз">
+          <video id="seal-video" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="fb" aria-hidden="true">
+            <svg class="imprint" viewBox="0 0 200 200"><defs><path id="ringp" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+              <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="100" cy="100" r="54" fill="none" stroke="currentColor" stroke-width="2"/>
+              <text font-family="Onest, sans-serif" font-size="12.5" font-weight="500" letter-spacing="2.2" fill="currentColor"><textPath href="#ringp">АДВОКАТСЬКЕ ОБ’ЄДНАННЯ • НАГОРНА ТА ПАРТНЕРИ •</textPath></text>
+              <text x="100" y="114" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="40" fill="currentColor">Н&amp;П</text></svg>
+            <svg class="stamp" viewBox="0 0 120 150"><ellipse cx="60" cy="22" rx="22" ry="20" fill="#7A5240"/><rect x="50" y="36" width="20" height="58" rx="6" fill="#7A5240"/>
+              <rect x="10" y="92" width="100" height="34" rx="8" fill="#C9A46A"/><rect x="6" y="122" width="108" height="16" rx="5" fill="#8E2639"/></svg>
+          </div>
+          <span class="replay" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4.5h4.5"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tinted" id="consult" aria-labelledby="consult-title">
+    <div class="wrap">
+      <div class="consult">
+        <div class="head">
+          <h2 id="consult-title" class="rv-title"><span class="mask"><span>Питання адвокату</span></span><span class="mask"><span>в SMS</span></span></h2>
+          <p class="rv">Не потрібно приїжджати в офіс, щоб зрозуміти, чи є у справи перспектива. Напишіть, і співробітник об’єднання коротко відповість протягом години.</p>
+        </div>
+        <div class="consult-main">
+          <ol class="steps" id="steps">
+            <li class="step js-ask" role="button" tabindex="0"><div class="n">1</div><div><h3>Опишіть ситуацію</h3><p>Кілька речень: що сталося, які є документи, на якій стадії справа.</p></div></li>
+            <li class="step js-ask" role="button" tabindex="0"><div class="n">2</div><div><h3>Отримайте відповідь</h3><p>Протягом 1 години прийде SMS з коротким описом, що робити далі.</p></div></li>
+            <li class="step js-ask" role="button" tabindex="0"><div class="n">3</div><div><h3>Вирішіть, як діяти</h3><p>Якщо потрібна детальна робота, домовимося про зустріч або дзвінок з адвокатом.</p></div></li>
+          </ol>
+          <div class="row">
+            <button class="btn btn-accent pulse js-ask" type="button">Написати питання</button>
+            <a class="btn btn-line js-tel" href="#">Або подзвонити</a>
+          </div>
+        </div>
+        <div class="stage" id="stage">
+          <div class="phone js-ask" id="phone" role="button" tabindex="0" aria-label="Приклад SMS-консультації. Натисніть, щоб написати своє питання">
+            <div class="ph-screen">
+              <div class="ph-top"><span class="ph-av">Н</span><div><b>Нагорна та партнери</b><small>SMS · безкоштовна консультація</small></div></div>
+              <div class="ph-wm" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="20" cy="20" r="14.5" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="1.5 2.2"/><text x="20" y="24.5" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="12.5" fill="currentColor">Н&amp;П</text></svg></div>
+              <div class="chat" id="chat" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="awards" aria-labelledby="awards-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="awards-title" class="rv-title"><span class="mask"><span>Відзнаки</span></span></h2>
+        <p class="rv">Дипломи, сертифікати підвищення кваліфікації та грамоти адвокатів об’єднання. Натисніть, щоб переглянути.</p>
+      </div>
+      <div class="certs" id="certs"></div>
+    </div>
+  </section>
+
+  <section class="block flush" id="contacts" aria-labelledby="contacts-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="contacts-title" class="rv-title"><span class="mask"><span>Зв’язатися</span></span><span class="mask"><span>з нами</span></span></h2>
+        <p class="rv">Телефонуйте або пишіть SMS. Новини, роз’яснення та корисні відео публікуємо в соцмережах.</p>
+      </div>
+      <div class="contacts">
+        <div class="call">
+          <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="lbl">Телефон і SMS</p>
+          <p class="tel js-phone-text">+380 XX XXX XX XX</p>
+          <p>На SMS з питанням відповідаємо протягом 1 години. Консультація в SMS безкоштовна.</p>
+          <div class="row">
+            <a class="btn js-tel" href="#">Подзвонити</a>
+            <button class="btn ghost js-ask" type="button">Написати SMS</button>
+          </div>
+        </div>
+        <ul class="soc" aria-label="Соцмережі">
+          <li><a class="js-tiktok" href="#" target="_blank" rel="noopener"><span class="gl"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.6 2.3 4.3 5 4.5"/></svg></span><span class="nm">TikTok</span><span class="st"><span class="lbl">скоро</span><svg class="arr" viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></span></a></li>
+          <li><a class="js-instagram" href="#" target="_blank" rel="noopener"><span class="gl"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></span><span class="nm">Instagram</span><span class="st"><span class="lbl">скоро</span><svg class="arr" viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></span></a></li>
+          <li><a class="js-facebook" href="#" target="_blank" rel="noopener"><span class="gl"><svg viewBox="0 0 24 24"><path d="M15 3.5h-2.2A3.8 3.8 0 0 0 9 7.3V21M6 11h8"/></svg></span><span class="nm">Facebook</span><span class="st"><span class="lbl">скоро</span><svg class="arr" viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="mark" id="mark" role="link" tabindex="0" aria-label="Нагорна та партнери, нагору"><span class="mask"><span>Нагорна</span></span><span class="mask"><span>та партнери</span></span></p>
+    <div class="meta-row">
+      <span>© 2026 Адвокатське об’єднання «Нагорна та партнери»</span>
+      <span>Інформація на сайті не є юридичною консультацією</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-accent js-tel" href="#">Подзвонити</a>
+  <button class="btn btn-line js-ask" type="button">Питання в SMS</button>
+</div>
+
+<div class="nudge" id="nudge" role="dialog" aria-labelledby="nudge-title" hidden>
+  <button class="x" type="button" id="nudge-close" aria-label="Закрити">×</button>
+  <h3 id="nudge-title">Маєте питання до адвоката?</h3>
+  <p>Напишіть його в SMS. Співробітник об’єднання безкоштовно відповість протягом 1 години.</p>
+  <button class="btn btn-accent js-ask" type="button">Написати питання</button>
+</div>
+
+<div class="modal" id="ask" role="dialog" aria-modal="true" aria-labelledby="ask-title" aria-hidden="true">
+  <div class="modal-bg" data-close></div>
+  <div class="sheet"><div class="grab" aria-hidden="true"></div>
+  <form class="dlg" onsubmit="return false">
+    <button class="x" type="button" data-close aria-label="Закрити">×</button>
+    <h2 id="ask-title">Питання в SMS</h2>
+    <p>Опишіть ситуацію коротко. Після натискання кнопки відкриється SMS з вашим текстом, залишиться лише надіслати його. Відповідь прийде протягом 1 години.</p>
+    <label for="ask-text">Ваше питання</label>
+    <textarea id="ask-text" placeholder="Наприклад: виконавець наклав арешт на рахунок через старий кредит. Чи можна це оскаржити?"></textarea>
+    <a class="btn btn-accent" id="ask-send" href="#">Відкрити SMS</a>
+    <div class="numrow"><span class="js-phone-text">+380 XX XXX XX XX</span><button type="button" id="copy">Скопіювати номер</button></div>
+    <p class="hint">Якщо SMS не відкрилось автоматично, надішліть питання на цей номер вручну.</p>
+  </form>
+  </div>
+</div>
+
+<div class="modal" id="cert-dlg" role="dialog" aria-modal="true" aria-labelledby="cert-title" aria-hidden="true">
+  <div class="modal-bg" data-close></div>
+  <div class="sheet"><div class="grab" aria-hidden="true"></div>
+  <div class="dlg">
+    <button class="x" type="button" data-close aria-label="Закрити">×</button>
+    <h2 id="cert-title">Сертифікат</h2>
+    <div class="paper" aria-hidden="true"><div class="l"></div><div class="l s"></div><div class="l"></div><div class="l"></div><div class="l s"></div><div class="seal"></div></div>
+    <p>Скан документа з’явиться тут найближчим часом.</p>
+  </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ===== Контакти: замініть значення тут ===== */
+const CONTACTS = {
+  phone: "+380000000000",           // номер для дзвінків і SMS, без пробілів
+  phoneText: "+380 XX XXX XX XX",   // як номер показується на сайті
+  tiktok: "",                       // https://www.tiktok.com/@...
+  instagram: "",                    // https://www.instagram.com/...
+  facebook: ""                      // https://www.facebook.com/...
+};
+
+/* ===== Напрями практики ===== */
+const SERVICES = [
+  {key:"crim", beats:["Затримання чи підозра","Захищаємо до остаточного рішення"], name:"Кримінальні справи", short:"Кримінальні справи", tag:"КПК · КК",
+   icon:'<path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+   desc:"Захищаємо підозрюваних і обвинувачених та представляємо потерпілих. Адвокат підключається з моменту затримання або виклику до слідчого і веде справу до остаточного рішення.",
+   list:["Захист на стадії досудового розслідування","Участь в обшуках, допитах та інших слідчих діях","Оскарження запобіжних заходів і арештів майна","Представництво потерпілих і цивільних позивачів","Апеляційне та касаційне оскарження вироків"]},
+  {key:"admin", beats:["Рішення влади проти вас","Оскаржуємо його в суді"], name:"Адміністративне та міграційне право", short:"Адміністративні справи", tag:"КАС · КУпАП",
+   icon:'<path d="M3 9l9-5 9 5M5.5 9.5v8M10 9.5v8M14 9.5v8M18.5 9.5v8"/><path d="M3 20h18"/>',
+   desc:"Оскаржуємо рішення, дії та бездіяльність органів влади в адміністративних судах. Допомагаємо іноземцям і особам без громадянства з документами на перебування в Україні та захищаємо їх у спорах з міграційною службою.",
+   list:["Оскарження рішень органів влади та місцевого самоврядування","Справи про адмінправопорушення, зокрема ДТП і позбавлення права керування","Спори з ТЦК та СП","Посвідки на тимчасове та постійне проживання, оскарження відмов ДМС","Захист від примусового повернення та видворення"]},
+  {key:"biz", beats:["Спір, перевірка чи борги","Захищаємо інтереси бізнесу"], name:"Господарське, податкове право та банкрутство", short:"Господарські справи", tag:"ГПК · ПК · КУзПБ",
+   icon:'<path d="M4 8h16v11H4zM9 8V5h6v3"/><path d="M4 13h16"/>',
+   desc:"Супроводжуємо підприємства та ФОП у спорах з контрагентами, податковими органами й кредиторами. Представляємо бізнес у господарських та адміністративних судах усіх інстанцій.",
+   list:["Договірні спори та стягнення заборгованості","Корпоративні спори","Оскарження податкових повідомлень-рішень і результатів перевірок","Розблокування податкових накладних","Банкрутство юридичних осіб і неплатоспроможність фізичних осіб"]},
+  {key:"customs", beats:["Вантаж затримали на митниці","Відстоюємо ваш вантаж"], name:"Митне право та зовнішньоекономічна діяльність", short:"Митні спори та ЗЕД", tag:"МК · ЗЕД",
+   icon:'<path d="M3 8l9-4 9 4v9l-9 4-9-4zM3 8l9 4 9-4"/><path d="M12 12v9"/>',
+   desc:"Захищаємо імпортерів, експортерів і перевізників у спорах з митницею. Перевіряємо та готуємо зовнішньоекономічні контракти, щоб зменшити ризики ще до перетину кордону.",
+   list:["Оскарження рішень про коригування митної вартості","Спори щодо класифікації товарів за УКТ ЗЕД","Справи про порушення митних правил","Повернення вилучених товарів і транспортних засобів","Супровід зовнішньоекономічних контрактів і валютного контролю"]},
+  {key:"enforce", beats:["Арешт майна чи рахунку","Знімаємо арешти"], name:"Виконавче провадження, кредити та борги", short:"Виконавче провадження", tag:"ЗУ № 1404-VIII",
+   icon:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 7.6-1.7"/>',
+   desc:"Представляємо фізичних і юридичних осіб у справах, пов’язаних з виконавчим провадженням: банківські кредити під заставу, приватні позики, боргові розписки. Працюємо як на боці боржника, так і на боці стягувача.",
+   list:["Оскарження дій державних і приватних виконавців","Зняття арештів з майна та рахунків","Захист заставного й іпотечного майна від стягнення","Спори з банками щодо кредитів під заставу","Стягнення боргів за позиками та розписками"]},
+  {key:"civil", beats:["Спір за майно чи спадщину","Захищаємо ваш дім і родину"], name:"Цивільні справи", short:"Цивільні справи", tag:"ЦК · ЦПК · СК",
+   icon:'<path d="M4 11l8-7 8 7M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>',
+   desc:"Ведемо майнові, спадкові, кредитні та сімейні спори. Готуємо позови, збираємо докази і представляємо клієнта на кожному засіданні.",
+   list:["Майнові спори та поділ майна","Спадщина: оформлення, визнання права, оскарження заповітів","Кредитні спори з банками та фінансовими компаніями","Визначення місця проживання дитини"]}
+];
+const CHAPTERS_DEFAULT = {duration:12, chapters:[
+  {t:0, text:"Обставини складаються не на вашу користь"},
+  {t:4, text:"Ми збираємо докази й аргументи"},
+  {t:8, text:"І повертаємо рівновагу"}]};
+
+const $ = s => document.querySelector(s), $$ = s => Array.from(document.querySelectorAll(s));
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
+const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const svgIcon = (paths, cls) => `<svg viewBox="0 0 24 24" aria-hidden="true"${cls?` class="${cls}"`:""}>${paths}</svg>`;
+
+/* ---------- i18n (UA / EN) ---------- */
+const EN = {"Н": "N", "Затримання чи підозра": "Detention or suspicion", "Захищаємо до остаточного рішення": "We defend you to the final decision", "Рішення влади проти вас": "An official decision against you", "Оскаржуємо його в суді": "We challenge it in court", "Спір, перевірка чи борги": "A dispute, an audit or debts", "Захищаємо інтереси бізнесу": "We protect your business", "Вантаж затримали на митниці": "Your cargo is held at customs", "Відстоюємо ваш вантаж": "We get your cargo through", "Арешт майна чи рахунку": "Property or an account frozen", "Знімаємо арешти": "We lift the freeze", "Спір за майно чи спадщину": "A property or inheritance dispute", "Захищаємо ваш дім і родину": "We protect your home and family", "Як це працює": "How it works", "Поставити питання": "Ask a question", "Нагорна та партнери": "Nahorna & Partners", "Адвокатське об’єднання": "Law Association", "Послуги": "Services", "Консультація": "Consultation", "Відзнаки": "Awards", "Контакти": "Contacts", "Подзвонити": "Call us", "Чому ми": "Why us", "Розділ 1 з 3": "Chapter 1 of 3", "Розділ 2 з 3": "Chapter 2 of 3", "Розділ 3 з 3": "Chapter 3 of 3", "Обставини складаються не на вашу користь": "The circumstances are against you", "Ми збираємо докази й аргументи": "We gather evidence and arguments", "І повертаємо рівновагу": "And restore the balance", "Увімкнути звук": "Turn sound on", "Звук увімкнено": "Sound on", "Вимкнути звук": "Turn sound off", "Нагорна": "Nahorna", "та партнери": "& Partners", "Ведемо": "We handle", "кримінальні": "criminal", "адміністративні": "administrative", "господарські": "commercial", "митні": "customs", "та": "and", "цивільні": "civil", "справи, а також": "cases, as well as", "виконавче провадження": "enforcement proceedings", ". Представляємо клієнтів у судах відповідної юрисдикції.": ". We represent clients in the courts of the relevant jurisdiction.", "Безкоштовна консультація": "Free consultation", "Кримінальні справи": "Criminal cases", "Адміністративні справи": "Administrative cases", "Господарські справи": "Commercial cases", "Митні спори та ЗЕД": "Customs & foreign trade", "Виконавче провадження": "Enforcement proceedings", "Цивільні справи": "Civil cases", "Адміністративне та міграційне право": "Administrative and migration law", "Господарське, податкове право та банкрутство": "Commercial and tax law, bankruptcy", "Митне право та зовнішньоекономічна діяльність": "Customs law and foreign trade", "Виконавче провадження, кредити та борги": "Enforcement proceedings, loans and debts", "Чому нам": "Why clients", "довіряють": "trust us", "Натисніть на картку, щоб дізнатися більше.": "Tap a card to learn more.", "Безкоштовна консультація в SMS": "Free consultation by SMS", "Опишіть ситуацію кількома реченнями. Перша оцінка справи нічого не коштує.": "Describe your situation in a few sentences. The first assessment of your case costs nothing.", "Відповідь протягом години": "A reply within an hour", "Співробітник об’єднання відповідає SMS з коротким описом, що робити далі.": "A member of our team replies by SMS with a short outline of what to do next.", "Від першої інстанції до Верховного Суду": "From first instance to the Supreme Court", "Усі судові інстанції": "Every court instance", "Супроводжуємо справу в місцевих та апеляційних судах і у Верховному Суді.": "We handle your case in local and appeal courts and at the Supreme Court.", "Адвокатська таємниця": "Attorney–client privilege", "Усе, що ви розповідаєте адвокату, захищене законом: ст. 22 ЗУ «Про адвокатуру та адвокатську діяльність».": "Everything you tell your lawyer is protected by law: Article 22 of the Law of Ukraine “On the Bar and Practice of Law”.", "Напрями": "Practice", "практики": "areas", "Потягніть стрічку або натисніть на напрям, щоб побачити, з чим ми допомагаємо. Супроводжуємо справу від аналізу документів до рішення Верховного Суду.": "Drag the strip or tap an area to see how we help. We take a case from the first review of documents to a Supreme Court ruling.", "КПК · КК": "Criminal & Criminal Procedure Codes", "КАС · КУпАП": "Administrative Procedure & Offences Codes", "ГПК · ПК · КУзПБ": "Commercial Procedure, Tax & Bankruptcy Codes", "МК · ЗЕД": "Customs Code · foreign trade", "ЗУ № 1404-VIII": "Law No. 1404-VIII", "ЦК · ЦПК · СК": "Civil, Civil Procedure & Family Codes", "Потягніть, щоб гортати": "Drag to browse", "Запитати про свою справу": "Ask about your case", "Детальніше": "Details", "Попередній напрям": "Previous area", "Наступний напрям": "Next area", "Ставимо печатку": "We put our seal", "під результатом": "on the result", "Шість напрямів практики, усі судові інстанції і відповідь на SMS протягом години.": "Six practice areas, every court instance and an SMS reply within an hour.", "напрямів практики": "practice areas", "судові інстанції": "court instances", "хв": "min", "відповідь на SMS": "SMS reply time", "консультація в SMS": "SMS consultation", "Питання адвокату": "Ask a lawyer", "в SMS": "by SMS", "Не потрібно приїжджати в офіс, щоб зрозуміти, чи є у справи перспектива. Напишіть, і співробітник об’єднання коротко відповість протягом години.": "You don’t need to come to the office to find out whether your case has a chance. Write to us and a member of our team will reply briefly within an hour.", "Опишіть ситуацію": "Describe your situation", "Кілька речень: що сталося, які є документи, на якій стадії справа.": "A few sentences: what happened, which documents you have, what stage the case is at.", "Отримайте відповідь": "Get a reply", "Протягом 1 години прийде SMS з коротким описом, що робити далі.": "Within 1 hour you’ll get an SMS with a short outline of what to do next.", "Вирішіть, як діяти": "Decide how to proceed", "Якщо потрібна детальна робота, домовимося про зустріч або дзвінок з адвокатом.": "If your case needs detailed work, we’ll arrange a meeting or a call with a lawyer.", "Написати питання": "Write your question", "Або подзвонити": "Or call us", "SMS · безкоштовна консультація": "SMS · free consultation", "Сьогодні, 14:02": "Today, 14:02", "Добрий день. Приватний виконавець наклав арешт на мій рахунок через старий кредит. Чи можна це оскаржити?": "Hello. A private enforcement officer has frozen my bank account over an old loan. Can I challenge this?", "Добрий день! Так, дії виконавця можна оскаржити, але строки короткі. Надішліть фото постанови, адвокат перегляне її сьогодні.": "Hello! Yes, the officer’s actions can be challenged, but the deadlines are short. Send us a photo of the order and a lawyer will review it today.", "Доставлено": "Delivered", "Відповідь через 38 хв": "Replied in 38 min", "друкує…": "typing…", "Дипломи, сертифікати підвищення кваліфікації та грамоти адвокатів об’єднання. Натисніть, щоб переглянути.": "Diplomas, professional development certificates and commendations of our lawyers. Tap to view.", "Сертифікат": "Certificate", "Фото буде додано": "Photo coming soon", "Диплом": "Diploma", "Грамота": "Commendation", "Свідоцтво": "Licence", "Подяка": "Letter of thanks", "Зв’язатися": "Get in", "з нами": "touch", "Телефонуйте або пишіть SMS. Новини, роз’яснення та корисні відео публікуємо в соцмережах.": "Call us or send an SMS. We post news, explanations and useful videos on social media.", "Телефон і SMS": "Phone and SMS", "На SMS з питанням відповідаємо протягом 1 години. Консультація в SMS безкоштовна.": "We answer SMS questions within 1 hour. The SMS consultation is free.", "Написати SMS": "Send an SMS", "скоро": "soon", "перейти": "open", "© 2026 Адвокатське об’єднання «Нагорна та партнери»": "© 2026 Nahorna & Partners Law Association", "Інформація на сайті не є юридичною консультацією": "Information on this website is not legal advice", "Питання в SMS": "Ask by SMS", "Маєте питання до адвоката?": "Have a question for a lawyer?", "Напишіть його в SMS. Співробітник об’єднання безкоштовно відповість протягом 1 години.": "Send it by SMS. A member of our team will reply for free within 1 hour.", "Опишіть ситуацію коротко. Після натискання кнопки відкриється SMS з вашим текстом, залишиться лише надіслати його. Відповідь прийде протягом 1 години.": "Describe your situation briefly. The button opens an SMS with your text, so you only need to send it. You’ll get a reply within 1 hour.", "Ваше питання": "Your question", "Відкрити SMS": "Open SMS", "Скопіювати номер": "Copy number", "Скопійовано": "Copied", "Якщо SMS не відкрилось автоматично, надішліть питання на цей номер вручну.": "If the SMS app doesn’t open, send your question to this number yourself.", "Скан документа з’явиться тут найближчим часом.": "A scan of the document will appear here soon.", "Нагорна та партнери, на початок": "Nahorna & Partners, back to top", "Нагорна та партнери, нагору": "Nahorna & Partners, back to top", "Розділи сайту": "Site sections", "Змінити тему": "Change theme", "Меню": "Menu", "Про об’єднання": "About the association", "Розділ 1": "Chapter 1", "Розділ 2": "Chapter 2", "Розділ 3": "Chapter 3", "Зупинити відео": "Pause video", "Відтворити відео": "Play video", "Напрями практики": "Practice areas", "Напрями практики, потягніть убік": "Practice areas, drag sideways", "Згорнути опис": "Collapse details", "Відео: печатка об’єднання. Натисніть, щоб поставити ще раз": "Video: the association’s seal. Tap to stamp again", "Приклад SMS-консультації. Натисніть, щоб написати своє питання": "Example of an SMS consultation. Tap to write your question", "Соцмережі": "Social media", "Закрити": "Close", "Мова сайту": "Site language", "Наприклад: виконавець наклав арешт на рахунок через старий кредит. Чи можна це оскаржити?": "For example: an enforcement officer froze my account over an old loan. Can I challenge this?", "Захищаємо підозрюваних і обвинувачених та представляємо потерпілих. Адвокат підключається з моменту затримання або виклику до слідчого і веде справу до остаточного рішення.": "We defend suspects and the accused and represent victims. A lawyer joins from the moment of detention or a summons to the investigator and stays with the case until the final decision.", "Захист на стадії досудового розслідування": "Defence during the pre-trial investigation", "Участь в обшуках, допитах та інших слідчих діях": "Presence at searches, interrogations and other investigative actions", "Оскарження запобіжних заходів і арештів майна": "Challenging preventive measures and asset seizures", "Представництво потерпілих і цивільних позивачів": "Representing victims and civil claimants", "Апеляційне та касаційне оскарження вироків": "Appeals and cassation appeals against verdicts", "Оскаржуємо рішення, дії та бездіяльність органів влади в адміністративних судах. Допомагаємо іноземцям і особам без громадянства з документами на перебування в Україні та захищаємо їх у спорах з міграційною службою.": "We challenge decisions, actions and inaction of public authorities in administrative courts. We help foreigners and stateless persons with residence documents in Ukraine and defend them in disputes with the migration service.", "Оскарження рішень органів влади та місцевого самоврядування": "Challenging decisions of state and local authorities", "Справи про адмінправопорушення, зокрема ДТП і позбавлення права керування": "Administrative offence cases, including road accidents and driving bans", "Спори з ТЦК та СП": "Disputes with territorial recruitment centres", "Посвідки на тимчасове та постійне проживання, оскарження відмов ДМС": "Temporary and permanent residence permits, appeals against migration service refusals", "Захист від примусового повернення та видворення": "Protection against forced return and expulsion", "Супроводжуємо підприємства та ФОП у спорах з контрагентами, податковими органами й кредиторами. Представляємо бізнес у господарських та адміністративних судах усіх інстанцій.": "We support companies and sole proprietors in disputes with counterparties, tax authorities and creditors. We represent businesses in commercial and administrative courts of all instances.", "Договірні спори та стягнення заборгованості": "Contract disputes and debt recovery", "Корпоративні спори": "Corporate disputes", "Оскарження податкових повідомлень-рішень і результатів перевірок": "Challenging tax assessment notices and audit results", "Розблокування податкових накладних": "Unblocking VAT invoices", "Банкрутство юридичних осіб і неплатоспроможність фізичних осіб": "Bankruptcy of companies and insolvency of individuals", "Захищаємо імпортерів, експортерів і перевізників у спорах з митницею. Перевіряємо та готуємо зовнішньоекономічні контракти, щоб зменшити ризики ще до перетину кордону.": "We defend importers, exporters and carriers in disputes with customs. We review and draft foreign trade contracts to reduce risks before goods cross the border.", "Оскарження рішень про коригування митної вартості": "Challenging customs value adjustments", "Спори щодо класифікації товарів за УКТ ЗЕД": "Disputes over the tariff classification of goods", "Справи про порушення митних правил": "Customs violation cases", "Повернення вилучених товарів і транспортних засобів": "Recovery of seized goods and vehicles", "Супровід зовнішньоекономічних контрактів і валютного контролю": "Support with foreign trade contracts and currency control", "Представляємо фізичних і юридичних осіб у справах, пов’язаних з виконавчим провадженням: банківські кредити під заставу, приватні позики, боргові розписки. Працюємо як на боці боржника, так і на боці стягувача.": "We represent individuals and companies in matters involving enforcement proceedings: secured bank loans, private loans and IOUs. We act for both debtors and creditors.", "Оскарження дій державних і приватних виконавців": "Challenging actions of state and private enforcement officers", "Зняття арештів з майна та рахунків": "Lifting seizures of property and bank accounts", "Захист заставного й іпотечного майна від стягнення": "Protecting pledged and mortgaged property from foreclosure", "Спори з банками щодо кредитів під заставу": "Disputes with banks over secured loans", "Стягнення боргів за позиками та розписками": "Recovering debts under loans and IOUs", "Ведемо майнові, спадкові, кредитні та сімейні спори. Готуємо позови, збираємо докази і представляємо клієнта на кожному засіданні.": "We handle property, inheritance, credit and family disputes. We draft claims, gather evidence and represent the client at every hearing.", "Майнові спори та поділ майна": "Property disputes and division of property", "Спадщина: оформлення, визнання права, оскарження заповітів": "Inheritance: registration, recognition of rights, challenging wills", "Кредитні спори з банками та фінансовими компаніями": "Credit disputes with banks and finance companies", "Визначення місця проживання дитини": "Determining a child’s place of residence"};
+const UK = Object.fromEntries(Object.entries(EN).map(([k, v]) => [v, k]));
+let LANGC = "uk";
+const t = s => LANGC === "en" ? (EN[s] ?? s) : s;
+function setLabel(el, uk){ el.setAttribute("data-o-aria-label", uk); el.setAttribute("aria-label", t(uk)); }
+const I18N = (function(){
+  const orig = new WeakMap(), ATTRS = ["aria-label","placeholder","title"];
+  const conv = k => { const base = UK[k] ?? k; return LANGC === "en" ? (EN[base] ?? base) : base; };
+  function trNode(n){
+    if (!orig.has(n)) orig.set(n, n.nodeValue);
+    let o = orig.get(n); const k = o.trim(); if (!k) return;
+    if (n.nodeValue.trim() !== k && n.nodeValue.trim() !== conv(k) && n.nodeValue.trim() !== (UK[k] ?? k)) { orig.set(n, n.nodeValue); o = n.nodeValue; }
+    const kk = o.trim(), nv = o.replace(kk, conv(kk)); if (n.nodeValue !== nv) n.nodeValue = nv;
+  }
+  function trEl(el){
+    for (const a of ATTRS) {
+      if (!el.hasAttribute(a)) continue;
+      const key = "data-o-" + a; if (!el.hasAttribute(key)) el.setAttribute(key, el.getAttribute(a));
+      const v = conv(el.getAttribute(key)); if (el.getAttribute(a) !== v) el.setAttribute(a, v);
+    }
+  }
+  function walk(root){
+    if (root.nodeType === 3) { const pn = root.parentNode && root.parentNode.nodeName; if (pn !== "SCRIPT" && pn !== "STYLE" && pn !== "textPath") trNode(root); return; }
+    if (root.nodeType !== 1 || /^(SCRIPT|STYLE)$/.test(root.nodeName)) return;
+    trEl(root);
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT); let n;
+    while ((n = w.nextNode())) {
+      if (n.nodeType === 3) { const pn = n.parentNode.nodeName; if (pn !== "SCRIPT" && pn !== "STYLE" && pn !== "textPath") trNode(n); }
+      else trEl(n);
+    }
+  }
+  new MutationObserver(ms => { if (LANGC === "uk") return; ms.forEach(m => m.addedNodes.forEach(walk)); }).observe(document.body, {childList:true, subtree:true});
+  function set(l, animate){
+    LANGC = l === "en" ? "en" : "uk";
+    document.documentElement.lang = LANGC;
+    walk(document.body);
+    document.title = t("Нагорна та партнери");
+    $$(".js-lang span").forEach(sp => sp.classList.toggle("on", sp.dataset.l === LANGC));
+    store.set("np-lang", LANGC);
+    if (animate && !reduce) $$("main h1, main h2, main h3, main p, .nav, .film-copy").forEach(el => { el.classList.remove("i18n-swap"); void el.offsetWidth; el.classList.add("i18n-swap"); });
+    document.dispatchEvent(new Event("langchange"));
+  }
+  document.addEventListener("click", e => { if (e.target.closest(".js-lang")) set(LANGC === "en" ? "uk" : "en", true); });
+  return {set, walk};
+})();
+
+/* ---------- Sound (synthesised with Web Audio, off until the visitor turns it on) ---------- */
+const Sound = (function(){
+  let ctx = null, master, wet, noiseBuf, on = false, lastTick = 0, pad = null, hPrev = -1, dropI = 0;
+  const ok = () => on && ctx && ctx.state === "running";
+  function init(){
+    if (ctx) return true;
+    const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return false;
+    try { ctx = new AC(); } catch (e) { return false; }
+    master = ctx.createGain(); master.gain.value = .5;
+    const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -20; comp.ratio.value = 4;
+    master.connect(comp); comp.connect(ctx.destination);
+    const r = ctx.sampleRate, n = Math.floor(r * 2.6), ir = ctx.createBuffer(2, n, r);
+    for (let c = 0; c < 2; c++) { const d = ir.getChannelData(c); for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / n, 3); }
+    const conv = ctx.createConvolver(); conv.buffer = ir; wet = ctx.createGain(); wet.gain.value = .5; wet.connect(conv); conv.connect(master);
+    noiseBuf = ctx.createBuffer(1, r, r); const nd = noiseBuf.getChannelData(0); for (let i = 0; i < r; i++) nd[i] = Math.random() * 2 - 1;
+    return true;
+  }
+  function route(node, w){ node.connect(master); if (w) { const g = ctx.createGain(); g.gain.value = w; node.connect(g); g.connect(wet); } }
+  function tone(f, o = {}){
+    const t0 = ctx.currentTime + (o.at || 0), a = o.a ?? .004, d = o.d ?? .3, pk = o.v ?? .2;
+    const osc = ctx.createOscillator(), g = ctx.createGain();
+    osc.type = o.type || "sine"; osc.frequency.setValueAtTime(f, t0);
+    if (o.to) osc.frequency.exponentialRampToValueAtTime(o.to, t0 + (o.glide ?? d * .6));
+    g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(pk, t0 + a); g.gain.exponentialRampToValueAtTime(.0001, t0 + a + d);
+    osc.connect(g); route(g, o.wet ?? .25); osc.start(t0); osc.stop(t0 + a + d + .05);
+  }
+  function noise(o = {}){
+    const t0 = ctx.currentTime + (o.at || 0), d = o.d ?? .2, a = o.a ?? .003;
+    const src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
+    const f = ctx.createBiquadFilter(); f.type = o.type || "bandpass"; f.frequency.setValueAtTime(o.f || 1200, t0);
+    if (o.f2) f.frequency.exponentialRampToValueAtTime(o.f2, t0 + a + d); f.Q.value = o.q ?? 1;
+    const g = ctx.createGain(); g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(o.v ?? .1, t0 + a); g.gain.exponentialRampToValueAtTime(.0001, t0 + a + d);
+    src.connect(f); f.connect(g); route(g, o.wet ?? .2); src.start(t0, Math.random() * .5); src.stop(t0 + a + d + .05);
+  }
+  function bell(f, v = .1, d = 3, at = 0){ [[1,1],[2.76,.42],[5.4,.2],[8.93,.08]].forEach(([m, k]) => tone(f * m, {v:v * k, d:d / Math.sqrt(m), a:.003, wet:.55, at})); }
+  const fx = {
+    tick(){ const n = performance.now(); if (n - lastTick < 55) return; lastTick = n; noise({f:3600, q:6, d:.016, v:.045, wet:0}); },
+    click(){ tone(640, {to:430, d:.08, v:.07, wet:.15}); noise({f:2400, q:4, d:.018, v:.04, wet:0}); },
+    whoosh(){ noise({f:420, f2:2600, q:1.3, d:.36, a:.09, v:.07, wet:.3}); },
+    open(){ bell(784, .045, 1.4); bell(1175, .03, 1.2, .07); },
+    pop(){ tone(820, {to:1240, d:.07, v:.07, wet:.2}); },
+    key(){ noise({f:2600 + Math.random() * 900, q:5, d:.012, v:.022, wet:0}); },
+    pluck(f, v = .06, d = 1.6, at = 0){ tone(f, {v, d, a:.006, wet:.45, at}); tone(f * 2, {v:v * .3, d:d * .55, a:.004, wet:.45, at}); tone(f * 3, {v:v * .1, d:d * .35, a:.003, wet:.45, at}); },
+    intro(){ dropI = 0; fx.pluck(123.47, .07, 2.6); fx.pluck(246.94, .045, 2.2, .02); },
+    drop(){ const n = [392, 493.88, 587.33][dropI++ % 3]; fx.pluck(n, .065, 1.4); noise({f:1500, q:2.5, d:.03, v:.035, wet:.2}); tone(n * 4, {at:.05, d:.25, v:.008, wet:.5}); },
+    swell(){ noise({f:500, f2:1600, q:.8, d:1.6, a:1, v:.02, wet:.6}); },
+    resolve(){ [587.33, 739.99, 880, 1174.66].forEach((f, i) => bell(f, .038, 3.4, i * .13)); },
+    lift(){ fx.pluck(587.33, .045, 1.3); fx.pluck(880, .032, 1.3, .1); },
+    shimmer(){ for (let i = 0; i < 4; i++) tone(1760 + i * 220, {at:i * .08, d:.6, v:.008, wet:.6}); },
+    stamp(){ tone(150, {to:52, d:.28, v:.42, glide:.12, wet:.15}); noise({type:"lowpass", f:900, d:.09, v:.26, wet:.15}); },
+    paper(){ noise({f:3200, q:.8, d:.24, a:.05, v:.04, wet:.2}); }
+  };
+  const api = {};
+  Object.keys(fx).forEach(k => api[k] = (...a) => { if (ok()) try { fx[k](...a); } catch (e) {} });
+  /* warm pad: three soft chords that follow the film (Bm9 → Gmaj9 → Dmaj9) */
+  const CHORDS = [[123.47,185,293.66,440,554.37],[98,146.83,246.94,369.99,440],[146.83,220,369.99,554.37,659.26]];
+  function padOn(){
+    if (!ok() || pad) return; const t0 = ctx.currentTime, g = ctx.createGain();
+    g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(.05, t0 + 3);
+    const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 1500; lp.Q.value = .4;
+    const trem = ctx.createGain(); trem.gain.value = 1; const lfo = ctx.createOscillator(), lg = ctx.createGain(); lfo.frequency.value = .13; lg.gain.value = .12; lfo.connect(lg); lg.connect(trem.gain);
+    const voices = CHORDS[0].map((f, i) => {
+      const a = ctx.createOscillator(), b = ctx.createOscillator(), vg = ctx.createGain();
+      a.type = "sine"; b.type = "triangle"; a.frequency.value = f; b.frequency.value = f; b.detune.value = 5 + i;
+      vg.gain.value = i === 0 ? .26 : .2; a.connect(vg); const bg = ctx.createGain(); bg.gain.value = .35; b.connect(bg); bg.connect(vg); vg.connect(lp);
+      a.start(); b.start(); return [a, b];
+    });
+    lp.connect(trem); trem.connect(g); route(g, .55); lfo.start(); pad = {g, voices, lfo, chord:0};
+  }
+  function padChord(i){
+    if (!pad || pad.chord === i) return; pad.chord = i; const t0 = ctx.currentTime;
+    CHORDS[i].forEach((f, k) => pad.voices[k].forEach(o => o.frequency.setTargetAtTime(f, t0, .45)));
+  }
+  function padOff(){
+    if (!pad || !ctx) return; const pd = pad; pad = null; const t0 = ctx.currentTime;
+    pd.g.gain.cancelScheduledValues(t0); pd.g.gain.setValueAtTime(Math.max(pd.g.gain.value, .0002), t0); pd.g.gain.exponentialRampToValueAtTime(.0001, t0 + 1.4);
+    setTimeout(() => { pd.voices.flat().forEach(o => { try { o.stop(); } catch (e) {} }); try { pd.lfo.stop(); } catch (e) {} }, 1600);
+  }
+  const HERO_EV = [[.25,"intro"],[3.6,"swell"],[4.75,"drop"],[6.0,"drop"],[7.25,"drop"],[8.55,"resolve"],[9.6,"shimmer"]];
+  api.hero = (tm, D, active) => {
+    if (!ok() || !active) { padOff(); hPrev = -1; return; }
+    padOn(); padChord(tm < 4 ? 0 : tm < 8 ? 1 : 2);
+    if (hPrev < 0) { hPrev = tm; return; }
+    const fwd = tm >= hPrev ? tm - hPrev : tm + D - hPrev;
+    if (fwd > .6) { hPrev = tm; return; }
+    HERO_EV.forEach(([e, k]) => { const hit = tm >= hPrev ? (e > hPrev && e <= tm) : (e > hPrev || e <= tm); if (hit) api[k](); });
+    hPrev = tm;
+  };
+  api.heroJump = () => { hPrev = -1; };
+  function ui(){
+    document.documentElement.classList.toggle("snd-on", on);
+    $$(".js-sound").forEach(b => { b.setAttribute("aria-pressed", String(on)); setLabel(b, on ? "Вимкнути звук" : "Увімкнути звук"); });
+    $$(".snd-lbl").forEach(l => l.textContent = t(on ? "Звук увімкнено" : "Увімкнути звук"));
+  }
+  api.set = v => {
+    if (v && !init()) v = false;
+    on = !!v; store.set("np-sound", on ? "1" : "0");
+    if (on) { const r = ctx.resume(); (r && r.then ? r : Promise.resolve()).then(() => api.open()); } else { padOff(); hPrev = -1; }
+    ui();
+  };
+  api.isOn = () => on;
+  document.addEventListener("click", e => { if (e.target.closest(".js-sound")) api.set(!on); });
+  document.addEventListener("langchange", ui);
+  /* the visitor's choice is remembered; audio can start only after their first tap */
+  if (store.get("np-sound") === "1") {
+    const arm = () => { removeEventListener("pointerdown", arm, true); removeEventListener("keydown", arm, true); if (!on) api.set(true); };
+    addEventListener("pointerdown", arm, true); addEventListener("keydown", arm, true);
+  }
+  /* soft UI feedback */
+  let hov = null;
+  document.addEventListener("pointerover", e => {
+    if (e.pointerType !== "mouse") return;
+    const el = e.target.closest(".btn,.obj,.flip,.cert,.soc a,.nl,.ticker button,.num,.step,.bar,.icon-btn,.lead a,.lang,.snd-pill,.phone,.seal-film");
+    if (el !== hov) { hov = el; if (el) api.tick(); }
+  });
+  document.addEventListener("click", e => {
+    const el = e.target.closest("button,a,[role=button],[role=link]");
+    if (!el || el.matches(".flip,.js-sound,.seal-film") ) return;
+    api.click();
+  }, true);
+  setTimeout(ui, 0);
+  return api;
+})();
+
+/* ---------- Modal (works inside sandboxed viewers; bottom sheet on phones) ---------- */
+const Modal = (function(){
+  let cur = null, ret = null;
+  function open(id, from){
+    const m = document.getElementById(id); if (!m) return;
+    if (cur && cur !== m) close(true);
+    cur = m; ret = from || document.activeElement;
+    m.querySelector(".sheet").style.transform = "";
+    m.classList.add("open"); m.setAttribute("aria-hidden", "false");
+    document.documentElement.style.overflow = "hidden";
+    Sound.open();
+    requestAnimationFrame(() => { const x = m.querySelector(".x"); if (x) x.focus({preventScroll:true}); });
+  }
+  function close(silent){
+    if (!cur) return; const m = cur; cur = null;
+    m.classList.remove("open"); m.setAttribute("aria-hidden", "true");
+    m.querySelector(".sheet").style.transform = "";
+    document.documentElement.style.overflow = "";
+    if (!silent && ret && ret.focus) ret.focus({preventScroll:true});
+  }
+  document.addEventListener("click", e => { if (cur && cur.contains(e.target) && e.target.closest("[data-close]")) close(); });
+  addEventListener("keydown", e => {
+    if (!cur) return;
+    if (e.key === "Escape") { e.preventDefault(); close(); return; }
+    if (e.key === "Tab") {
+      const f = [...cur.querySelectorAll("a[href],button,textarea,input,[tabindex]:not([tabindex='-1'])")].filter(el => el.offsetParent !== null);
+      if (!f.length) return; const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  /* swipe the sheet down to close it on phones */
+  $$(".modal .sheet").forEach(sh => {
+    let y0 = null, dy = 0;
+    sh.addEventListener("pointerdown", e => { if (e.pointerType === "mouse" || sh.scrollTop > 0 || e.target.closest("textarea,button,a,input")) return; y0 = e.clientY; dy = 0; });
+    sh.addEventListener("pointermove", e => { if (y0 === null) return; dy = Math.max(0, e.clientY - y0); if (dy > 4) { sh.classList.add("dragging"); sh.style.transform = `translateY(${dy}px)`; } });
+    const end = () => { if (y0 === null) return; y0 = null; sh.classList.remove("dragging"); if (dy > 90) close(); else sh.style.transform = ""; };
+    sh.addEventListener("pointerup", end); sh.addEventListener("pointercancel", end);
+  });
+  return {open, close, isOpen: () => !!cur};
+})();
+
+
+/* ---------- Theme ---------- */
+(function(){
+  const root = document.documentElement, saved = store.get("np-theme");
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  document.addEventListener("click", e => { if (!e.target.closest(".js-theme")) return;
+    const cur = root.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    const next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next); store.set("np-theme", next);
+  });
+})();
+
+/* ---------- Contacts ---------- */
+$$(".js-tel").forEach(a => a.href = "tel:" + CONTACTS.phone);
+$$(".js-phone-text").forEach(el => el.textContent = CONTACTS.phoneText);
+["tiktok","instagram","facebook"].forEach(k => $$(".js-" + k).forEach(a => {
+  if (CONTACTS[k]) { a.href = CONTACTS[k]; a.querySelector(".lbl").textContent = "перейти"; }
+  else { a.removeAttribute("target"); a.setAttribute("aria-disabled","true"); a.addEventListener("click", e => e.preventDefault()); }
+}));
+
+/* ---------- Header, nav, menu, mobile bar ---------- */
+const bar = $("#top-bar"), mbar = $("#mbar");
+const onScroll = () => { bar.classList.toggle("solid", scrollY > 20); mbar.classList.toggle("show", scrollY > innerHeight * .5); };
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+const navLinks = $$(".nav a.nl");
+const secIO = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+}), {rootMargin:"-45% 0px -50% 0px"});
+["why","services","facts","consult","awards","contacts"].forEach(id => secIO.observe(document.getElementById(id)));
+const burger = $("#burger");
+function setMenu(open){ document.body.classList.toggle("menu-open", open); burger.setAttribute("aria-expanded", String(open)); }
+burger.addEventListener("click", () => setMenu(!document.body.classList.contains("menu-open")));
+$$("#mmenu a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
+
+/* ---------- Ticker ---------- */
+(function(){
+  const glyph = '<svg class="glyph" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/><circle cx="8" cy="8" r="2.2" fill="currentColor"/></svg>';
+  const set = hidden => `<div class="ticker-set"${hidden ? ' aria-hidden="true"' : ""}>` + SERVICES.map(s =>
+    `<button type="button" data-open="${s.key}"${hidden ? ' tabindex="-1"' : ""}>${s.short}</button>${glyph}`).join("") + "</div>";
+  $("#ticker-track").innerHTML = set(false) + set(true);
+})();
+
+/* ---------- Flip cards ---------- */
+$$(".flip").forEach(b => {
+  b.addEventListener("click", e => { if (e.target.closest(".bk-cta")) return; Sound.whoosh(); b.classList.remove("peek"); const on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); });
+  if (finePointer) b.addEventListener("pointermove", e => { const r = b.getBoundingClientRect(); b.style.setProperty("--mx", (e.clientX - r.left) + "px"); b.style.setProperty("--my", (e.clientY - r.top) + "px"); });
+});
+
+/* object loops on the trust cards: hover on desktop, in view on phones */
+(function(){
+  const play = (f, on) => {
+    if (reduce) return; const v = f.querySelector(".fshot video"); if (!v || v.dataset.err) return;
+    if (on) { if (!v.src) { v.src = v.dataset.src; v.addEventListener("error", () => { v.dataset.err = 1; f.classList.remove("play"); }); } const pr = v.play(); if (pr) pr.then(() => f.classList.add("play"), () => {}); }
+    else { f.classList.remove("play"); setTimeout(() => { if (!f.classList.contains("play")) v.pause(); }, 450); }
+  };
+  $$(".flip").forEach(f => {
+    if (finePointer) { f.addEventListener("pointerenter", () => play(f, true)); f.addEventListener("pointerleave", () => play(f, false)); f.addEventListener("focus", () => play(f, true)); f.addEventListener("blur", () => play(f, false)); }
+    else new IntersectionObserver(es => play(f, es[0].intersectionRatio > .8), {threshold:[0,.8,1]}).observe(f);
+  });
+})();
+
+/* ---------- Shelf of practice areas ---------- */
+const shelf = $("#shelf"), track = $("#shelf-track");
+(function buildShelf(){
+  const card = (s, clone) => `<button class="obj" type="button" data-key="${s.key}"${clone ? ' tabindex="-1"' : ''} aria-label="${s.name}">
+    <span class="shot"><span class="ico">${svgIcon(s.icon)}</span><img alt="" draggable="false" loading="lazy" src="media/obj-${s.key}.jpg" onerror="this.remove()"><video muted loop playsinline preload="none" data-src="media/obj-${s.key}.mp4"></video></span>
+    <span class="obj-cap"><b>${s.short}</b><span class="mean">${s.beats[1]}</span></span></button>`;
+  track.innerHTML = `<div class="shelf-set">${SERVICES.map(s => card(s,false)).join("")}</div><div class="shelf-set" aria-hidden="true">${SERVICES.map(s => card(s,true)).join("")}</div>`;
+})();
+const shelfCtl = (function(){
+  const sets = track.querySelectorAll(".shelf-set");
+  let x = 0, v = 0, setW = 0, drag = null, moved = false, hover = false, focusIn = false, target = null, last = 0, visible = true;
+  const cards = [...track.querySelectorAll(".obj")]; let offs = [], cw = 0, gap = 20, lastC = -1;
+  const measure = () => { setW = sets[1].offsetLeft - sets[0].offsetLeft; offs = cards.map(c => c.offsetLeft + c.parentNode.offsetLeft + c.offsetWidth / 2); cw = cards[0].offsetWidth; gap = parseFloat(getComputedStyle(sets[0]).columnGap) || 20; };
+  measure(); addEventListener("resize", measure);
+  const wrapX = () => { if (!setW) return; while (x <= -setW) { x += setW; if (target !== null) target += setW; } while (x > 0) { x -= setW; if (target !== null) target -= setW; } };
+  function frame(now){
+    const dt = last ? Math.min((now - last) / 1000, .05) : 0; last = now;
+    if (!drag) {
+      if (target !== null) { x += (target - x) * Math.min(1, dt * 7); if (Math.abs(target - x) < .5) { x = target; target = null; } }
+      else {
+        x += v * dt; v *= Math.pow(.04, dt);
+        if (Math.abs(v) < 4) v = 0;
+        if (!reduce && !hover && !focusIn && v === 0) x -= 22 * dt;
+      }
+    }
+    wrapX();
+    track.style.transform = `translate3d(${x.toFixed(2)}px,0,0)`;
+    const vw = shelf.clientWidth, half = vw / 2; let best = 1e9, bi = 0;
+    for (let i = 0; i < cards.length; i++) {
+      const d = offs[i] + x - half, ad = Math.abs(d);
+      if (ad < best) { best = ad; bi = i; }
+      if (ad > vw) continue;
+      const k = Math.min(ad / (half + cw * .5), 1);
+      cards[i].style.transform = reduce ? "" : `scale(${(1 - .12 * k * k).toFixed(4)})`;
+      cards[i].style.opacity = (1 - .5 * k * k).toFixed(3);
+    }
+    const ci = bi % SERVICES.length;
+    if (ci !== lastC) { if (lastC >= 0 && (drag || Math.abs(v) > 40 || target !== null)) Sound.tick(); lastC = ci; shelf.style.setProperty("--sp", ci); $(".shelf-prog").style.setProperty("--sp", ci); }
+    if (visible) requestAnimationFrame(frame); else last = 0;
+  }
+  new IntersectionObserver(es => { const was = visible; visible = es[0].isIntersecting; if (visible && !was) requestAnimationFrame(frame); }).observe(shelf);
+  requestAnimationFrame(frame);
+  shelf.addEventListener("pointerenter", e => { if (e.pointerType === "mouse") hover = true; });
+  shelf.addEventListener("pointerleave", () => { hover = false; });
+  shelf.addEventListener("pointerdown", e => {
+    if (e.button !== 0) return;
+    drag = {x0:e.clientX, y0:e.clientY, xs:x, lastX:e.clientX, lastT:performance.now(), id:e.pointerId, captured:false}; moved = false; v = 0; target = null;
+  });
+  shelf.addEventListener("pointermove", e => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const dx = e.clientX - drag.x0;
+    if (!moved && Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(e.clientY - drag.y0)) { moved = true; shelf.setPointerCapture(e.pointerId); drag.captured = true; shelf.classList.add("drag"); }
+    if (moved) {
+      const now = performance.now(), ddt = Math.max(1, now - drag.lastT);
+      v = (e.clientX - drag.lastX) / ddt * 1000; drag.lastX = e.clientX; drag.lastT = now;
+      x = drag.xs + dx; wrapX(); drag.xs = x - dx;
+    }
+  });
+  const end = e => { if (!drag || (e && e.pointerId !== drag.id)) return; if (!moved) v = 0; drag = null; shelf.classList.remove("drag"); };
+  shelf.addEventListener("pointerup", end); shelf.addEventListener("pointercancel", end);
+  shelf.addEventListener("click", e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  shelf.addEventListener("wheel", e => { if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) { e.preventDefault(); x -= e.deltaX; v = 0; target = null; wrapX(); } }, {passive:false});
+  shelf.addEventListener("scroll", () => { shelf.scrollLeft = 0; });
+  shelf.addEventListener("focusin", e => {
+    focusIn = true; const c = e.target.closest(".obj"); if (!c) return;
+    const vr = shelf.getBoundingClientRect(), r = c.getBoundingClientRect();
+    if (r.left < vr.left + 24) target = x + (vr.left + 24 - r.left); else if (r.right > vr.right - 24) target = x - (r.right - vr.right + 24);
+  });
+  shelf.addEventListener("focusout", () => { focusIn = false; });
+  const step = dir => { target = (target ?? x) - dir * (cw + gap); v = 0; };
+  $("#sh-prev").addEventListener("click", () => step(-1));
+  $("#sh-next").addEventListener("click", () => step(1));
+  return {
+    center(key){
+      const c = sets[0].querySelector(`[data-key="${key}"]`); if (!c) return;
+      const vw = shelf.clientWidth; let t = vw / 2 - (c.offsetLeft + c.offsetWidth / 2);
+      while (t - x > setW / 2) t -= setW; while (x - t > setW / 2) t += setW;
+      target = t; v = 0;
+    }
+  };
+})();
+/* hover video on cards */
+track.addEventListener("pointerover", e => { const c = e.target.closest(".obj"); if (c) playCard(c, true); });
+track.addEventListener("pointerout", e => { const c = e.target.closest(".obj"); if (c && !c.contains(e.relatedTarget)) playCard(c, false); });
+track.addEventListener("focusin", e => { const c = e.target.closest(".obj"); if (c) playCard(c, true); });
+track.addEventListener("focusout", e => { const c = e.target.closest(".obj"); if (c) playCard(c, false); });
+function playCard(c, on){
+  if (reduce) return;
+  const vd = c.querySelector("video"); if (!vd || vd.dataset.err) return;
+  if (on) {
+    if (!vd.src) { vd.src = vd.dataset.src; vd.onerror = () => { vd.dataset.err = 1; c.classList.remove("play"); }; }
+    const p = vd.play(); if (p) p.then(() => c.classList.add("play"), () => {});
+  } else { c.classList.remove("play"); setTimeout(() => { if (!c.classList.contains("play")) vd.pause(); }, 450); }
+}
+
+/* ---------- Detail panel ---------- */
+const panel = $("#svc-panel");
+let current = null;
+function fillPanel(s){
+  $("#pn-tag").textContent = s.tag; $("#pn-title").textContent = s.name; $("#pn-desc").textContent = s.desc;
+  $("#pn-list").innerHTML = s.list.map(t => `<li>${t}</li>`).join("");
+  const m = $("#pn-media");
+  m.innerHTML = `<span class="ico">${svgIcon(s.icon)}</span><img alt="" src="media/obj-${s.key}.jpg" onerror="this.remove()">` +
+    (reduce ? "" : `<video muted loop playsinline autoplay preload="auto" src="media/obj-${s.key}.mp4" poster="media/obj-${s.key}.jpg" onerror="this.remove()"></video>`);
+  m.insertAdjacentHTML("beforeend", `<div class="pm-cap" aria-hidden="true"><div class="pm-bars"><i></i><i></i></div><p class="pm-txt"><span class="on">${s.beats[0]}</span><span>${s.beats[1]}</span></p></div>`);
+  const vd = m.querySelector("video"); if (vd) { vd.addEventListener("error", () => vd.remove()); const p = vd.play(); if (p) p.catch(() => {}); }
+  storySync(s.key);
+}
+/* two-beat captions under each practice film, synced to the video */
+let STORIES = {}; fetch("media/obj-stories.json").then(r => r.ok ? r.json() : {}).then(j => STORIES = j || {}).catch(() => {});
+let storyRaf = 0;
+let panelVis = false;
+new IntersectionObserver(es => {
+  const now = es[0].intersectionRatio >= .4; if (now === panelVis) return; panelVis = now;
+  const v = $("#pn-media video"); if (!v || !panel.classList.contains("open")) return;
+  if (panelVis) { try { v.currentTime = 0; } catch (e) {} const p = v.play(); if (p) p.catch(() => {}); } else v.pause();
+}, {threshold:[0, .4, .6]}).observe($("#pn-box"));
+function storySync(key){
+  cancelAnimationFrame(storyRaf);
+  let beat = -1, prevT = -1;
+  const loop = () => {
+    const m = $("#pn-media"), vd = m.querySelector("video"), bars = m.querySelectorAll(".pm-bars i"), sp = m.querySelectorAll(".pm-txt span");
+    if (!panel.classList.contains("open") || !bars.length) return;
+    const st = STORIES[key] || {}, D = (vd && vd.duration) || st.duration || 6, b2 = st.beat2 || 2.6;
+    const t = vd && vd.duration ? vd.currentTime : (reduce ? D : 0);
+    const i = t >= b2 ? 1 : 0;
+    bars[0].style.setProperty("--p", Math.min(1, t / b2).toFixed(3));
+    bars[1].style.setProperty("--p", i ? Math.min(1, (t - b2) / (D - b2)).toFixed(3) : 0);
+    if (i !== beat) { beat = i; sp.forEach((x, k) => x.classList.toggle("on", k === i)); }
+    if (panelVis && prevT >= 0 && prevT < b2 && t >= b2 && t - prevT < .5) Sound.lift();
+    prevT = t;
+    storyRaf = requestAnimationFrame(loop);
+  };
+  storyRaf = requestAnimationFrame(loop);
+}
+/* staggered reveal of the panel content (Web Animations, no dependency) */
+function revealPanel(){
+  if (reduce || !Element.prototype.animate) return;
+  const ease = "cubic-bezier(.2,.75,.2,1)";
+  const items = [...$("#pn-body").children].filter(el => el.tagName !== "UL").concat($$("#pn-list li"));
+  items.sort((a, b) => a.compareDocumentPosition(b) & 4 ? -1 : 1);
+  items.forEach((el, i) => el.animate([{opacity:0, transform:"translateY(16px)"}, {opacity:1, transform:"none"}], {duration:700, delay:140 + i * 55, easing:ease, fill:"backwards"}));
+  $("#pn-media").animate([{opacity:0, transform:"scale(1.06)", filter:"blur(6px)"}, {opacity:1, transform:"none", filter:"blur(0)"}], {duration:900, delay:60, easing:ease, fill:"backwards"});
+}
+function openService(key, opts = {}){
+  const s = SERVICES.find(x => x.key === key); if (!s) return;
+  $$(".obj").forEach(c => c.classList.toggle("on", c.dataset.key === key));
+  shelfCtl.center(key);
+  const wasOpen = panel.classList.contains("open");
+  const swaps = [$("#pn-media"), $("#pn-body")];
+  if (wasOpen && current !== key) {
+    swaps.forEach(el => el.classList.add("out"));
+    setTimeout(() => { fillPanel(s); swaps.forEach(el => el.classList.remove("out")); }, reduce ? 0 : 300);
+    setTimeout(revealPanel, reduce ? 0 : 300);
+  } else if (!wasOpen) { fillPanel(s); panel.classList.add("open"); revealPanel(); }
+  Sound.open();
+  current = key;
+  if (opts.scroll !== false) {
+    setTimeout(() => {
+      const box = $("#pn-box"), r = box.getBoundingClientRect();
+      window.scrollTo({top: scrollY + r.top - 96, behavior: reduce ? "auto" : "smooth"});
+      $("#pn-title").focus({preventScroll:true});
+    }, wasOpen ? 60 : 380);
+  }
+}
+function closePanel(){ cancelAnimationFrame(storyRaf); panel.classList.remove("open"); $$(".obj").forEach(c => c.classList.remove("on")); const v = $("#pn-media video"); if (v) v.pause(); current = null; }
+$("#pn-close").addEventListener("click", closePanel);
+track.addEventListener("click", e => { const c = e.target.closest(".obj"); if (c) openService(c.dataset.key); });
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-open]"); if (!a) return;
+  e.preventDefault(); setMenu(false);
+  if (a.matches(".lead a")) { a.classList.add("hit"); setTimeout(() => a.classList.remove("hit"), 900); }
+  openService(a.dataset.open);
+});
+if (/^#s-/.test(location.hash)) setTimeout(() => openService(location.hash.slice(3)), 500);
+
+/* ---------- Hero film + chapters ---------- */
+(function(){
+  const film = $("#film"), vd = $("#hero-video"), ctl = $("#film-ctl"), ico = $("#film-ico"), capBox = $("#cap");
+  const bars = $$("#chapters .bar i");
+  let CH = CHAPTERS_DEFAULT, useVideo = false, playing = !reduce, clock = 0, last = 0, onScreen = true, curIdx = -1;
+  const tallQ = matchMedia("(max-width: 820px) and (orientation: portrait)");
+  const pickSrc = () => tallQ.matches ? "tall" : "wide";
+  function setSrc(){
+    const k = pickSrc(); if (vd.dataset.k === k) return;
+    vd.dataset.k = k; vd.poster = `media/hero-${k}.jpg`; vd.src = `media/hero-${k}.mp4`;
+    if (playing) { const p = vd.play(); if (p) p.catch(() => {}); }
+  }
+  vd.addEventListener("loadeddata", () => { useVideo = true; film.classList.add("has-video"); });
+  vd.addEventListener("error", () => { useVideo = false; film.classList.remove("has-video"); });
+  tallQ.addEventListener ? tallQ.addEventListener("change", setSrc) : tallQ.addListener(setSrc);
+  setSrc();
+  fetch("media/hero-chapters.json").then(r => r.ok ? r.json() : null).then(j => { if (j && j.chapters && j.chapters.length) { CH = j; renderCaps(); } }).catch(() => {});
+  function renderCaps(){
+    capBox.innerHTML = CH.chapters.map((c, i) => `<p data-i="${i}"><small>Розділ ${i + 1} з ${CH.chapters.length}</small>${c.text}</p>`).join("");
+    curIdx = -1;
+  }
+  renderCaps();
+  /* fallback scales (SVG) */
+  const beam = $("#fb-beam"), panL = $("#fb-panL"), panR = $("#fb-panR"), docs = $$("#fb-docs .d"), weight = $("#fb-weight");
+  let ang = .32, av = 0;
+  function drawFallback(t, dt){
+    const D = CH.duration, c1 = CH.chapters[1] ? CH.chapters[1].t : D/3, c2 = CH.chapters[2] ? CH.chapters[2].t : 2*D/3;
+    let n = 0; if (t >= c1) n = Math.min(3, Math.floor((t - c1) / ((c2 - c1) / 3)) + 1);
+    if (t >= c2) n = 3;
+    const target = t < c1 ? .32 : (t < c2 ? .32 - n * .09 : 0) + (t >= c2 ? Math.sin(t * 1.3) * .006 : 0);
+    av += (-(ang - target) * 26 - av * 5.2) * dt; ang += av * dt;
+    const cx = 300, cy = 160, L = 170, lx = cx - L * Math.cos(ang), ly = cy + L * Math.sin(ang), rx = cx + L * Math.cos(ang), ry = cy - L * Math.sin(ang);
+    beam.setAttribute("x1", lx); beam.setAttribute("y1", ly); beam.setAttribute("x2", rx); beam.setAttribute("y2", ry);
+    panL.setAttribute("transform", `translate(${lx} ${ly})`); panR.setAttribute("transform", `translate(${rx} ${ry})`);
+    docs.forEach((d, i) => d.style.opacity = i < n ? 1 : 0);
+    weight.style.opacity = t > D - .6 ? Math.max(0, (D - t) / .6) : 1;
+  }
+  function setChapter(t){
+    const D = CH.duration || 12, cs = CH.chapters;
+    let idx = 0; for (let i = 0; i < cs.length; i++) if (t >= cs[i].t) idx = i;
+    bars.forEach((b, i) => {
+      const s = cs[i] ? cs[i].t : 0, e = cs[i + 1] ? cs[i + 1].t : D;
+      const p = i < idx ? 1 : i > idx ? 0 : Math.min(1, Math.max(0, (t - s) / (e - s)));
+      b.style.setProperty("--p", p.toFixed(4));
+    });
+    if (idx !== curIdx) { curIdx = idx; capBox.querySelectorAll("p").forEach(p => p.classList.toggle("on", +p.dataset.i === idx)); }
+  }
+  function tick(now){
+    const dt = last ? Math.min((now - last) / 1000, .05) : 0; last = now;
+    const D = CH.duration || 12;
+    let t;
+    if (useVideo && vd.duration) t = vd.currentTime * (D / vd.duration);
+    else { if (playing) clock = (clock + dt) % D; t = clock; drawFallback(t, dt); }
+    setChapter(t);
+    Sound.hero(t, D, playing && onScreen && !document.hidden && useVideo);
+    if (onScreen && !document.hidden) requestAnimationFrame(tick); else { last = 0; Sound.hero(0, D, false); }
+  }
+  function seekChapter(i){
+    const cs = CH.chapters, D = CH.duration || 12; if (!cs[i]) return;
+    Sound.heroJump();
+    if (useVideo && vd.duration) vd.currentTime = cs[i].t * (vd.duration / D) + .02; else clock = cs[i].t + .02;
+    if (!playing) { playing = true; const p = vd.play(); if (p) p.catch(() => {}); setIcon(); }
+  }
+  $$("#chapters .bar").forEach(b => b.addEventListener("click", e => { e.stopPropagation(); seekChapter(+b.dataset.ch); }));
+  film.addEventListener("click", e => {
+    if (e.target.closest("a,button,.film-copy,.cap,[role=button]")) return;
+    seekChapter(curIdx >= CH.chapters.length - 1 ? 0 : curIdx + 1);
+  });
+  const kick = () => { if (onScreen && !document.hidden) { last = 0; requestAnimationFrame(tick); } };
+  let wasAway = false;
+  new IntersectionObserver(es => {
+    const r = es[0].intersectionRatio, was = onScreen;
+    onScreen = r >= .45; if (r < .05) wasAway = true;
+    if (onScreen && !was) {
+      if (wasAway) { wasAway = false; try { vd.currentTime = 0; } catch (e) {} clock = 0; Sound.heroJump(); }
+      if (playing) { const p = vd.play(); if (p) p.catch(() => {}); }
+      kick();
+    } else if (!onScreen && was) { vd.pause(); Sound.hero(0, CH.duration || 12, false); }
+  }, {threshold:[0, .05, .45, .6]}).observe(film);
+  document.addEventListener("visibilitychange", kick);
+  function setIcon(){
+    ico.innerHTML = playing ? '<rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/>' : '<path d="M3 1.5v11l9.5-5.5z"/>';
+    setLabel(ctl, playing ? "Зупинити відео" : "Відтворити відео");
+  }
+  ctl.addEventListener("click", () => { playing = !playing; if (playing) { const p = vd.play(); if (p) p.catch(() => {}); } else vd.pause(); setIcon(); });
+  setIcon();
+  if (reduce) { clock = CH.chapters[2] ? CH.chapters[2].t + .5 : 9; ang = 0; drawFallback(clock, 0); }
+  else { const p = vd.play(); if (p) p.catch(() => {}); }
+  onScreen = true; requestAnimationFrame(tick);
+})();
+
+/* ---------- Seal film ---------- */
+(function(){
+  const box = $("#seal-film"), vd = $("#seal-video");
+  vd.addEventListener("loadeddata", () => box.classList.add("has-video"));
+  vd.addEventListener("error", () => box.classList.remove("has-video"));
+  vd.poster = "media/stamp.jpg";
+  let vis = false, prev = -1, raf = 0;
+  const load = () => { if (!vd.src) vd.src = "media/stamp.mp4"; };
+  new IntersectionObserver(es => { if (es[0].isIntersecting) load(); }, {rootMargin:"600px 0px"}).observe(box);
+  const sync = () => {
+    raf = 0; if (!vis) return;
+    const t = vd.currentTime || 0;
+    if (prev >= 0 && t >= prev && t - prev < .5) { if (prev < 1.0 && t >= 1.0) { Sound.stamp(); box.classList.remove("thump"); void box.offsetWidth; box.classList.add("thump"); } if (prev < 1.62 && t >= 1.62) Sound.paper(); }
+    prev = t; raf = requestAnimationFrame(sync);
+  };
+  new IntersectionObserver(es => {
+    const r = es[0].intersectionRatio, now = r >= .5;
+    if (now === vis) return; vis = now;
+    if (vis && !reduce) { load(); try { vd.currentTime = 0; } catch (e) {} prev = -1; const p = vd.play(); if (p) p.catch(() => {}); if (!raf) raf = requestAnimationFrame(sync); }
+    else { vd.pause(); prev = -1; }
+  }, {threshold:[0, .5, .7]}).observe(box);
+  const restamp = () => { load(); try { vd.currentTime = .25; } catch (e) {} prev = .25; const p = vd.play(); if (p) p.catch(() => {}); if (!raf && vis) raf = requestAnimationFrame(sync); };
+  box.addEventListener("click", restamp);
+  box.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); restamp(); } });
+})();
+
+/* ---------- Counters ---------- */
+const cIO = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; cIO.unobserve(e.target);
+  if (reduce) return;
+  const el = e.target, to = +el.dataset.count, t0 = performance.now(), dur = 1800;
+  const step = now => { const p = Math.min((now - t0) / dur, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 4))); if (p < 1) requestAnimationFrame(step); };
+  el.textContent = "0"; requestAnimationFrame(step);
+}), {threshold:.6});
+$$("[data-count]").forEach(el => cIO.observe(el));
+
+/* ---------- SMS film in the phone ---------- */
+(function(){
+  const chat = $("#chat"), steps = $$("#steps .step"), phone = $("#phone"), stage = $("#stage");
+  const Q = "Добрий день. Приватний виконавець наклав арешт на мій рахунок через старий кредит. Чи можна це оскаржити?";
+  const A = "Добрий день! Так, дії виконавця можна оскаржити, але строки короткі. Надішліть фото постанови, адвокат перегляне її сьогодні.";
+  const OK = '<svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3.5"/></svg>Відповідь через 38 хв';
+  const add = (cls, html) => { const d = document.createElement("div"); d.className = cls; d.innerHTML = html; chat.appendChild(d); if (visible && /bub|ok/.test(cls) && html) Sound.pop(); return d; };
+  const live = i => steps.forEach((s, k) => s.classList.toggle("live", k === i));
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  let running = false, visible = false;
+  async function typeInto(el, str){ el.classList.add("caret"); for (let i = 1; i <= str.length; i++){ if (!visible) break; el.textContent = str.slice(0, i); if (i % 3 === 0) Sound.key(); await wait(i % 9 === 0 ? 70 : 20); } el.textContent = str; el.classList.remove("caret"); }
+  function finalState(){ chat.innerHTML = ""; add("meta","Сьогодні, 14:02"); add("bub me", t(Q)); add("meta","Доставлено"); add("bub them", t(A)); add("meta ok", OK); }
+  document.addEventListener("langchange", () => { if (!running) finalState(); });
+  async function loop(){
+    if (running) return; running = true;
+    while (visible){
+      chat.style.opacity = 1; chat.innerHTML = ""; live(0);
+      add("meta","Сьогодні, 14:02"); await wait(500);
+      const me = add("bub me",""); await typeInto(me, t(Q)); await wait(400);
+      const dl = add("meta","Доставлено"); await wait(900);
+      live(1); const tp = add("typing","<span><i></i><i></i><i></i></span>друкує…"); await wait(2400); tp.remove();
+      add("bub them", t(A)); await wait(500); add("meta ok", OK);
+      await wait(1800); live(2); await wait(4200);
+      chat.style.opacity = 0; await wait(550);
+    }
+    live(-1); running = false;
+  }
+  finalState();
+  if (!reduce) new IntersectionObserver(es => { visible = es[0].intersectionRatio >= .5; if (visible) loop(); }, {threshold:[0, .5, .7]}).observe(phone);
+  if (finePointer && !reduce) {
+    stage.addEventListener("pointermove", e => {
+      const r = stage.getBoundingClientRect(), px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
+      phone.style.setProperty("--ry", (px * 18).toFixed(2) + "deg"); phone.style.setProperty("--rx", (-py * 12).toFixed(2) + "deg");
+    });
+    stage.addEventListener("pointerleave", () => { phone.style.removeProperty("--ry"); phone.style.removeProperty("--rx"); });
+  }
+})();
+
+/* ---------- Certificates ---------- */
+(function(){
+  const names = ["Сертифікат","Диплом","Грамота","Свідоцтво","Сертифікат","Подяка"];
+  const box = $("#certs");
+  box.innerHTML = names.map((n, i) => `<button class="cert" type="button" style="--i:${i}" data-name="${n}">
+    <span class="paper" aria-hidden="true"><span class="ttl">${n}</span><span class="l s"></span><span class="l"></span><span class="l"></span><span class="l s"></span><span class="seal"></span></span>
+    <b>${n}</b><span>Фото буде додано</span></button>`).join("");
+  box.addEventListener("click", e => { const c = e.target.closest(".cert"); if (!c) return; $("#cert-title").textContent = c.dataset.name; Modal.open("cert-dlg", c); });
+  new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { box.classList.add("go"); o.disconnect(); } }, {threshold:.3}).observe(box);
+})();
+
+/* ---------- SMS dialog + nudge ---------- */
+const text = $("#ask-text"), send = $("#ask-send");
+const smsHref = () => "sms:" + CONTACTS.phone + (text.value.trim() ? "?body=" + encodeURIComponent(text.value.trim()) : "");
+function openAsk(){
+  hideNudge(true); setMenu(false); send.href = smsHref();
+  Modal.open("ask", document.activeElement);
+  if (finePointer) setTimeout(() => text.focus({preventScroll:true}), 120);
+}
+document.addEventListener("click", e => { if (e.target.closest(".js-ask")) { e.preventDefault(); openAsk(); } });
+text.addEventListener("input", () => send.href = smsHref());
+const copyBtn = $("#copy");
+copyBtn.addEventListener("click", () => {
+  const done = () => { copyBtn.textContent = t("Скопійовано"); setTimeout(() => copyBtn.textContent = t("Скопіювати номер"), 1800); };
+  const sel = () => { const r = document.createRange(); r.selectNodeContents(copyBtn.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+  try { navigator.clipboard.writeText(CONTACTS.phone).then(done, sel); } catch (e) { sel(); }
+});
+const nudge = $("#nudge");
+function hideNudge(remember){
+  if (!nudge.hidden) { nudge.classList.remove("show"); setTimeout(() => nudge.hidden = true, 400); }
+  if (remember) store.set("np-nudge","1");
+}
+if (store.get("np-nudge") !== "1") setTimeout(() => {
+  if (Modal.isOpen() || document.body.classList.contains("menu-open")) return;
+  nudge.hidden = false; requestAnimationFrame(() => requestAnimationFrame(() => nudge.classList.add("show")));
+}, 8000);
+$("#nudge-close").addEventListener("click", () => hideNudge(true));
+
+
+/* ---------- Everything is clickable ---------- */
+document.addEventListener("click", e => {
+  const n = e.target.closest("[data-go]"); if (!n) return;
+  const id = n.dataset.go, el = document.getElementById(id); if (!el) return;
+  el.scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"start"});
+  if (id === "why") setTimeout(() => { const f = $$(".flip")[2]; if (f && !f.classList.contains("on")) f.click(); }, 900);
+});
+document.addEventListener("keydown", e => {
+  const el = e.target.closest && e.target.closest("[role=button],[role=link]");
+  if (!el || e.target.closest("button,a,textarea,input") || (e.key !== "Enter" && e.key !== " ")) return;
+  e.preventDefault(); el.click();
+});
+$("#mark").addEventListener("click", () => scrollTo({top:0, behavior: reduce ? "auto" : "smooth"}));
+
+/* ---------- Language: initial ---------- */
+(function(){
+  const saved = store.get("np-lang");
+  const nav = (navigator.language || "uk").toLowerCase();
+  I18N.set(saved || (/^(uk|ru)/.test(nav) ? "uk" : "en"), false);
+})();
+
+/* ---------- Motion (GSAP, optional) ---------- */
+(function(){
+  if (reduce || !window.gsap) return;
+  const g = window.gsap;
+  g.from("#film", {scale:.965, opacity:0, duration:1.3, ease:"power3.out"});
+  g.from("#film h1 .ln > span", {yPercent:110, duration:1.1, ease:"power4.out", stagger:.12, delay:.35});
+  g.from("#film .hl", {y:18, opacity:0, duration:.9, ease:"power3.out", stagger:.1, delay:.7});
+  g.from("#chapters", {opacity:0, y:-10, duration:.8, delay:1.1});
+  g.from(".ticker", {opacity:0, duration:1, delay:1.2});
+  if (!window.ScrollTrigger) return;
+  g.registerPlugin(window.ScrollTrigger);
+  $$(".rv-title").forEach(h => g.from(h.querySelectorAll(".mask > span"), {yPercent:105, duration:1, ease:"power4.out", stagger:.1, scrollTrigger:{trigger:h, start:"top 86%", once:true}}));
+  $$(".rv").forEach(p => g.from(p, {opacity:0, y:16, duration:.9, ease:"power3.out", scrollTrigger:{trigger:p, start:"top 90%", once:true}}));
+  /* hero: slow push-in and copy drift while scrolling away */
+  g.to("#hero-video", {scale:1.08, yPercent:5, ease:"none", scrollTrigger:{trigger:"#film", start:"top top", end:"bottom top", scrub:true}});
+  g.to(".film-copy", {y:-70, opacity:.15, ease:"none", scrollTrigger:{trigger:"#film", start:"30% top", end:"bottom top", scrub:true}});
+  /* flip cards rise in, then the first one peeks at its back to show that cards turn */
+  g.from(".flip", {y:70, rotationY:-28, opacity:0, duration:1.1, ease:"power3.out", stagger:.1, transformPerspective:1200, transformOrigin:"0% 50%", clearProps:"transform,opacity",
+    scrollTrigger:{trigger:"#flips", start:"top 84%", once:true},
+    onComplete(){ const f = $(".flip:not(.on)"); if (f) { setTimeout(() => f.classList.add("peek"), 250); setTimeout(() => f.classList.remove("peek"), 950); } }});
+  g.from("#shelf", {x:120, opacity:0, duration:1.2, ease:"power3.out", scrollTrigger:{trigger:"#shelf", start:"top 90%", once:true}});
+  g.from(".num", {opacity:0, y:24, duration:.8, stagger:.08, scrollTrigger:{trigger:".nums", start:"top 88%", once:true}});
+  g.from("#seal-film", {clipPath:"inset(12% 12% 12% 12% round 28px)", duration:1.3, ease:"power3.out", scrollTrigger:{trigger:"#seal-film", start:"top 88%", once:true}});
+  g.from("#steps", {opacity:0, y:30, duration:.9, ease:"power3.out", clearProps:"transform,opacity", scrollTrigger:{trigger:"#steps", start:"top 86%", once:true}});
+  g.from("#stage", {y:80, opacity:0, duration:1.3, ease:"power3.out", clearProps:"transform,opacity", scrollTrigger:{trigger:"#stage", start:"top 85%", once:true}});
+  g.from(".cert", {y:40, opacity:0, duration:.9, stagger:.07, ease:"power3.out", scrollTrigger:{trigger:"#certs", start:"top 88%", once:true}});
+  g.from(".call, .soc li", {y:30, opacity:0, duration:.9, stagger:.08, ease:"power3.out", scrollTrigger:{trigger:".contacts", start:"top 88%", once:true}});
+  g.from("#mark .mask > span", {yPercent:105, duration:1.2, ease:"power4.out", stagger:.12, scrollTrigger:{trigger:"#mark", start:"top 95%", once:true}});
+  addEventListener("load", () => window.ScrollTrigger.refresh());
+})();
+</script>
+
+</body>
+</html>

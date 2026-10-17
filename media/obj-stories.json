@@ -1,0 +1,32 @@
+{
+ "crim": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 3.6
+ },
+ "admin": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 3.8
+ },
+ "biz": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 4.0
+ },
+ "customs": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 4.1
+ },
+ "enforce": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 4.1
+ },
+ "civil": {
+  "duration": 6,
+  "beat2": 2.6,
+  "resolved": 4.1
+ }
+}
