@@ -575,9 +575,9 @@ footer .meta-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1
   .ticker{overflow-x:auto}
 }
 </style>
+
 </head>
 <body>
-
 
 <header class="top" id="top-bar">
   <div class="wrap">
@@ -1558,7 +1558,7 @@ if (/^#s-/.test(location.hash)) setTimeout(() => openService(location.hash.slice
   const sync = () => {
     raf = 0; if (!vis) return;
     const t = vd.currentTime || 0;
-    if (prev >= 0 && t >= prev && t - prev < .5) EV.forEach(e => { if (prev < e.t && t >= e.t) { if (e.type === "clasp") { Sound.clasp(); box.classList.remove("thump"); void box.offsetWidth; box.classList.add("thump"); } else Sound.folder(); } });
+    if (prev >= 0 && t >= prev && t - prev < .5) EV.forEach(e => { if (prev < e.t && t >= e.t) { if (e.type === "clasp") { Sound.clasp(); box.classList.remove("thump"); void box.offsetWidth; box.classList.add("thump"); } else if (e.type === "sheet") Sound.paper(); else Sound.folder(); } });
     prev = t; raf = requestAnimationFrame(sync);
   };
   new IntersectionObserver(es => {
