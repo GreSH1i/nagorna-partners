@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="Нагорна та партнери — адвокатське об’єднання">
 <meta name="twitter:description" content="Кримінальні, адміністративні, господарські, митні та цивільні справи. Представництво в судах усіх інстанцій. Безкоштовна консультація в SMS — відповідь протягом години.">
 <meta name="twitter:image" content="https://gresh1i.github.io/nagorna-partners/og.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Нагорна та партнери","alternateName":"Nahorna & Partners","url":"https://gresh1i.github.io/nagorna-partners/","logo":"https://gresh1i.github.io/nagorna-partners/logo-512.png","image":"https://gresh1i.github.io/nagorna-partners/og.jpg","description":"Кримінальні, адміністративні, господарські, митні та цивільні справи. Представництво в судах усіх інстанцій. Безкоштовна консультація в SMS — відповідь протягом години.","areaServed":"UA","knowsLanguage":["uk","en"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Нагорна та партнери","alternateName":"Nahorna & Partners","url":"https://gresh1i.github.io/nagorna-partners/","logo":"https://gresh1i.github.io/nagorna-partners/logo-512.png","image":"https://gresh1i.github.io/nagorna-partners/og.jpg","description":"Кримінальні, адміністративні, господарські, митні та цивільні справи. Представництво в судах усіх інстанцій. Безкоштовна консультація в SMS — відповідь протягом години.","telephone":"+380506986868","address":{"@type":"PostalAddress","streetAddress":"вул. Предславинська, 34, літ. Б, офіс 107","addressLocality":"Київ","postalCode":"03150","addressCountry":"UA"},"hasMap":"https://www.google.com/maps/search/?api=1&query=03150%2C%20%D0%BC.%20%D0%9A%D0%B8%D1%97%D0%B2%2C%20%D0%B2%D1%83%D0%BB.%20%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D0%BB%D0%B0%D0%B2%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%2C%20%D0%B1%D1%83%D0%B4.%2034%2C%20%D0%BB%D1%96%D1%82.%20%D0%91%2C%20%D0%BE%D1%84%D1%96%D1%81%20107","areaServed":"UA","knowsLanguage":["uk","en"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Onest:wght@400;500;600&display=swap">
@@ -45,17 +45,21 @@
   --spot:rgba(224,122,139,.14); --notch:#0A0709; --glass:rgba(255,255,255,.08); --backdrop:rgba(10,4,6,.62);
   --f-display:"Forum","Times New Roman",Georgia,serif;
   --f-body:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --lg-ink:#F2EADC; --lg-fill:#14284B; --lg-gold:#D8BA7C; --lg-gold-hi:#D8BA7C; --lg-edge:#F2EADC; --lg-edge-w:2.2px;
+  --err:#FF9AA8; --ok:#9FD8B4;
   --wrap:1240px; --ease:cubic-bezier(.2,.75,.2,1); --ease-io:cubic-bezier(.65,0,.35,1);
   color-scheme:dark;
 }
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
   --bg:#F5F0EC; --raised:#FFFFFF; --raised-2:#FBF7F4; --line:#E3D9D4; --ink:#1C1418; --muted:#66595C;
   --accent:#8E2639; --accent-ink:#FFFFFF; --glow:rgba(142,38,57,.22); --glow0:rgba(142,38,57,0); --shade:rgba(40,10,15,.16);
-  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light}}
+  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light;
+  --lg-ink:#14284B; --lg-gold:#A9843F; --lg-gold-hi:#D3B06B; --lg-edge:#14284B; --lg-edge-w:0px; --err:#B3261E; --ok:#1F7A4A}}
 :root[data-theme="light"]{
   --bg:#F5F0EC; --raised:#FFFFFF; --raised-2:#FBF7F4; --line:#E3D9D4; --ink:#1C1418; --muted:#66595C;
   --accent:#8E2639; --accent-ink:#FFFFFF; --glow:rgba(142,38,57,.22); --glow0:rgba(142,38,57,0); --shade:rgba(40,10,15,.16);
-  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light}
+  --accent-hi:#A93850; --btn-hi:rgba(255,255,255,.22); --glow-soft:rgba(142,38,57,.05); --paper-edge:#E2D5CB; --spot:rgba(142,38,57,.08); color-scheme:light;
+  --lg-ink:#14284B; --lg-gold:#A9843F; --lg-gold-hi:#D3B06B; --lg-edge:#14284B; --lg-edge-w:0px; --err:#B3261E; --ok:#1F7A4A}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
@@ -89,9 +93,10 @@ p{margin:0}
 .top.solid{background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
-.brand-mark{width:40px;height:40px;flex:none;color:var(--accent)}
-.brand-name{font-family:var(--f-display);font-size:21px;line-height:1.05;white-space:nowrap}
-.brand-sub{display:block;font-size:12px;color:var(--muted);line-height:1.3}
+.brand-mark{width:31px;height:42px;flex:none;overflow:visible;filter:drop-shadow(0 4px 8px rgba(0,0,0,.18))}
+.brand-txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.brand-name{font-family:var(--f-display);font-size:15.5px;line-height:1;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:var(--lg-ink);padding-bottom:5px;border-bottom:1px solid color-mix(in srgb,var(--lg-gold) 70%,transparent)}
+.brand-sub{display:block;font-size:11.5px;color:var(--muted);line-height:1.2;letter-spacing:.02em}
 .nav{display:flex;align-items:center;gap:4px}
 .nav a.nl{position:relative;padding:8px 12px;text-decoration:none;font-size:15px;color:var(--muted);transition:color .2s}
 .nav a.nl::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
@@ -132,11 +137,12 @@ p{margin:0}
 .film::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(to top,color-mix(in srgb,var(--film-bg) 94%,transparent) 0%,color-mix(in srgb,var(--film-bg) 62%,transparent) 34%,transparent 62%),linear-gradient(to right,color-mix(in srgb,var(--film-bg) 70%,transparent) 0%,transparent 55%),linear-gradient(to bottom,color-mix(in srgb,var(--film-bg) 55%,transparent) 0%,transparent 22%)}
 .film-copy{position:absolute;z-index:2;left:clamp(22px,4vw,56px);right:clamp(22px,4vw,56px);bottom:clamp(26px,4.5vw,56px);max-width:700px}
-.kicker{font-size:15px;color:var(--film-muted)}
-.film h1{font-size:clamp(52px,7.4vw,104px);letter-spacing:-.012em;margin-top:10px;line-height:.98}
+.kicker{display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:.02em;color:var(--film-muted)}
+.kicker::before{content:"";width:26px;height:1px;background:#D8BA7C;flex:none}
+.film h1{font-size:clamp(40px,4.6vw,66px);letter-spacing:-.01em;margin-top:12px;line-height:1}
 .film h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
 .film h1 .ln>span{display:block}
-.film .lead{font-size:clamp(16px,1.6vw,19px);line-height:1.6;color:var(--film-muted);max-width:36em;margin-top:22px}
+.film .lead{font-size:clamp(15.5px,1.35vw,17.5px);line-height:1.6;color:var(--film-muted);max-width:31em;margin-top:18px}
 .lead a{color:var(--film-ink);font-weight:600;text-decoration:none;cursor:pointer;transition:color .25s;border-radius:3px}
 .lead a:hover,.lead a:focus-visible,.lead a.hit{color:var(--film-accent)}
 .film .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
@@ -178,7 +184,8 @@ p{margin:0}
 @media (max-width:940px){.nav .js-theme{display:none}}
 /* phones: the header has no room, so the sound toggle lives in the hero film (top) and in the bottom bar (after scrolling) */
 @media (max-width:720px){.nav .js-sound{display:none}}
-@media (max-width:400px){.brand-sub{display:none}.brand-name{font-size:19px}.lang span{min-width:30px;padding:0 6px}}
+@media (max-width:380px){.top .brand-name{white-space:normal;font-size:12.5px;line-height:1.2;letter-spacing:.1em;max-width:9.5em}}
+@media (max-width:400px){.brand-sub{display:none}.brand-name{font-size:13.5px;letter-spacing:.12em;padding-bottom:0;border-bottom:0}.brand-mark{width:27px;height:37px}.lang span{min-width:30px;padding:0 6px}}
 
 .cap{position:relative;margin-top:16px;min-height:3.2em}
 .cap p{position:absolute;inset:0 0 auto 0;font-family:var(--f-display);font-size:clamp(20px,2vw,26px);line-height:1.2;color:var(--film-ink);opacity:0;transform:translateY(-8px);transition:opacity .3s ease,transform .4s ease}
@@ -189,7 +196,7 @@ p{margin:0}
 .film-ctl svg{width:14px;height:14px;fill:currentColor}
 @media (max-width:820px){
   .film{height:auto;min-height:0;aspect-ratio:auto;border-radius:26px}
-  .film{height:max(640px,min(calc(100svh - 96px),860px))}
+  .film{height:clamp(540px,calc(100svh - 170px),700px)}
   .film .fb{justify-content:center;align-items:flex-start;padding:70px 0 0}
   .film .fb svg{height:auto;width:86%;max-width:none}
   .film::after{background:linear-gradient(to top,color-mix(in srgb,var(--film-bg) 96%,transparent) 0%,color-mix(in srgb,var(--film-bg) 80%,transparent) 38%,transparent 66%),linear-gradient(to bottom,color-mix(in srgb,var(--film-bg) 60%,transparent) 0%,transparent 20%)}
@@ -204,6 +211,100 @@ p{margin:0}
   .snd-pill{width:44px;padding:0;justify-content:center}
   .snd-pill .snd-lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 }
+
+/* Hero grid: the film with a short headline, the lead form beside it (below it on phones and tablets) */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,404px);gap:18px;align-items:stretch}
+.hero-grid .film{height:auto;min-height:max(600px,min(84vh,720px))}
+.hero-grid .film video{object-position:74% 50%}
+.hero-grid .film-copy{max-width:470px}
+.hero-grid .film-copy::before{content:"";position:absolute;z-index:-1;inset:-40% -30% -30% -18%;pointer-events:none;background:radial-gradient(closest-side,color-mix(in srgb,var(--film-bg) 70%,transparent),transparent)}
+@media (max-width:1099px){.hero-grid{grid-template-columns:1fr}.hero-grid .film{min-height:0;height:min(80vh,640px)}.hero-grid .film video{object-position:18% 50%}.hero-grid>.lf-card{width:min(640px,100%);justify-self:center}}
+@media (max-width:820px){.hero-grid{gap:14px}.hero-grid .film{height:clamp(560px,calc(100svh - 190px),680px)}.hero-grid>.lf-card{width:100%}.kicker{font-size:13px}.kicker::before{display:none}}
+
+/* Lead form */
+.lf-card{position:relative;border-radius:32px;border:1px solid var(--line);background:var(--raised);padding:clamp(22px,2.3vw,30px);box-shadow:0 40px 90px -46px var(--shade);isolation:isolate;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.lf-card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(90% 46% at 100% 0%,var(--glow-soft),transparent 70%)}
+.lf-card::after{content:"";position:absolute;left:30px;right:30px;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--lg-gold),transparent);opacity:.8;pointer-events:none}
+.lf{display:flex;flex-direction:column;flex:1;min-width:0}
+.lf-body{display:flex;flex-direction:column;gap:13px;flex:1}
+.lf-title{font-family:var(--f-display);font-size:clamp(28px,2.4vw,33px);line-height:1.05}
+.lf-sub{color:var(--muted);font-size:14.5px;line-height:1.5;margin:8px 0 6px}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fld>label{font-size:13.5px;font-weight:500;line-height:1.3}
+.fld .opt{font-weight:400;color:var(--muted)}
+.fld input:not([type=checkbox]),.fld select,.fld textarea{width:100%;min-height:50px;margin:0;padding:0 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:400 16px/1.3 var(--f-body);transition:border-color .2s,box-shadow .2s,background .2s;scroll-margin:112px 0 160px;-webkit-appearance:none;appearance:none}
+.fld textarea{min-height:80px;padding:13px 16px;resize:vertical;line-height:1.45;display:block}
+.fld input::placeholder,.fld textarea::placeholder{color:color-mix(in srgb,var(--muted) 75%,transparent)}
+.fld input:not([type=checkbox]):hover,.fld select:hover,.fld textarea:hover{border-color:color-mix(in srgb,var(--ink) 30%,var(--line))}
+.fld input:not([type=checkbox]):focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.fld [aria-invalid=true]{border-color:var(--err)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--err) 16%,transparent)}
+.sel{position:relative}
+.sel select{padding-right:46px;cursor:pointer}
+.sel select:invalid{color:var(--muted)}
+.sel option{color:var(--ink);background:var(--raised)}
+.sel svg{position:absolute;right:16px;top:50%;width:16px;height:16px;margin-top:-8px;fill:none;stroke:var(--muted);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.f-err{display:flex;align-items:flex-start;gap:6px;font-size:13px;line-height:1.35;color:var(--err)}
+.f-err:empty{display:none}
+.f-err::before{content:"!";flex:none;display:grid;place-items:center;width:15px;height:15px;margin-top:1px;border-radius:50%;background:var(--err);color:var(--raised);font:700 10.5px/1 var(--f-body)}
+.chk{flex-direction:row;align-items:flex-start;gap:12px}
+.cbx{position:relative;flex:none;width:24px;height:24px;margin-top:1px}
+.cbx input{position:absolute;inset:0;width:24px;height:24px;margin:0;border-radius:8px;border:1px solid color-mix(in srgb,var(--ink) 28%,var(--line));background:var(--bg);cursor:pointer;-webkit-appearance:none;appearance:none;transition:background .2s,border-color .2s,box-shadow .2s}
+.cbx input:checked{background:var(--accent);border-color:var(--accent)}
+.cbx input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.cbx svg{position:absolute;left:5px;top:5px;width:14px;height:14px;fill:none;stroke:var(--accent-ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset .3s var(--ease)}
+.cbx input:checked+svg{stroke-dashoffset:0}
+.chk>label{font-size:13.5px;line-height:1.45;color:var(--muted);font-weight:400;cursor:pointer}
+.chk .linkish{color:var(--ink);text-decoration-color:color-mix(in srgb,var(--ink) 35%,transparent)}
+.chk-wrap{display:flex;flex-direction:column;gap:6px}
+.lf-submit{width:100%;min-height:54px;margin-top:3px;font-size:15.5px}
+.lf-submit svg{transition:transform .35s var(--ease)}
+.lf-submit:hover svg{transform:translateX(3px)}
+.lf-submit[aria-busy=true]{opacity:.75;pointer-events:none}
+.f-status{font-size:13.5px;line-height:1.4;color:var(--err);text-align:center}
+.f-status:empty{display:none}
+.lf-alt{font-size:13.5px;color:var(--muted);text-align:center;margin-top:auto;padding-top:2px}
+.lf-alt a{color:var(--ink);font-weight:600;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lf-alt a:hover{color:var(--accent)}
+.hp{position:absolute!important;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.lf.is-done .lf-body{display:none}
+.lf-done{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:18px 0 6px;outline:none}
+.ok-anim{width:84px;height:84px;margin-bottom:6px;overflow:visible}
+.ok-anim circle{fill:color-mix(in srgb,var(--accent) 10%,transparent);stroke:var(--accent);stroke-width:2;stroke-dasharray:214;stroke-dashoffset:214;transform:rotate(-90deg);transform-origin:50% 50%}
+.ok-anim path{fill:none;stroke:var(--accent);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:44;stroke-dashoffset:44}
+.lf.is-done .ok-anim circle{animation:okc .8s var(--ease) forwards}
+.lf.is-done .ok-anim path{animation:okp .5s var(--ease) .55s forwards}
+.lf.is-done .ok-anim{animation:okpop .6s var(--ease) .95s}
+.lf-card.shake{animation:lfshake .45s var(--ease)}
+@keyframes lfshake{20%{transform:translateX(-6px)}45%{transform:translateX(5px)}70%{transform:translateX(-3px)}}
+@keyframes okc{to{stroke-dashoffset:0}}
+@keyframes okp{to{stroke-dashoffset:0}}
+@keyframes okpop{40%{transform:scale(1.08)}}
+.lf-done-title{font-family:var(--f-display);font-size:clamp(30px,3vw,38px);line-height:1.05}
+.lf-done>p:not(.lf-done-title){color:var(--muted);font-size:15.5px;max-width:24em}
+.lf.is-done .lf-done>*{animation:pop .6s var(--ease) both}
+.lf.is-done .lf-done>:nth-child(2){animation-delay:.5s}.lf.is-done .lf-done>:nth-child(3){animation-delay:.6s}.lf.is-done .lf-done>:nth-child(4){animation-delay:.7s}.lf.is-done .lf-done>:nth-child(5){animation-delay:.8s}
+.lf-sms{width:100%;display:grid;gap:10px;margin-top:6px;padding-top:16px;border-top:1px solid var(--line);text-align:left}
+.lf-sms p{font-size:14px;color:var(--muted);line-height:1.5}
+.lf-sms-row{display:flex;flex-wrap:wrap;gap:10px}
+.lf-sms-row .btn{flex:1 1 auto;min-height:46px;padding:0 18px;font-size:14.5px}
+.lf-again{font-size:13.5px;color:var(--muted);margin-top:4px}
+html.kb-open .mbar{transform:translateY(110%)}
+html.kb-open .fab,html.form-in-view .fab{opacity:0;pointer-events:none}
+#lf-card-apply .lf-sub{display:none}
+
+/* Closing call to action: the same form, before the contacts */
+.apply{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(36px,6vw,96px);align-items:center}
+.apply h2{font-size:clamp(40px,5vw,68px)}
+.apply-copy>p{color:var(--muted);font-size:17px;max-width:30em;margin-top:22px}
+.apply-pts{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:12px}
+.apply-pts li{display:flex;align-items:center;gap:14px;font-size:16px;line-height:1.4}
+.apply-pts .gl{width:42px;height:42px;flex:none;border-radius:13px;display:grid;place-items:center;background:var(--raised);border:1px solid var(--line);color:var(--accent)}
+.apply-pts svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.apply-tel{display:inline-flex;flex-direction:column;gap:4px;margin-top:32px;text-decoration:none}
+.apply-tel small{font-size:13.5px;color:var(--muted)}
+.apply-tel span{font-family:var(--f-display);font-size:clamp(28px,3vw,36px);line-height:1;font-variant-numeric:tabular-nums;transition:color .25s}
+.apply-tel:hover span{color:var(--accent)}
+@media (max-width:900px){.apply{grid-template-columns:1fr}.apply-tel{margin-top:24px}}
 
 /* Ticker */
 .ticker{margin-top:28px;border-block:1px solid var(--line);overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
@@ -227,6 +328,9 @@ p{margin:0}
 @media (max-width:820px){.block{padding-block:84px}.block.flush{padding-top:0}.head{grid-template-columns:1fr;margin-bottom:36px}.head p{font-size:16px}}
 .mask{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
 .mask>span{display:block}
+
+#why .head{grid-template-columns:1fr}
+#why .head h2{font-size:clamp(34px,5.6vw,74px)}
 
 /* Flip cards */
 .flips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;perspective:1400px}
@@ -454,6 +558,14 @@ p{margin:0}
 .call .btn:hover{box-shadow:0 14px 34px -12px var(--shade)}
 .call .btn.ghost{background:transparent;color:var(--back-ink);border-color:var(--back-line)}
 .call .btn.ghost:hover{border-color:var(--back-ink)}
+.call .addr{display:flex;align-items:center;gap:14px;margin-top:6px;padding-top:20px;border-top:1px solid var(--back-line);color:var(--back-ink);text-decoration:none;border-radius:4px}
+.addr .pin{width:46px;height:46px;flex:none;border-radius:15px;border:1px solid var(--back-line);background:color-mix(in srgb,var(--back-ink) 8%,transparent);display:grid;place-items:center}
+.addr .pin svg,.foot-addr svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.addr .at{flex:1;min-width:0}
+.addr small{display:block;font-size:13px;color:var(--back-muted)}
+.addr b{display:block;font-weight:500;font-size:15.5px;line-height:1.45}
+.addr .arr{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .35s var(--ease)}
+.addr:hover .arr{transform:translate(3px,-3px)}
 .soc{list-style:none;margin:0;padding:0;display:grid;grid-auto-rows:1fr;gap:12px}
 .soc li{display:flex}
 .soc li>a{flex:1}
@@ -468,13 +580,18 @@ p{margin:0}
 @media (max-width:860px){.contacts{grid-template-columns:1fr}}
 
 footer{border-top:1px solid var(--line);overflow:hidden}
-.mark{font-family:var(--f-display);font-size:clamp(46px,11.2vw,172px);line-height:.95;letter-spacing:-.02em;padding-top:64px;white-space:nowrap}
-.mark .mask{padding-bottom:.12em}
-.mark{cursor:pointer}
-.mark:hover .mask>span{color:var(--accent);transition:color .4s}
-.mark .mask+.mask{text-align:right}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:36px 64px;align-items:center;padding-top:clamp(52px,6vw,80px)}
+.foot-logo{display:block;width:min(520px,100%);text-decoration:none;border-radius:8px}
+.foot-logo svg{display:block;width:100%;height:auto;overflow:visible}
+.foot-logo text{font-family:var(--f-display)}
+.foot-col{display:grid;gap:14px;justify-items:start;max-width:340px}
+.foot-tel{font-family:var(--f-display);font-size:clamp(26px,2.6vw,32px);line-height:1;text-decoration:none;font-variant-numeric:tabular-nums;transition:color .25s}
+.foot-tel:hover{color:var(--accent)}
+.foot-addr{display:flex;align-items:flex-start;gap:10px;color:var(--muted);text-decoration:none;font-size:14.5px;line-height:1.5;transition:color .25s}
+.foot-addr svg{flex:none;margin-top:2px;color:var(--accent)}
+.foot-addr:hover{color:var(--ink)}
+@media (max-width:760px){.foot{grid-template-columns:1fr;gap:28px}}
 footer .meta-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:28px 32px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:36px}
-@media (max-width:620px){.mark{white-space:normal}.mark .mask+.mask{text-align:left}}
 
 /* Mobile quick bar */
 .mbar{display:none}
@@ -642,8 +759,8 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
 <header class="top" id="top-bar">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Нагорна та партнери, на початок">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="20" cy="20" r="14.5" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1.5 2.2"/><text x="20" y="24.5" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="12.5" fill="currentColor">Н&amp;П</text></svg>
-      <span><span class="brand-name">Нагорна та партнери</span><span class="brand-sub">Адвокатське об’єднання</span></span>
+      <svg class="brand-mark" viewBox="9 3 82 114" aria-hidden="true"><use href="#np-sh"/></svg>
+      <span class="brand-txt"><span class="brand-name">Нагорна та партнери</span><span class="brand-sub">Адвокатське об’єднання</span></span>
     </a>
     <nav class="nav" aria-label="Розділи сайту">
       <a class="nl" href="#services">Послуги</a>
@@ -662,6 +779,7 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
     </nav>
   </div>
 </header>
+<svg class="sprite" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs><g id="np-sh"><path d="M12 15.5C26 17.5 40 14 50 6.5C60 14 74 17.5 88 15.5L88 58C88 86.5 72 104 50 114.5C28 104 12 86.5 12 58Z" style="fill:var(--lg-fill);stroke:var(--lg-edge);stroke-width:var(--lg-edge-w)" stroke-linejoin="round"/><path d="M16.6 19.6C29 20.8 41.4 18 50 12.2C58.6 18 71 20.8 83.4 19.6L83.4 58C83.4 83.6 69.4 99.4 50 109.3C30.6 99.4 16.6 83.6 16.6 58Z" fill="none" style="stroke:var(--lg-gold-hi)" stroke-width="1.1" stroke-linejoin="round"/><g style="fill:var(--lg-gold-hi);stroke:var(--lg-gold-hi)" stroke-width="0"><path d="M50 34.5V88" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M50 27.2l1.7 3.4-1.7 3.4-1.7-3.4z"/><circle cx="50" cy="38.6" r="2.3"/><path d="M43.2 89.2h13.6l2.6 4.6H40.6z"/><path d="M36.5 95.2h27v2.8h-27z"/><path d="M28 41.4Q50 37.8 72 41.4" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="28" cy="41.4" r="1.7"/><circle cx="72" cy="41.4" r="1.7"/><path d="M28 42.6L20.6 63.4M28 42.6L35.4 63.4" stroke-width="0.95" fill="none" stroke-linecap="round"/><path d="M18.4 63.2H37.6C36 69.2 32.8 71.4 28 71.4C23.2 71.4 20 69.2 18.4 63.2Z"/><path d="M72 42.6L64.6 63.4M72 42.6L79.4 63.4" stroke-width="0.95" fill="none" stroke-linecap="round"/><path d="M62.4 63.2H81.6C80 69.2 76.8 71.4 72 71.4C67.2 71.4 64 69.2 62.4 63.2Z"/><path d="M47.75 29.45Q45.7 27.82 45.96 25.21Q48.01 26.85 47.75 29.45ZM47.75 29.45Q45.99 30.84 43.89 30.06Q45.65 28.67 47.75 29.45ZM44.53 27.91Q42.5 26.63 42.7 24.24Q44.74 25.51 44.53 27.91ZM44.53 27.91Q43.07 29.36 41.13 28.66Q42.59 27.21 44.53 27.91ZM41.18 26.71Q39.11 25.97 39.09 23.78Q41.15 24.52 41.18 26.71ZM41.18 26.71Q40.15 28.3 38.33 27.83Q39.35 26.25 41.18 26.71ZM37.79 26.27Q35.8 26.27 35.38 24.32Q37.37 24.32 37.79 26.27ZM52.25 29.45Q51.99 26.85 54.04 25.21Q54.3 27.82 52.25 29.45ZM52.25 29.45Q54.35 28.67 56.11 30.06Q54.01 30.84 52.25 29.45ZM55.47 27.91Q55.26 25.51 57.3 24.24Q57.5 26.63 55.47 27.91ZM55.47 27.91Q57.41 27.21 58.87 28.66Q56.93 29.36 55.47 27.91ZM58.82 26.71Q58.85 24.52 60.91 23.78Q60.89 25.97 58.82 26.71ZM58.82 26.71Q60.65 26.25 61.67 27.83Q59.85 28.3 58.82 26.71ZM62.21 26.27Q62.63 24.32 64.62 24.32Q64.2 26.27 62.21 26.27Z"/><path d="M50 30.6C46 28.6 41 25.6 36.4 26.4M50 30.6C54 28.6 59 25.6 63.6 26.4" fill="none" stroke-width=".7"/></g></g><g id="np-em"><g style="fill:var(--lg-ink);stroke:var(--lg-ink)" stroke-width="0"><path d="M44 127.5C15 126.5 1.5 104 4.6 52M56 127.5C85 126.5 98.5 104 95.4 52" fill="none" stroke-width="1.6" stroke-linecap="round"/><path d="M39.77 127.19Q36.82 134.86 28.65 135.69Q31.59 128.03 39.77 127.19ZM39.77 127.19Q33.08 127.51 30.57 121.31Q37.25 120.99 39.77 127.19ZM32.88 125.84Q28.87 132.68 20.96 132.17Q24.97 125.33 32.88 125.84ZM32.88 125.84Q26.46 125.1 25.06 118.79Q31.48 119.53 32.88 125.84ZM26.73 123.44Q21.7 129.19 14.3 127.26Q19.33 121.51 26.73 123.44ZM26.73 123.44Q20.78 121.57 20.61 115.35Q26.55 117.21 26.73 123.44ZM21.3 119.95Q15.44 124.4 8.86 121.13Q14.71 116.68 21.3 119.95ZM21.3 119.95Q16.06 117.05 17.12 111.14Q22.36 114.05 21.3 119.95ZM16.61 115.35Q10.25 118.43 4.68 114.07Q11.04 110.99 16.61 115.35ZM16.61 115.35Q12.22 111.62 14.37 106.26Q18.76 110 16.61 115.35ZM12.66 109.6Q6.13 111.42 1.64 106.33Q8.18 104.51 12.66 109.6ZM12.66 109.6Q9.16 105.32 12.12 100.65Q15.63 104.93 12.66 109.6ZM9.46 102.67Q3.01 103.44 -0.47 97.95Q5.98 97.19 9.46 102.67ZM9.46 102.67Q6.77 98.11 10.27 94.13Q12.97 98.7 9.46 102.67ZM7.01 94.53Q0.8 94.49 -1.83 88.86Q4.38 88.9 7.01 94.53ZM7.01 94.53Q4.99 89.88 8.8 86.54Q10.82 91.19 7.01 94.53ZM5.31 85.14Q-0.58 84.52 -2.52 78.91Q3.38 79.54 5.31 85.14ZM5.31 85.14Q3.83 80.53 7.78 77.74Q9.26 82.35 5.31 85.14ZM4.37 74.47Q-1.17 73.44 -2.56 67.97Q2.99 69 4.37 74.47ZM4.37 74.47Q3.31 69.99 7.29 67.66Q8.34 72.14 4.37 74.47ZM4.19 62.49Q-1 61.18 -1.95 55.91Q3.24 57.22 4.19 62.49ZM4.19 62.49Q3.46 58.18 7.37 56.23Q8.11 60.54 4.19 62.49ZM4.6 52Q1.92 46.58 5.22 41.52Q7.91 46.94 4.6 52ZM60.23 127.19Q68.41 128.03 71.35 135.69Q63.18 134.86 60.23 127.19ZM60.23 127.19Q62.75 120.99 69.43 121.31Q66.92 127.51 60.23 127.19ZM67.12 125.84Q75.03 125.33 79.04 132.17Q71.13 132.68 67.12 125.84ZM67.12 125.84Q68.52 119.53 74.94 118.79Q73.54 125.1 67.12 125.84ZM73.27 123.44Q80.67 121.51 85.7 127.26Q78.3 129.19 73.27 123.44ZM73.27 123.44Q73.45 117.21 79.39 115.35Q79.22 121.57 73.27 123.44ZM78.7 119.95Q85.29 116.68 91.14 121.13Q84.56 124.4 78.7 119.95ZM78.7 119.95Q77.64 114.05 82.88 111.14Q83.94 117.05 78.7 119.95ZM83.39 115.35Q88.96 110.99 95.32 114.07Q89.75 118.43 83.39 115.35ZM83.39 115.35Q81.24 110 85.63 106.26Q87.78 111.62 83.39 115.35ZM87.34 109.6Q91.82 104.51 98.36 106.33Q93.87 111.42 87.34 109.6ZM87.34 109.6Q84.37 104.93 87.88 100.65Q90.84 105.32 87.34 109.6ZM90.54 102.67Q94.02 97.19 100.47 97.95Q96.99 103.44 90.54 102.67ZM90.54 102.67Q87.03 98.7 89.73 94.13Q93.23 98.11 90.54 102.67ZM92.99 94.53Q95.62 88.9 101.83 88.86Q99.2 94.49 92.99 94.53ZM92.99 94.53Q89.18 91.19 91.2 86.54Q95.01 89.88 92.99 94.53ZM94.69 85.14Q96.62 79.54 102.52 78.91Q100.58 84.52 94.69 85.14ZM94.69 85.14Q90.74 82.35 92.22 77.74Q96.17 80.53 94.69 85.14ZM95.63 74.47Q97.01 69 102.56 67.97Q101.17 73.44 95.63 74.47ZM95.63 74.47Q91.66 72.14 92.71 67.66Q96.69 69.99 95.63 74.47ZM95.81 62.49Q96.76 57.22 101.95 55.91Q101 61.18 95.81 62.49ZM95.81 62.49Q91.89 60.54 92.63 56.23Q96.54 58.18 95.81 62.49ZM95.4 52Q92.09 46.94 94.78 41.52Q98.08 46.58 95.4 52Z"/><path d="M44 125.4c2.4-1.9 4.3-2.2 6-.5 1.7-1.7 3.6-1.4 6 .5-2 1.8-3.9 2.6-6 1.4-2.1 1.2-4 .4-6-1.4z"/><path d="M48.3 126.6l-3.4 6.2 2.8-.6 1.2 2.3 1.1-7.4M51.7 126.6l3.4 6.2-2.8-.6-1.2 2.3-1.1-7.4"/></g><use href="#np-sh"/></g></defs></svg>
 
 <nav class="mmenu" id="mmenu" aria-label="Меню">
   <a href="#services" style="--i:0">Послуги</a>
@@ -670,14 +788,15 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
   <a href="#awards" style="--i:3">Відзнаки</a>
   <a href="#faq" style="--i:4">Питання</a>
   <a href="#reviews" style="--i:5">Відгуки</a>
-  <a href="#contacts" style="--i:6">Контакти</a>
-  <a class="btn btn-accent js-tel" href="#" style="--i:7">Подзвонити</a>
+  <a href="#apply" style="--i:6">Заявка</a>
+  <a href="#contacts" style="--i:7">Контакти</a>
+  <a class="btn btn-accent js-tel" href="#" style="--i:8">Подзвонити</a>
   <div class="mm-tools"><button class="icon-btn js-sound" type="button" aria-label="Увімкнути звук"><svg class="off" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></button><button class="icon-btn js-theme" type="button" aria-label="Змінити тему"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button></div>
 </nav>
 
 <main id="top">
   <section class="hero" aria-label="Про об’єднання">
-    <div class="wrap">
+    <div class="wrap hero-grid">
       <div class="film" id="film">
         <video id="hero-video" muted loop playsinline preload="auto" aria-hidden="true"></video>
         <div class="fb" aria-hidden="true">
@@ -705,14 +824,43 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
         <div class="film-tools"><button class="snd-pill js-sound" type="button" aria-pressed="false"><svg class="spk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="snd-lbl">Увімкнути звук</span></button><button class="film-ctl" id="film-ctl" type="button" aria-label="Зупинити відео"><svg viewBox="0 0 14 14" id="film-ico"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg></button></div>
 
         <div class="film-copy">
-          <p class="kicker hl">Адвокатське об’єднання</p>
-          <h1 aria-label="Нагорна та партнери"><span class="ln"><span>Нагорна</span></span><span class="ln"><span>та партнери</span></span></h1>
+          <p class="kicker hl">Адвокатське об’єднання «Нагорна та партнери»</p>
+          <h1><span class="ln"><span>Сильна позиція</span></span><span class="ln"><span>у вашій справі</span></span></h1>
           <p class="lead hl"><a href="#s-crim" data-open="crim">Кримінальні</a>, <a href="#s-admin" data-open="admin">адміністративні</a>, <a href="#s-biz" data-open="biz">господарські</a>, <a href="#s-customs" data-open="customs">митні</a>, <a href="#s-civil" data-open="civil">цивільні</a> справи та <a href="#s-enforce" data-open="enforce">виконавче провадження</a>.</p>
-          <div class="actions hl">
-            <button class="btn btn-accent pulse js-ask" type="button">Безкоштовна консультація</button>
-            <a class="btn btn-line js-tel" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Подзвонити</a>
-          </div>
         </div>
+      </div>
+      <!-- ===== Форма заявки =====
+           Та сама форма повторюється в блоці #apply перед контактами (скрипт копіює її, змінюючи id).
+           Куди йдуть заявки, налаштовується в CONTACTS.formEndpoint у скрипті нижче. -->
+      <div class="lf-card" id="lf-card-hero">
+        <form class="lf" id="lf-h" novalidate aria-labelledby="lf-h-title">
+          <div class="lf-body">
+            <div>
+              <p class="lf-title" id="lf-h-title">Безкоштовна консультація</p>
+              <p class="lf-sub">Залиште контакти — адвокат зателефонує й підкаже, з чого почати.</p>
+            </div>
+            <div class="fld"><label for="lf-h-name">Ім’я</label><input id="lf-h-name" name="name" type="text" autocomplete="name" autocapitalize="words" enterkeyhint="next" maxlength="80" required aria-describedby="lf-h-name-err"><p class="f-err" id="lf-h-name-err"></p></div>
+            <div class="fld"><label for="lf-h-phone">Телефон</label><input id="lf-h-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="next" maxlength="17" placeholder="+380 __ ___ __ __" required aria-describedby="lf-h-phone-err"><p class="f-err" id="lf-h-phone-err"></p></div>
+            <div class="fld"><label for="lf-h-area">Напрям</label><div class="sel"><select id="lf-h-area" name="area" required aria-describedby="lf-h-area-err"><option value="" disabled selected>Оберіть напрям</option></select><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></div><p class="f-err" id="lf-h-area-err"></p></div>
+            <div class="fld"><label for="lf-h-msg">Коротко про ситуацію <span class="opt">(необов’язково)</span></label><textarea id="lf-h-msg" name="message" rows="2" maxlength="1000"></textarea></div>
+            <div class="hp" aria-hidden="true"><label for="lf-h-web">Сайт</label><input id="lf-h-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <div class="chk-wrap"><div class="fld chk"><span class="cbx"><input id="lf-h-ok" name="consent" type="checkbox" required aria-describedby="lf-h-ok-err"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7"/></svg></span><label for="lf-h-ok">Погоджуюся на обробку моїх даних для зв’язку відповідно до <button class="linkish js-privacy" type="button">політики конфіденційності</button></label></div><p class="f-err" id="lf-h-ok-err"></p></div>
+            <button class="btn btn-accent lf-submit" type="submit"><span class="lf-go">Отримати консультацію</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+            <p class="f-status" role="status" aria-live="polite"></p>
+            <p class="lf-alt">Або телефонуйте: <a class="js-tel js-phone-text" href="#">+380 50 698 68 68</a></p>
+          </div>
+          <div class="lf-done" tabindex="-1" hidden>
+            <svg class="ok-anim" viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="34"/><path d="M24 39l9.5 9.5L53 29"/></svg>
+            <p class="lf-done-title">Дякуємо!</p>
+            <p>Ми зв’яжемося з вами найближчим часом.</p>
+            <div class="lf-sms" hidden>
+              <p class="lf-sms-note"></p>
+              <div class="numrow"><span class="js-phone-text">+380 50 698 68 68</span><button type="button" class="lf-copy">Скопіювати номер</button></div>
+              <div class="lf-sms-row"><a class="btn btn-accent lf-sms-open" href="#">Відкрити SMS</a><button class="btn btn-line lf-copy-text" type="button">Скопіювати текст</button></div>
+            </div>
+            <button class="linkish lf-again" type="button">Надіслати ще одну заявку</button>
+          </div>
+        </form>
       </div>
     </div>
     <div class="ticker" aria-label="Напрями практики">
@@ -723,31 +871,31 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
   <section class="block" id="why" aria-labelledby="why-title">
     <div class="wrap">
       <div class="head">
-        <h2 id="why-title" class="rv-title"><span class="mask"><span>Чому нам</span></span><span class="mask"><span>довіряють</span></span></h2>
+        <h2 id="why-title" class="rv-title"><span class="mask"><span>Чому варто звернутися</span></span><span class="mask"><span>саме до нас</span></span></h2>
       </div>
       <div class="flips" id="flips">
         <div class="flip" role="button" tabindex="0" aria-pressed="false">
           <span class="flip-in">
-            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-sms.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-sms.mp4"></video></span><h3>Безкоштовна консультація в SMS</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
-            <span class="face back"><h3>Безкоштовна консультація в SMS</h3><p>Опишіть ситуацію кількома реченнями, перша оцінка справи безкоштовна.</p><button class="bk-cta js-ask" type="button">Написати питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-sms.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-sms.mp4"></video></span><h3>Перша консультація безкоштовна</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Перша консультація безкоштовна</h3><p>Опишіть ситуацію кількома реченнями, перша оцінка справи безкоштовна.</p><button class="bk-cta js-ask" type="button">Написати питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
           </span>
         </div>
         <div class="flip" role="button" tabindex="0" aria-pressed="false">
           <span class="flip-in">
-            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-hour.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-hour.mp4"></video></span><h3>Відповідь протягом години</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
-            <span class="face back"><h3>Відповідь протягом години</h3><p>Співробітник відповідає SMS і пояснює, що робити далі.</p><button class="bk-cta" type="button" data-go="consult">Як це працює<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-hour.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-hour.mp4"></video></span><h3>Відповідаємо протягом години</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Відповідаємо протягом години</h3><p>Співробітник відповідає SMS і пояснює, що робити далі.</p><button class="bk-cta" type="button" data-go="consult">Як це працює<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
           </span>
         </div>
         <div class="flip" role="button" tabindex="0" aria-pressed="false">
           <span class="flip-in">
-            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-gavel.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-gavel.mp4"></video></span><h3>Від першої інстанції до Верховного Суду</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
-            <span class="face back"><h3>Усі судові інстанції</h3><p>Супроводжуємо справу в місцевих, апеляційних судах і Верховному Суді.</p><button class="bk-cta" type="button" data-go="services">Напрями практики<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-gavel.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-gavel.mp4"></video></span><h3>Ведемо справу до Верховного Суду</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Ведемо справу до Верховного Суду</h3><p>Супроводжуємо справу в місцевих, апеляційних судах і Верховному Суді.</p><button class="bk-cta" type="button" data-go="services">Напрями практики<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
           </span>
         </div>
         <div class="flip" role="button" tabindex="0" aria-pressed="false">
           <span class="flip-in">
-            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-secret.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-secret.mp4"></video></span><h3>Адвокатська таємниця</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
-            <span class="face back"><h3>Адвокатська таємниця</h3><p>Усе, що ви розповідаєте адвокату, захищене законом.</p><button class="bk-cta js-ask" type="button">Поставити питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
+            <span class="face front"><span class="fshot" aria-hidden="true"><img alt="" src="media/obj-secret.jpg" loading="lazy" draggable="false"><video muted loop playsinline preload="none" data-src="media/obj-secret.mp4"></video></span><h3>Зберігаємо адвокатську таємницю</h3><svg class="turn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg></span>
+            <span class="face back"><h3>Зберігаємо адвокатську таємницю</h3><p>Усе, що ви розповідаєте адвокату, захищене законом.</p><button class="bk-cta js-ask" type="button">Поставити питання<svg viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></button></span>
           </span>
         </div>
       </div>
@@ -829,7 +977,7 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
           <div class="phone js-ask" id="phone" role="button" tabindex="0" aria-label="Приклад SMS-консультації. Натисніть, щоб написати своє питання">
             <div class="ph-screen">
               <div class="ph-top"><span class="ph-av">Н</span><div><b>Нагорна та партнери</b><small>SMS · безкоштовна консультація</small></div></div>
-              <div class="ph-wm" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="20" cy="20" r="14.5" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="1.5 2.2"/><text x="20" y="24.5" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="12.5" fill="currentColor">Н&amp;П</text></svg></div>
+              <div class="ph-wm" aria-hidden="true"><svg viewBox="9 3 82 114"><use href="#np-sh"/></svg></div>
               <div class="chat" id="chat" aria-hidden="true"></div>
             </div>
           </div>
@@ -883,7 +1031,25 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
     </div>
   </section>
 
-  <section class="block flush" id="contacts" aria-labelledby="contacts-title">
+  <section class="block tinted" id="apply" aria-labelledby="apply-title">
+    <div class="wrap">
+      <div class="apply">
+        <div class="apply-copy">
+          <h2 id="apply-title" class="rv-title"><span class="mask"><span>Залиште заявку —</span></span><span class="mask"><span>ми зателефонуємо</span></span></h2>
+          <p class="rv">Коротко опишіть ситуацію. Адвокат зв’яжеться з вами, вислухає й підкаже, з чого почати.</p>
+          <ul class="apply-pts">
+            <li><span class="gl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h7"/></svg></span>Перша консультація безкоштовна</li>
+            <li><span class="gl"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>Відповідаємо протягом години</li>
+            <li><span class="gl"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 14.5v2.5"/></svg></span>Усе сказане захищене адвокатською таємницею</li>
+          </ul>
+          <a class="apply-tel js-tel" href="#"><small>Або телефонуйте</small><span class="js-phone-text">+380 50 698 68 68</span></a>
+        </div>
+        <div class="lf-card" id="lf-card-apply"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contacts" aria-labelledby="contacts-title">
     <div class="wrap">
       <div class="head">
         <h2 id="contacts-title" class="rv-title"><span class="mask"><span>Зв’язатися</span></span><span class="mask"><span>з нами</span></span></h2>
@@ -893,12 +1059,13 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
         <div class="call">
           <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
           <p class="lbl">Телефон і SMS</p>
-          <p class="tel js-phone-text">+380 XX XXX XX XX</p>
+          <p class="tel js-phone-text">+380 50 698 68 68</p>
           <div class="row">
             <a class="btn js-tel" href="#">Подзвонити</a>
             <button class="btn ghost js-ask" type="button">Написати SMS</button>
             <button class="btn ghost js-contact" type="button">Telegram, Viber</button>
           </div>
+          <a class="addr js-addr" href="#" target="_blank" rel="noopener"><span class="pin" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><span class="at"><small>Офіс у Києві · відкрити на мапі</small><b class="js-addr-text">03150, м. Київ, вул. Предславинська, буд. 34, літ. Б, офіс 107</b></span><svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
         </div>
         <ul class="soc" aria-label="Соцмережі">
           <li><a class="js-tiktok" href="#" target="_blank" rel="noopener"><span class="gl"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.6 2.3 4.3 5 4.5"/></svg></span><span class="nm">TikTok</span><span class="st"><span class="lbl">скоро</span><svg class="arr" viewBox="0 0 16 16"><path d="M4 12L12 4M6 4h6v6"/></svg></span></a></li>
@@ -912,7 +1079,13 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
 
 <footer>
   <div class="wrap">
-    <p class="mark" id="mark" role="link" tabindex="0" aria-label="Нагорна та партнери, нагору"><span class="mask"><span>Нагорна</span></span><span class="mask"><span>та партнери</span></span></p>
+    <div class="foot">
+      <a class="foot-logo" id="mark" href="#top" aria-label="Нагорна та партнери, нагору"><svg viewBox="-6 0 408 142" aria-hidden="true"><use href="#np-em"/><g style="fill:var(--lg-ink)"><text x="128" y="30" font-size="13.2" textLength="268" lengthAdjust="spacing">АДВОКАТСЬКЕ ОБ’ЄДНАННЯ</text><text x="128" y="77" font-size="52" textLength="268" lengthAdjust="spacing" style="stroke:var(--lg-ink);stroke-width:.9px;stroke-linejoin:round">НАГОРНА</text><text x="128" y="106" font-size="31" textLength="268" lengthAdjust="spacing" style="stroke:var(--lg-ink);stroke-width:.45px;stroke-linejoin:round">ТА ПАРТНЕРИ</text></g><path d="M128 117.5H255.0M269.0 117.5H396" style="stroke:var(--lg-gold)" stroke-width="1.3" fill="none"/><path d="M262.0 114.1l3.4 3.4-3.4 3.4-3.4-3.4z" style="fill:var(--lg-gold)"/><g style="fill:var(--lg-gold)"><text x="128" y="134.5" font-size="12" textLength="268" lengthAdjust="spacing">ЗАХИСТ · ДОВІРА · ЗАКОН</text></g></svg></a>
+      <div class="foot-col">
+        <a class="foot-tel js-tel js-phone-text" href="#">+380 50 698 68 68</a>
+        <a class="foot-addr js-addr" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span class="js-addr-text">03150, м. Київ, вул. Предславинська, буд. 34, літ. Б, офіс 107</span></a>
+      </div>
+    </div>
     <div class="meta-row">
       <span>© 2026 Адвокатське об’єднання «Нагорна та партнери»</span>
       <span class="js-edrpou" hidden>ЄДРПОУ <b></b></span>
@@ -938,7 +1111,7 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
     <h2 id="contact-title">Оберіть спосіб зв’язку</h2>
     <div class="ways">
       <button class="way main js-ask" type="button"><span class="wi"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h7"/></svg></span><span class="wt"><b>Питання в SMS</b><small>Безкоштовно, відповідь протягом години</small></span><svg class="way-go" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></button>
-      <a class="way js-tel" href="#"><span class="wi"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="wt"><b>Подзвонити</b><small class="js-phone-text">+380 XX XXX XX XX</small></span><svg class="way-go" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
+      <a class="way js-tel" href="#"><span class="wi"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="wt"><b>Подзвонити</b><small class="js-phone-text">+380 50 698 68 68</small></span><svg class="way-go" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
       <a class="way js-telegram" href="#" target="_blank" rel="noopener"><span class="wi"><svg viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg></span><span class="wt"><b>Telegram</b><small class="lbl">скоро</small></span><svg class="way-go" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
       <a class="way js-viber" href="#"><span class="wi"><svg viewBox="0 0 24 24"><path d="M12 3c5 0 8 2.5 8 7.5S17 18 12 18l-4 3v-3.5C5.5 16.5 4 14 4 10.5 4 5.5 7 3 12 3z"/><path d="M10 8c.5 2 1.5 3.3 4 4.5"/></svg></span><span class="wt"><b>Viber</b><small class="lbl">скоро</small></span><svg class="way-go" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
     </div>
@@ -953,9 +1126,11 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
     <button class="x" type="button" data-close aria-label="Закрити">×</button>
     <h2 id="privacy-title">Політика конфіденційності</h2>
     <h3>Які дані ми отримуємо</h3>
-    <p>Сайт не має форм і не збирає ваших персональних даних. Ви пишете нам SMS або телефонуєте самостійно, тож ми бачимо лише ваш номер і те, що ви повідомили.</p>
+    <p>Лише те, що ви надсилаєте самі: у формі заявки — ім’я, номер телефону, напрям і, за бажанням, короткий опис ситуації; у SMS чи під час дзвінка — ваш номер і те, що ви повідомили.</p>
     <h3>Як ми їх використовуємо</h3>
-    <p>Лише для того, щоб відповісти на ваше питання та надати правничу допомогу. Ми не передаємо ці дані третім особам. Усе, що ви розповідаєте адвокату, захищене адвокатською таємницею.</p>
+    <p>Тільки для того, щоб зв’язатися з вами щодо вашого звернення. Ми не передаємо ці дані третім особам і не використовуємо їх для реклами. Більше сайт нічого не збирає й не зберігає: тут немає аналітики, рекламних міток і відстеження. Усе, що ви розповідаєте адвокату, захищене адвокатською таємницею.</p>
+    <h3>Ваша згода</h3>
+    <p>Надсилаючи заявку, ви погоджуєтеся, щоб ми використали ці дані для зв’язку з вами. Щоб відкликати згоду або попросити видалити дані, зателефонуйте нам.</p>
     <h3>Що зберігається у вашому браузері</h3>
     <p>Сайт запам’ятовує в браузері ваш вибір мови, теми та звуку, щоб не питати знову. Ці налаштування нікуди не передаються.</p>
   </div>
@@ -979,7 +1154,7 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
     <label for="ask-text">Ваше питання</label>
     <textarea id="ask-text" placeholder="Наприклад: виконавець наклав арешт на рахунок через старий кредит. Чи можна це оскаржити?"></textarea>
     <a class="btn btn-accent" id="ask-send" href="#">Відкрити SMS</a>
-    <div class="numrow"><span class="js-phone-text">+380 XX XXX XX XX</span><button type="button" id="copy">Скопіювати номер</button></div>
+    <div class="numrow"><span class="js-phone-text">+380 50 698 68 68</span><button type="button" id="copy">Скопіювати номер</button></div>
     <p class="hint">Якщо SMS не відкрилось автоматично, надішліть питання на цей номер вручну.</p>
   </form>
   </div>
@@ -1006,8 +1181,23 @@ a.rvw-src:hover{border-color:var(--accent);color:var(--accent)}
 <script>
 /* ===== Контакти: замініть значення тут ===== */
 const CONTACTS = {
-  phone: "+380000000000",           // номер для дзвінків і SMS, без пробілів
-  phoneText: "+380 XX XXX XX XX",   // як номер показується на сайті
+  phone: "+380506986868",           // номер для дзвінків і SMS, без пробілів (0 (50) 698 68 68)
+  phoneText: "+380 50 698 68 68",   // як номер показується на сайті
+  address: "03150, м. Київ, вул. Предславинська, буд. 34, літ. Б, офіс 107", // адреса офісу (англійський варіант — у словнику EN)
+  /* ===== Форма заявки: куди надсилати =====
+     Поки formEndpoint порожній, форма нічого не надсилає в інтернет: на телефоні вона відкриває SMS на номер phone
+     з уже заповненим текстом заявки (ім’я, телефон, напрям, ситуація), на комп’ютері показує номер із кнопкою
+     «Скопіювати номер», «Відкрити SMS» і «Скопіювати текст». Щоб заявки приходили на пошту, підключіть сервіс форм:
+     • Formspree: зареєструйтеся на formspree.io → New form → скопіюйте адресу виду https://formspree.io/f/abcdwxyz
+       у formEndpoint. formAccessKey залиште порожнім.
+     • Web3Forms: на web3forms.com введіть пошту → Access Key прийде листом. formEndpoint:
+       "https://api.web3forms.com/submit", formAccessKey: "ваш ключ".
+     formFormat: "json" (підходить обом сервісам) або "formdata", якщо сервіс приймає лише звичайну форму.
+     Захист від спаму вже є: приховане поле-пастка і перевірка часу (бот, що заповнює форму миттєво, нічого не надішле).
+     Після підключення надішліть тестову заявку й перевірте пошту; у політиці конфіденційності варто назвати сервіс. */
+  formEndpoint: "",                 // напр. "https://formspree.io/f/abcdwxyz" або "https://api.web3forms.com/submit"
+  formAccessKey: "",                // лише для Web3Forms
+  formFormat: "json",               // "json" або "formdata"
   tiktok: "",                       // https://www.tiktok.com/@...
   instagram: "",                    // https://www.instagram.com/...
   facebook: "",                     // https://www.facebook.com/...
@@ -1080,7 +1270,7 @@ const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}},
 const svgIcon = (paths, cls) => `<svg viewBox="0 0 24 24" aria-hidden="true"${cls?` class="${cls}"`:""}>${paths}</svg>`;
 
 /* ---------- i18n (UA / EN) ---------- */
-const EN = {"Н": "N", "Відео: справа на кожному етапі. Натисніть, щоб переглянути ще раз": "Video: your case at every stage. Tap to watch again", "Скільки коштує консультація?": "How much does a consultation cost?", "Як працює консультація в SMS?": "How does the SMS consultation work?", "Які документи підготувати?": "Which documents should I prepare?", "Чи конфіденційна наша розмова?": "Is our conversation confidential?", "Відповідь протягом години": "A reply within an hour", "Усі судові інстанції": "Every court instance", "Питання": "Questions", "та відповіді": "and answers", "Інші способи зв’язку": "Other ways to reach us", "Зв’язатися": "Contact", "Зв’язатися з нами": "Contact us", "Оберіть спосіб зв’язку": "Choose how to reach us", "Безкоштовно, відповідь протягом години": "Free, reply within an hour", "Політика конфіденційності": "Privacy policy", "Які дані ми отримуємо": "What data we receive", "Сайт не має форм і не збирає ваших персональних даних. Ви пишете нам SMS або телефонуєте самостійно, тож ми бачимо лише ваш номер і те, що ви повідомили.": "The website has no forms and does not collect your personal data. You text or call us yourself, so we only see your number and what you tell us.", "Як ми їх використовуємо": "How we use it", "Лише для того, щоб відповісти на ваше питання та надати правничу допомогу. Ми не передаємо ці дані третім особам. Усе, що ви розповідаєте адвокату, захищене адвокатською таємницею.": "Only to answer your question and provide legal help. We do not share this data with third parties. Everything you tell your lawyer is protected by attorney–client privilege.", "Що зберігається у вашому браузері": "What is stored in your browser", "Сайт запам’ятовує в браузері ваш вибір мови, теми та звуку, щоб не питати знову. Ці налаштування нікуди не передаються.": "The website remembers your choice of language, theme and sound in your browser so it doesn’t ask again. These settings are not sent anywhere.", "Затримання чи підозра": "Detention or suspicion", "Захищаємо до остаточного рішення": "We defend you to the final decision", "Рішення влади проти вас": "An official decision against you", "Оскаржуємо його в суді": "We challenge it in court", "Спір, перевірка чи борги": "A dispute, an audit or debts", "Захищаємо інтереси бізнесу": "We protect your business", "Вантаж затримали на митниці": "Your cargo is held at customs", "Відстоюємо ваш вантаж": "We get your cargo through", "Арешт майна чи рахунку": "Property or an account frozen", "Знімаємо арешти": "We lift the freeze", "Спір за майно чи спадщину": "A property or inheritance dispute", "Захищаємо ваш дім і родину": "We protect your home and family", "Як це працює": "How it works", "Поставити питання": "Ask a question", "Нагорна та партнери": "Nahorna & Partners", "Адвокатське об’єднання": "Law Association", "Послуги": "Services", "Консультація": "Consultation", "Відзнаки": "Awards", "Контакти": "Contacts", "Подзвонити": "Call us", "Чому ми": "Why us", "Розділ 1 з 3": "Chapter 1 of 3", "Розділ 2 з 3": "Chapter 2 of 3", "Розділ 3 з 3": "Chapter 3 of 3", "Обставини складаються не на вашу користь": "The circumstances are against you", "Ми збираємо докази й аргументи": "We gather evidence and arguments", "І повертаємо рівновагу": "And restore the balance", "Увімкнути звук": "Turn sound on", "Звук увімкнено": "Sound on", "Вимкнути звук": "Turn sound off", "Нагорна": "Nahorna", "та партнери": "& Partners", "адміністративні": "administrative", "господарські": "commercial", "митні": "customs", "цивільні": "civil", "виконавче провадження": "enforcement proceedings", "Безкоштовна консультація": "Free consultation", "Кримінальні справи": "Criminal cases", "Адміністративні справи": "Administrative cases", "Господарські справи": "Commercial cases", "Митні спори та ЗЕД": "Customs & foreign trade", "Виконавче провадження": "Enforcement proceedings", "Цивільні справи": "Civil cases", "Адміністративне та міграційне право": "Administrative and migration law", "Господарське, податкове право та банкрутство": "Commercial and tax law, bankruptcy", "Митне право та зовнішньоекономічна діяльність": "Customs law and foreign trade", "Виконавче провадження, кредити та борги": "Enforcement proceedings, loans and debts", "Чому нам": "Why clients", "довіряють": "trust us", "Безкоштовна консультація в SMS": "Free consultation by SMS", "Від першої інстанції до Верховного Суду": "From first instance to the Supreme Court", "Адвокатська таємниця": "Attorney–client privilege", "Напрями": "Practice", "практики": "areas", "КПК · КК": "Criminal & Criminal Procedure Codes", "КАС · КУпАП": "Administrative Procedure & Offences Codes", "ГПК · ПК · КУзПБ": "Commercial Procedure, Tax & Bankruptcy Codes", "МК · ЗЕД": "Customs Code · foreign trade", "ЗУ № 1404-VIII": "Law No. 1404-VIII", "ЦК · ЦПК · СК": "Civil, Civil Procedure & Family Codes", "Потягніть, щоб гортати": "Drag to browse", "Запитати про свою справу": "Ask about your case", "Попередній напрям": "Previous area", "Наступний напрям": "Next area", "Захищаємо ваші права": "We protect your rights", "на кожному етапі справи": "at every stage of your case", "напрямів практики": "practice areas", "судові інстанції": "court instances", "хв": "min", "відповідь на SMS": "SMS reply time", "консультація в SMS": "SMS consultation", "Питання адвокату": "Ask a lawyer", "в SMS": "by SMS", "Опишіть ситуацію": "Describe your situation", "Отримайте відповідь": "Get a reply", "Вирішіть, як діяти": "Decide how to proceed", "Написати питання": "Write your question", "SMS · безкоштовна консультація": "SMS · free consultation", "Сьогодні, 14:02": "Today, 14:02", "Доставлено": "Delivered", "Відповідь через 38 хв": "Replied in 38 min", "друкує…": "typing…", "Сертифікат": "Certificate", "Диплом": "Diploma", "Грамота": "Commendation", "Свідоцтво": "Licence", "Подяка": "Letter of thanks", "з нами": "us", "Телефон і SMS": "Phone and SMS", "Написати SMS": "Send an SMS", "скоро": "soon", "перейти": "open", "© 2026 Адвокатське об’єднання «Нагорна та партнери»": "© 2026 Nahorna & Partners Law Association", "Інформація на сайті не є юридичною консультацією": "Information on this website is not legal advice", "Питання в SMS": "Ask by SMS", "Маєте питання до адвоката?": "Have a question for a lawyer?", "Напишіть його в SMS. Співробітник об’єднання безкоштовно відповість протягом 1 години.": "Send it by SMS. A member of our team will reply for free within 1 hour.", "Опишіть ситуацію коротко. Після натискання кнопки відкриється SMS з вашим текстом, залишиться лише надіслати його. Відповідь прийде протягом 1 години.": "Describe your situation briefly. The button opens an SMS with your text, so you only need to send it. You’ll get a reply within 1 hour.", "Ваше питання": "Your question", "Відкрити SMS": "Open SMS", "Скопіювати номер": "Copy number", "Скопійовано": "Copied", "Якщо SMS не відкрилось автоматично, надішліть питання на цей номер вручну.": "If the SMS app doesn’t open, send your question to this number yourself.", "Нагорна та партнери, на початок": "Nahorna & Partners, back to top", "Нагорна та партнери, нагору": "Nahorna & Partners, back to top", "Розділи сайту": "Site sections", "Змінити тему": "Change theme", "Меню": "Menu", "Про об’єднання": "About the association", "Розділ 1": "Chapter 1", "Розділ 2": "Chapter 2", "Розділ 3": "Chapter 3", "Зупинити відео": "Pause video", "Відтворити відео": "Play video", "Напрями практики": "Practice areas", "Напрями практики, потягніть убік": "Practice areas, drag sideways", "Згорнути опис": "Collapse details", "Приклад SMS-консультації. Натисніть, щоб написати своє питання": "Example of an SMS consultation. Tap to write your question", "Соцмережі": "Social media", "Закрити": "Close", "Мова сайту": "Site language", "Наприклад: виконавець наклав арешт на рахунок через старий кредит. Чи можна це оскаржити?": "For example: an enforcement officer froze my account over an old loan. Can I challenge this?", "Спори з ТЦК та СП": "Disputes with recruitment centres", "Розблокування податкових накладних": "Unblocking VAT invoices", "Кримінальні": "Criminal", "справи та": "cases and", "Опишіть ситуацію кількома реченнями, перша оцінка справи безкоштовна.": "Describe your situation in a few sentences; the first assessment is free.", "Співробітник відповідає SMS і пояснює, що робити далі.": "A member of our team replies by SMS and explains what to do next.", "Супроводжуємо справу в місцевих, апеляційних судах і Верховному Суді.": "We handle cases in local and appeal courts and at the Supreme Court.", "Усе, що ви розповідаєте адвокату, захищене законом.": "Everything you tell your lawyer is protected by law.", "Захищаємо підозрюваних і обвинувачених, представляємо потерпілих.": "We defend suspects and the accused and represent victims.", "Захист під час розслідування": "Defence during the investigation", "Участь в обшуках і допитах": "Presence at searches and interrogations", "Оскарження запобіжних заходів і арештів": "Challenging preventive measures and seizures", "Апеляція та касація": "Appeals and cassation", "Оскаржуємо рішення органів влади та супроводжуємо міграційні справи іноземців.": "We challenge decisions of public authorities and handle migration matters for foreigners.", "Оскарження рішень органів влади": "Challenging official decisions", "ДТП і позбавлення права керування": "Road accidents and driving bans", "Посвідки на проживання, відмови ДМС": "Residence permits, migration service refusals", "Захищаємо бізнес у спорах з контрагентами, податковою та кредиторами.": "We protect businesses in disputes with counterparties, the tax authority and creditors.", "Договірні та корпоративні спори": "Contract and corporate disputes", "Оскарження податкових повідомлень-рішень": "Challenging tax assessment notices", "Банкрутство та неплатоспроможність": "Bankruptcy and insolvency", "Захищаємо імпортерів, експортерів і перевізників у спорах з митницею.": "We defend importers, exporters and carriers in disputes with customs.", "Коригування митної вартості": "Customs value adjustments", "Класифікація товарів за УКТ ЗЕД": "Tariff classification of goods", "Порушення митних правил": "Customs violations", "Супровід ЗЕД-контрактів": "Foreign trade contracts", "Представляємо боржників і стягувачів у виконавчому провадженні.": "We represent debtors and creditors in enforcement proceedings.", "Оскарження дій виконавців": "Challenging enforcement officers", "Зняття арештів майна й рахунків": "Lifting freezes on property and accounts", "Захист заставного та іпотечного майна": "Protecting pledged and mortgaged property", "Стягнення боргів за розписками": "Recovering debts under IOUs", "Ведемо майнові, спадкові, кредитні та сімейні спори.": "We handle property, inheritance, credit and family disputes.", "Поділ майна": "Division of property", "Спадкові спори": "Inheritance disputes", "Кредитні спори з банками": "Credit disputes with banks", "Місце проживання дитини": "A child’s place of residence", "Без візиту в офіс: відповідь у SMS протягом години.": "No office visit needed: an SMS reply within an hour.", "За потреби — зустріч або дзвінок.": "If needed, a meeting or a call.", "Добрий день. Виконавець арештував мій рахунок через старий кредит. Чи можна це оскаржити?": "Hello. An enforcement officer froze my account over an old loan. Can I challenge this?", "Добрий день! Оскаржити можна, але строки короткі. Надішліть фото постанови, адвокат перегляне її сьогодні.": "Hello! It can be challenged, but the deadlines are short. Send a photo of the order and a lawyer will review it today.", "Консультація в SMS безкоштовна. Вартість подальшої роботи адвокат назве після знайомства з документами, до її початку.": "The SMS consultation is free. The lawyer will quote the cost of further work after reviewing your documents, before it begins.", "Надішліть опис ситуації на наш номер. Протягом години співробітник відповість SMS і підкаже наступні кроки.": "Text a short description to our number. Within an hour a member of our team will reply and suggest the next steps.", "Усе, що стосується справи: договори, постанови, повістки, листування. Не впевнені — надішліть, що є.": "Anything related to the case: contracts, orders, summonses, correspondence. Not sure? Send what you have.", "Так. Усе сказане адвокату є адвокатською таємницею (ст. 22 ЗУ «Про адвокатуру та адвокатську діяльність»).": "Yes. Everything you tell your lawyer is privileged (Art. 22 of the Law “On the Bar and Practice of Law”).", "Телефонуйте або пишіть SMS.": "Call us or send an SMS.", "Відгуки": "Reviews", "Відгуки клієнтів": "Client reviews", "Тут з’являться відгуки наших клієнтів.": "Our clients’ reviews will appear here.", "Публікуємо відгуки лише зі згоди клієнтів.": "We publish reviews only with our clients’ consent.", "Залишити відгук": "Leave a review", "Відгуки в Google": "Reviews on Google", "читати повністю": "read in full", "згорнути": "show less", "Попередній відгук": "Previous review", "Наступний відгук": "Next review", "Оберіть напрям.": "Pick an area.", "Що сталося, які є документи.": "What happened, which documents you have.", "SMS з наступними кроками.": "An SMS with the next steps.", "Грамоти, подяки та сертифікати.": "Certificates of merit, letters of thanks and training certificates.", "Почесна грамота": "Certificate of honour", "Київський апеляційний суд": "Kyiv Court of Appeal", "Київська обласна рада": "Kyiv Regional Council", "Вищий спеціалізований суд України з розгляду цивільних і кримінальних справ": "High Specialised Court of Ukraine for Civil and Criminal Cases", "Апеляційний суд Київської області": "Court of Appeal of Kyiv Region", "Національна школа суддів України": "National School of Judges of Ukraine", "Попередній документ": "Previous document", "Наступний документ": "Next document", "Максим Р.": "Maksym R.", "Андрій С.": "Andrii S.", "Олена М.": "Olena M.", "Катерина Б.": "Kateryna B.", "Кримінальна справа — захист під час досудового розслідування": "Criminal case — defence during the pre-trial investigation", "Господарська справа — порушення умов договору": "Commercial case — breach of contract", "Цивільна справа — спадковий спір": "Civil case — inheritance dispute", "Адміністративна справа — оскарження постанови": "Administrative case — appeal against a ruling", "Оцінка 5 з 5": "Rated 5 out of 5", "Оцінка 4 з 5": "Rated 4 out of 5", "Зазвичай відгуки не пишу, але тут вирішив залишити. Ситуація в мене була досить серйозна і чесно кажучи, спочатку взагалі не розумів що робити.": "I don’t usually write reviews, but this time I decided to. My situation was quite serious and, to be honest, at first I had no idea what to do.", "Звернувся до адвокатського об’єднання Нагорна та партнери за рекомендацією знайомого. На першій зустрічі адвокат вислухав мене, подивився документи та пояснив, які можуть бути подальші дії. Сподобалось, що ніхто не обіцяв вирішити все за один день.": "I came to Nahorna & Partners on a friend’s recommendation. At the first meeting the lawyer listened to me, looked through the documents and explained what the next steps could be. I liked that nobody promised to sort everything out in a day.", "Протягом роботи адвокат був на зв’язку, відповідав на мої запитання, навіть коли я по декілька разів перепитував одне й те саме. Також був присутній під час необхідних процесуальних дій.": "Throughout the work the lawyer stayed in touch and answered my questions, even when I asked the same thing several times. He was also present during the necessary procedural steps.", "Не можу сказати, що весь процес був простим, були моменти коли дуже переживав. Але принаймні я розумів, що відбувається і які в мене є права.": "I can’t say the whole process was easy; there were moments when I was very worried. But at least I understood what was happening and what rights I had.", "Дякую за допомогу та терпіння.": "Thank you for your help and patience.", "Звертався через проблеми з контрагентом, який не виконав свої зобов’язання по договору. До цього намагався сам вирішити питання, але без результату. Адвокати переглянули документи, пояснили які є варіанти та допомогли підготувати позов. Сподобалось що нічого зайвого не обіцяли, а говорили по суті. Загалом роботою задоволений.": "I came to them over a counterparty who failed to meet its obligations under a contract. I had tried to resolve it myself, without success. The lawyers reviewed the documents, explained the options and helped prepare the claim. I liked that they didn’t promise anything unnecessary and got straight to the point. Overall I’m satisfied with their work.", "Допомогли розібратись зі спадщиною після смерті батька. Все пояснили простими словами, без зайвої води. Дякую адвокату за допомогу.": "They helped me deal with an inheritance after my father died. Everything was explained in simple words, with no fluff. Thank you to the lawyer for the help.", "Хочу поділитись своїм досвідом, можливо комусь буде корисно. Отримала постанову, з якою була зовсім не згодна. Спочатку думала просто заплатити штраф і забути, бо не хотілось витрачати час і нерви. Але знайома порадила звернутись до адвоката.": "I want to share my experience; maybe it will help someone. I received a ruling I completely disagreed with. At first I thought I’d just pay the fine and forget about it, because I didn’t want to waste time and nerves. But a friend advised me to see a lawyer.", "На консультації мені пояснили, що можна зробити в моїй ситуації, які потрібні документи і скільки приблизно часу це займе. Допомогли підготувати скаргу та супроводжували справу. Приємно, що зі мною спілкувались нормально, без складних юридичних термінів. Дякую за вашу роботу!": "At the consultation they explained what could be done in my situation, which documents were needed and roughly how long it would take. They helped prepare the complaint and handled the case. It was nice that they spoke to me normally, without complicated legal jargon. Thank you for your work!"};
+const EN = {"Н": "N", "Відео: справа на кожному етапі. Натисніть, щоб переглянути ще раз": "Video: your case at every stage. Tap to watch again", "Скільки коштує консультація?": "How much does a consultation cost?", "Як працює консультація в SMS?": "How does the SMS consultation work?", "Які документи підготувати?": "Which documents should I prepare?", "Чи конфіденційна наша розмова?": "Is our conversation confidential?", "Питання": "Questions", "та відповіді": "and answers", "Інші способи зв’язку": "Other ways to reach us", "Зв’язатися": "Contact", "Зв’язатися з нами": "Contact us", "Оберіть спосіб зв’язку": "Choose how to reach us", "Безкоштовно, відповідь протягом години": "Free, reply within an hour", "Політика конфіденційності": "Privacy policy", "Які дані ми отримуємо": "What data we receive", "Як ми їх використовуємо": "How we use it", "Що зберігається у вашому браузері": "What is stored in your browser", "Сайт запам’ятовує в браузері ваш вибір мови, теми та звуку, щоб не питати знову. Ці налаштування нікуди не передаються.": "The website remembers your choice of language, theme and sound in your browser so it doesn’t ask again. These settings are not sent anywhere.", "Затримання чи підозра": "Detention or suspicion", "Захищаємо до остаточного рішення": "We defend you to the final decision", "Рішення влади проти вас": "An official decision against you", "Оскаржуємо його в суді": "We challenge it in court", "Спір, перевірка чи борги": "A dispute, an audit or debts", "Захищаємо інтереси бізнесу": "We protect your business", "Вантаж затримали на митниці": "Your cargo is held at customs", "Відстоюємо ваш вантаж": "We get your cargo through", "Арешт майна чи рахунку": "Property or an account frozen", "Знімаємо арешти": "We lift the freeze", "Спір за майно чи спадщину": "A property or inheritance dispute", "Захищаємо ваш дім і родину": "We protect your home and family", "Як це працює": "How it works", "Поставити питання": "Ask a question", "Нагорна та партнери": "Nahorna & Partners", "Адвокатське об’єднання": "Law Association", "Послуги": "Services", "Консультація": "Consultation", "Відзнаки": "Awards", "Контакти": "Contacts", "Подзвонити": "Call us", "Чому ми": "Why us", "Розділ 1 з 3": "Chapter 1 of 3", "Розділ 2 з 3": "Chapter 2 of 3", "Розділ 3 з 3": "Chapter 3 of 3", "Обставини складаються не на вашу користь": "The circumstances are against you", "Ми збираємо докази й аргументи": "We gather evidence and arguments", "І повертаємо рівновагу": "And restore the balance", "Увімкнути звук": "Turn sound on", "Звук увімкнено": "Sound on", "Вимкнути звук": "Turn sound off", "адміністративні": "administrative", "господарські": "commercial", "митні": "customs", "цивільні": "civil", "виконавче провадження": "enforcement proceedings", "Безкоштовна консультація": "Free consultation", "Кримінальні справи": "Criminal cases", "Адміністративні справи": "Administrative cases", "Господарські справи": "Commercial cases", "Митні спори та ЗЕД": "Customs & foreign trade", "Виконавче провадження": "Enforcement proceedings", "Цивільні справи": "Civil cases", "Адміністративне та міграційне право": "Administrative and migration law", "Господарське, податкове право та банкрутство": "Commercial and tax law, bankruptcy", "Митне право та зовнішньоекономічна діяльність": "Customs law and foreign trade", "Виконавче провадження, кредити та борги": "Enforcement proceedings, loans and debts", "Напрями": "Practice", "практики": "areas", "КПК · КК": "Criminal & Criminal Procedure Codes", "КАС · КУпАП": "Administrative Procedure & Offences Codes", "ГПК · ПК · КУзПБ": "Commercial Procedure, Tax & Bankruptcy Codes", "МК · ЗЕД": "Customs Code · foreign trade", "ЗУ № 1404-VIII": "Law No. 1404-VIII", "ЦК · ЦПК · СК": "Civil, Civil Procedure & Family Codes", "Потягніть, щоб гортати": "Drag to browse", "Запитати про свою справу": "Ask about your case", "Попередній напрям": "Previous area", "Наступний напрям": "Next area", "Захищаємо ваші права": "We protect your rights", "на кожному етапі справи": "at every stage of your case", "напрямів практики": "practice areas", "судові інстанції": "court instances", "хв": "min", "відповідь на SMS": "SMS reply time", "консультація в SMS": "SMS consultation", "Питання адвокату": "Ask a lawyer", "в SMS": "by SMS", "Опишіть ситуацію": "Describe your situation", "Отримайте відповідь": "Get a reply", "Вирішіть, як діяти": "Decide how to proceed", "Написати питання": "Write your question", "SMS · безкоштовна консультація": "SMS · free consultation", "Сьогодні, 14:02": "Today, 14:02", "Доставлено": "Delivered", "Відповідь через 38 хв": "Replied in 38 min", "друкує…": "typing…", "Сертифікат": "Certificate", "Диплом": "Diploma", "Грамота": "Commendation", "Свідоцтво": "Licence", "Подяка": "Letter of thanks", "з нами": "us", "Телефон і SMS": "Phone and SMS", "Написати SMS": "Send an SMS", "скоро": "soon", "перейти": "open", "© 2026 Адвокатське об’єднання «Нагорна та партнери»": "© 2026 Nahorna & Partners Law Association", "Інформація на сайті не є юридичною консультацією": "Information on this website is not legal advice", "Питання в SMS": "Ask by SMS", "Маєте питання до адвоката?": "Have a question for a lawyer?", "Напишіть його в SMS. Співробітник об’єднання безкоштовно відповість протягом 1 години.": "Send it by SMS. A member of our team will reply for free within 1 hour.", "Опишіть ситуацію коротко. Після натискання кнопки відкриється SMS з вашим текстом, залишиться лише надіслати його. Відповідь прийде протягом 1 години.": "Describe your situation briefly. The button opens an SMS with your text, so you only need to send it. You’ll get a reply within 1 hour.", "Ваше питання": "Your question", "Відкрити SMS": "Open SMS", "Скопіювати номер": "Copy number", "Скопійовано": "Copied", "Якщо SMS не відкрилось автоматично, надішліть питання на цей номер вручну.": "If the SMS app doesn’t open, send your question to this number yourself.", "Нагорна та партнери, на початок": "Nahorna & Partners, back to top", "Нагорна та партнери, нагору": "Nahorna & Partners, back to top", "Розділи сайту": "Site sections", "Змінити тему": "Change theme", "Меню": "Menu", "Про об’єднання": "About the association", "Розділ 1": "Chapter 1", "Розділ 2": "Chapter 2", "Розділ 3": "Chapter 3", "Зупинити відео": "Pause video", "Відтворити відео": "Play video", "Напрями практики": "Practice areas", "Напрями практики, потягніть убік": "Practice areas, drag sideways", "Згорнути опис": "Collapse details", "Приклад SMS-консультації. Натисніть, щоб написати своє питання": "Example of an SMS consultation. Tap to write your question", "Соцмережі": "Social media", "Закрити": "Close", "Мова сайту": "Site language", "Наприклад: виконавець наклав арешт на рахунок через старий кредит. Чи можна це оскаржити?": "For example: an enforcement officer froze my account over an old loan. Can I challenge this?", "Спори з ТЦК та СП": "Disputes with recruitment centres", "Розблокування податкових накладних": "Unblocking VAT invoices", "Кримінальні": "Criminal", "справи та": "cases and", "Опишіть ситуацію кількома реченнями, перша оцінка справи безкоштовна.": "Describe your situation in a few sentences; the first assessment is free.", "Співробітник відповідає SMS і пояснює, що робити далі.": "A member of our team replies by SMS and explains what to do next.", "Супроводжуємо справу в місцевих, апеляційних судах і Верховному Суді.": "We handle cases in local and appeal courts and at the Supreme Court.", "Усе, що ви розповідаєте адвокату, захищене законом.": "Everything you tell your lawyer is protected by law.", "Захищаємо підозрюваних і обвинувачених, представляємо потерпілих.": "We defend suspects and the accused and represent victims.", "Захист під час розслідування": "Defence during the investigation", "Участь в обшуках і допитах": "Presence at searches and interrogations", "Оскарження запобіжних заходів і арештів": "Challenging preventive measures and seizures", "Апеляція та касація": "Appeals and cassation", "Оскаржуємо рішення органів влади та супроводжуємо міграційні справи іноземців.": "We challenge decisions of public authorities and handle migration matters for foreigners.", "Оскарження рішень органів влади": "Challenging official decisions", "ДТП і позбавлення права керування": "Road accidents and driving bans", "Посвідки на проживання, відмови ДМС": "Residence permits, migration service refusals", "Захищаємо бізнес у спорах з контрагентами, податковою та кредиторами.": "We protect businesses in disputes with counterparties, the tax authority and creditors.", "Договірні та корпоративні спори": "Contract and corporate disputes", "Оскарження податкових повідомлень-рішень": "Challenging tax assessment notices", "Банкрутство та неплатоспроможність": "Bankruptcy and insolvency", "Захищаємо імпортерів, експортерів і перевізників у спорах з митницею.": "We defend importers, exporters and carriers in disputes with customs.", "Коригування митної вартості": "Customs value adjustments", "Класифікація товарів за УКТ ЗЕД": "Tariff classification of goods", "Порушення митних правил": "Customs violations", "Супровід ЗЕД-контрактів": "Foreign trade contracts", "Представляємо боржників і стягувачів у виконавчому провадженні.": "We represent debtors and creditors in enforcement proceedings.", "Оскарження дій виконавців": "Challenging enforcement officers", "Зняття арештів майна й рахунків": "Lifting freezes on property and accounts", "Захист заставного та іпотечного майна": "Protecting pledged and mortgaged property", "Стягнення боргів за розписками": "Recovering debts under IOUs", "Ведемо майнові, спадкові, кредитні та сімейні спори.": "We handle property, inheritance, credit and family disputes.", "Поділ майна": "Division of property", "Спадкові спори": "Inheritance disputes", "Кредитні спори з банками": "Credit disputes with banks", "Місце проживання дитини": "A child’s place of residence", "Без візиту в офіс: відповідь у SMS протягом години.": "No office visit needed: an SMS reply within an hour.", "За потреби — зустріч або дзвінок.": "If needed, a meeting or a call.", "Добрий день. Виконавець арештував мій рахунок через старий кредит. Чи можна це оскаржити?": "Hello. An enforcement officer froze my account over an old loan. Can I challenge this?", "Добрий день! Оскаржити можна, але строки короткі. Надішліть фото постанови, адвокат перегляне її сьогодні.": "Hello! It can be challenged, but the deadlines are short. Send a photo of the order and a lawyer will review it today.", "Консультація в SMS безкоштовна. Вартість подальшої роботи адвокат назве після знайомства з документами, до її початку.": "The SMS consultation is free. The lawyer will quote the cost of further work after reviewing your documents, before it begins.", "Надішліть опис ситуації на наш номер. Протягом години співробітник відповість SMS і підкаже наступні кроки.": "Text a short description to our number. Within an hour a member of our team will reply and suggest the next steps.", "Усе, що стосується справи: договори, постанови, повістки, листування. Не впевнені — надішліть, що є.": "Anything related to the case: contracts, orders, summonses, correspondence. Not sure? Send what you have.", "Так. Усе сказане адвокату є адвокатською таємницею (ст. 22 ЗУ «Про адвокатуру та адвокатську діяльність»).": "Yes. Everything you tell your lawyer is privileged (Art. 22 of the Law “On the Bar and Practice of Law”).", "Телефонуйте або пишіть SMS.": "Call us or send an SMS.", "Відгуки": "Reviews", "Відгуки клієнтів": "Client reviews", "Тут з’являться відгуки наших клієнтів.": "Our clients’ reviews will appear here.", "Публікуємо відгуки лише зі згоди клієнтів.": "We publish reviews only with our clients’ consent.", "Залишити відгук": "Leave a review", "Відгуки в Google": "Reviews on Google", "читати повністю": "read in full", "згорнути": "show less", "Попередній відгук": "Previous review", "Наступний відгук": "Next review", "Оберіть напрям.": "Pick an area.", "Що сталося, які є документи.": "What happened, which documents you have.", "SMS з наступними кроками.": "An SMS with the next steps.", "Грамоти, подяки та сертифікати.": "Certificates of merit, letters of thanks and training certificates.", "Почесна грамота": "Certificate of honour", "Київський апеляційний суд": "Kyiv Court of Appeal", "Київська обласна рада": "Kyiv Regional Council", "Вищий спеціалізований суд України з розгляду цивільних і кримінальних справ": "High Specialised Court of Ukraine for Civil and Criminal Cases", "Апеляційний суд Київської області": "Court of Appeal of Kyiv Region", "Національна школа суддів України": "National School of Judges of Ukraine", "Попередній документ": "Previous document", "Наступний документ": "Next document", "Максим Р.": "Maksym R.", "Андрій С.": "Andrii S.", "Олена М.": "Olena M.", "Катерина Б.": "Kateryna B.", "Кримінальна справа — захист під час досудового розслідування": "Criminal case — defence during the pre-trial investigation", "Господарська справа — порушення умов договору": "Commercial case — breach of contract", "Цивільна справа — спадковий спір": "Civil case — inheritance dispute", "Адміністративна справа — оскарження постанови": "Administrative case — appeal against a ruling", "Оцінка 5 з 5": "Rated 5 out of 5", "Оцінка 4 з 5": "Rated 4 out of 5", "Зазвичай відгуки не пишу, але тут вирішив залишити. Ситуація в мене була досить серйозна і чесно кажучи, спочатку взагалі не розумів що робити.": "I don’t usually write reviews, but this time I decided to. My situation was quite serious and, to be honest, at first I had no idea what to do.", "Звернувся до адвокатського об’єднання Нагорна та партнери за рекомендацією знайомого. На першій зустрічі адвокат вислухав мене, подивився документи та пояснив, які можуть бути подальші дії. Сподобалось, що ніхто не обіцяв вирішити все за один день.": "I came to Nahorna & Partners on a friend’s recommendation. At the first meeting the lawyer listened to me, looked through the documents and explained what the next steps could be. I liked that nobody promised to sort everything out in a day.", "Протягом роботи адвокат був на зв’язку, відповідав на мої запитання, навіть коли я по декілька разів перепитував одне й те саме. Також був присутній під час необхідних процесуальних дій.": "Throughout the work the lawyer stayed in touch and answered my questions, even when I asked the same thing several times. He was also present during the necessary procedural steps.", "Не можу сказати, що весь процес був простим, були моменти коли дуже переживав. Але принаймні я розумів, що відбувається і які в мене є права.": "I can’t say the whole process was easy; there were moments when I was very worried. But at least I understood what was happening and what rights I had.", "Дякую за допомогу та терпіння.": "Thank you for your help and patience.", "Звертався через проблеми з контрагентом, який не виконав свої зобов’язання по договору. До цього намагався сам вирішити питання, але без результату. Адвокати переглянули документи, пояснили які є варіанти та допомогли підготувати позов. Сподобалось що нічого зайвого не обіцяли, а говорили по суті. Загалом роботою задоволений.": "I came to them over a counterparty who failed to meet its obligations under a contract. I had tried to resolve it myself, without success. The lawyers reviewed the documents, explained the options and helped prepare the claim. I liked that they didn’t promise anything unnecessary and got straight to the point. Overall I’m satisfied with their work.", "Допомогли розібратись зі спадщиною після смерті батька. Все пояснили простими словами, без зайвої води. Дякую адвокату за допомогу.": "They helped me deal with an inheritance after my father died. Everything was explained in simple words, with no fluff. Thank you to the lawyer for the help.", "Хочу поділитись своїм досвідом, можливо комусь буде корисно. Отримала постанову, з якою була зовсім не згодна. Спочатку думала просто заплатити штраф і забути, бо не хотілось витрачати час і нерви. Але знайома порадила звернутись до адвоката.": "I want to share my experience; maybe it will help someone. I received a ruling I completely disagreed with. At first I thought I’d just pay the fine and forget about it, because I didn’t want to waste time and nerves. But a friend advised me to see a lawyer.", "На консультації мені пояснили, що можна зробити в моїй ситуації, які потрібні документи і скільки приблизно часу це займе. Допомогли підготувати скаргу та супроводжували справу. Приємно, що зі мною спілкувались нормально, без складних юридичних термінів. Дякую за вашу роботу!": "At the consultation they explained what could be done in my situation, which documents were needed and roughly how long it would take. They helped prepare the complaint and handled the case. It was nice that they spoke to me normally, without complicated legal jargon. Thank you for your work!", "Адвокатське об’єднання «Нагорна та партнери»": "Nahorna & Partners Law Association", "Сильна позиція": "A strong position", "у вашій справі": "in your case", "Залиште контакти — адвокат зателефонує й підкаже, з чого почати.": "Leave your details and a lawyer will call you and suggest where to start.", "Ім’я": "Name", "Телефон": "Phone", "Напрям": "Practice area", "Оберіть напрям": "Choose an area", "Інше": "Other", "Коротко про ситуацію": "Your situation in brief", "(необов’язково)": "(optional)", "Сайт": "Website", "Погоджуюся на обробку моїх даних для зв’язку відповідно до": "I agree to my data being used to contact me under the", "політики конфіденційності": "privacy policy", "Отримати консультацію": "Get a consultation", "Або телефонуйте:": "Or call us:", "Або телефонуйте": "Or call us", "Дякуємо!": "Thank you!", "Ми зв’яжемося з вами найближчим часом.": "We will get in touch with you shortly.", "Скопіювати текст": "Copy the text", "Надіслати ще одну заявку": "Send another request", "Вкажіть, як до вас звертатися": "Tell us how to address you", "Вкажіть номер телефону": "Enter your phone number", "Перевірте номер: +380 і ще 9 цифр": "Check the number: +380 and 9 more digits", "Потрібна ваша згода, щоб ми могли зв’язатися": "We need your consent to contact you", "Перевірте поля:": "Please check:", "Згода": "Consent", "Надсилаємо…": "Sending…", "Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам.": "We couldn’t send your request. Please try again or call us.", "Заявка з сайту": "Request from the website", "Ситуація": "Situation", "Ми відкрили SMS із вашою заявкою — залишилося лише надіслати його. Якщо воно не відкрилося, натисніть кнопку нижче.": "We’ve opened an SMS with your request, so you only need to send it. If it didn’t open, tap the button below.", "Щоб заявка дійшла, надішліть її SMS на цей номер (текст уже готовий) або просто зателефонуйте нам.": "To make sure your request reaches us, send it by SMS to this number (the text is ready) or simply call us.", "Залиште заявку —": "Leave a request —", "ми зателефонуємо": "we’ll call you", "Коротко опишіть ситуацію. Адвокат зв’яжеться з вами, вислухає й підкаже, з чого почати.": "Describe your situation briefly. A lawyer will get in touch, listen and suggest where to start.", "Перша консультація безкоштовна": "Your first consultation is free", "Відповідаємо протягом години": "We reply within an hour", "Усе сказане захищене адвокатською таємницею": "Everything you say is protected by attorney–client privilege", "Заявка": "Request", "Чому варто звернутися": "Why you should", "саме до нас": "choose us", "Ведемо справу до Верховного Суду": "We take your case to the Supreme Court", "Зберігаємо адвокатську таємницю": "We keep attorney–client privilege", "Офіс у Києві · відкрити на мапі": "Office in Kyiv · open the map", "03150, м. Київ, вул. Предславинська, буд. 34, літ. Б, офіс 107": "107 Office, Bldg 34 lit. B, Predslavynska St, Kyiv 03150", "АДВОКАТСЬКЕ ОБ’ЄДНАННЯ": "LAW ASSOCIATION", "НАГОРНА": "NAHORNA", "ТА ПАРТНЕРИ": "& PARTNERS", "ЗАХИСТ · ДОВІРА · ЗАКОН": "DEFENCE · TRUST · LAW", "Ваша згода": "Your consent", "Лише те, що ви надсилаєте самі: у формі заявки — ім’я, номер телефону, напрям і, за бажанням, короткий опис ситуації; у SMS чи під час дзвінка — ваш номер і те, що ви повідомили.": "Only what you send us yourself: in the request form, your name, phone number, practice area and, if you wish, a short description of your situation; by SMS or on a call, your number and what you tell us.", "Тільки для того, щоб зв’язатися з вами щодо вашого звернення. Ми не передаємо ці дані третім особам і не використовуємо їх для реклами. Більше сайт нічого не збирає й не зберігає: тут немає аналітики, рекламних міток і відстеження. Усе, що ви розповідаєте адвокату, захищене адвокатською таємницею.": "Only to contact you about your request. We do not share this data with third parties or use it for advertising. The website collects and stores nothing else: there is no analytics, no ad tags and no tracking. Everything you tell your lawyer is protected by attorney–client privilege.", "Надсилаючи заявку, ви погоджуєтеся, щоб ми використали ці дані для зв’язку з вами. Щоб відкликати згоду або попросити видалити дані, зателефонуйте нам.": "By sending a request you agree that we may use this data to contact you. To withdraw your consent or ask us to delete the data, give us a call."};
 const UK = Object.fromEntries(Object.entries(EN).map(([k, v]) => [v, k]));
 let LANGC = "uk";
 const t = s => LANGC === "en" ? (EN[s] ?? s) : s;
@@ -1373,6 +1563,11 @@ $$(".js-phone-text").forEach(el => el.textContent = CONTACTS.phoneText);
   if (url) { a.href = url; const l = a.querySelector(".lbl"); if (l) l.textContent = k === "viber" ? CONTACTS.viber : "перейти"; }
   else { a.removeAttribute("target"); a.setAttribute("aria-disabled","true"); a.addEventListener("click", e => e.preventDefault()); }
 }));
+
+/* office address: text from CONTACTS, every click opens Google Maps */
+const mapsUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(CONTACTS.address);
+$$(".js-addr").forEach(a => a.href = mapsUrl);
+$$(".js-addr-text").forEach(el => el.textContent = CONTACTS.address);
 
 if (CONTACTS.edrpou) { const e = $(".js-edrpou"); e.hidden = false; e.querySelector("b").textContent = CONTACTS.edrpou; }
 
@@ -1959,7 +2154,165 @@ document.addEventListener("keydown", e => {
   if (!el || e.target.closest("button,a,textarea,input") || (e.key !== "Enter" && e.key !== " ")) return;
   e.preventDefault(); el.click();
 });
-$("#mark").addEventListener("click", () => scrollTo({top:0, behavior: reduce ? "auto" : "smooth"}));
+$("#mark").addEventListener("click", e => { e.preventDefault(); scrollTo({top:0, behavior: reduce ? "auto" : "smooth"}); });
+
+/* ---------- Lead form (hero + closing block) ----------
+   One form in the hero, a copy of it in #apply. With CONTACTS.formEndpoint set it POSTs the request (JSON or FormData)
+   to a form service; while it is empty it opens an SMS to the firm's number with the request prefilled (phones) or shows
+   the number with copy buttons and an «Відкрити SMS» link (computers). A hidden honeypot field and a 3-second time trap
+   stop simple bots: they see the success state but nothing is sent. Nothing is stored or tracked. */
+const LeadForm = (function(){
+  const t0 = Date.now();
+  const coarse = matchMedia("(pointer: coarse)").matches;
+  const AREAS = SERVICES.map(s => [s.key, s.short]).concat([["other", "Інше"]]);
+  const hero = $("#lf-h");
+  hero.querySelector("select").insertAdjacentHTML("beforeend", AREAS.map(([k, n]) => `<option value="${k}">${n}</option>`).join(""));
+  /* the closing block gets a copy with its own ids */
+  const copy = hero.cloneNode(true);
+  copy.id = "lf-c"; copy.setAttribute("aria-labelledby", "lf-c-title");
+  copy.querySelectorAll("[id],[for],[aria-describedby]").forEach(el => ["id", "for", "aria-describedby"].forEach(a => { const v = el.getAttribute(a); if (v) el.setAttribute(a, v.replace(/\blf-h-/g, "lf-c-")); }));
+  $("#lf-card-apply").appendChild(copy);
+  const forms = [hero, copy];
+
+  /* phone: always shown as +380 50 123 45 67, whatever the visitor types or the browser autofills (050…, 380…, +380…) */
+  const norm = v => {
+    let d = String(v || "").replace(/\D/g, "");
+    if (!d) return "";
+    if (d.startsWith("380380")) d = d.slice(3);
+    if (d.startsWith("380")) { if (d[3] === "0") d = "380" + d.slice(4); }
+    else if (d.startsWith("80")) d = "3" + d;
+    else if (d.startsWith("0")) d = "38" + d;
+    else if (d !== "3" && d !== "38") d = "380" + d;
+    return d.slice(0, 12);
+  };
+  const fmt = d => d ? "+" + [d.slice(0, 3), d.slice(3, 5), d.slice(5, 8), d.slice(8, 10), d.slice(10, 12)].filter(Boolean).join(" ") : "";
+  const phoneOk = d => /^380\d{9}$/.test(d);
+  function mask(inp, e){
+    const raw = inp.value, pos = inp.selectionStart == null ? raw.length : inp.selectionStart, atEnd = pos >= raw.length;
+    let nd = raw.replace(/\D/g, ""), before = raw.slice(0, pos).replace(/\D/g, "").length;
+    /* backspace over a space: remove the digit in front of it */
+    if (e && e.inputType === "deleteContentBackward" && nd === inp._d && before > 0) { nd = nd.slice(0, before - 1) + nd.slice(before); before--; }
+    const d = norm(nd), val = fmt(d);
+    inp._d = d;
+    if (inp.value !== val) inp.value = val;
+    if (document.activeElement !== inp) return;
+    let caret = val.length;
+    if (!atEnd) { const want = before + Math.max(0, d.length - nd.length); let k = 0; caret = 0; while (caret < val.length && k < want) { if (/\d/.test(val[caret])) k++; caret++; } }
+    try { inp.setSelectionRange(caret, caret); } catch (er) {}
+  }
+
+  const q = (f, n) => f.querySelector(`[name="${n}"]`);
+  const RULES = {
+    name: el => el.value.trim().length >= 2 && /\p{L}/u.test(el.value) ? "" : "Вкажіть, як до вас звертатися",
+    phone: el => { const d = norm(el.value); return d.length <= 3 ? "Вкажіть номер телефону" : phoneOk(d) ? "" : "Перевірте номер: +380 і ще 9 цифр"; },
+    area: el => el.value ? "" : "Оберіть напрям",
+    consent: el => el.checked ? "" : "Потрібна ваша згода, щоб ми могли зв’язатися"
+  };
+  const LABEL = {name: "Ім’я", phone: "Телефон", area: "Напрям", consent: "Згода"};
+  function setErr(el, msg){
+    const p = document.getElementById(el.getAttribute("aria-describedby"));
+    if (msg) { el.setAttribute("aria-invalid", "true"); if (p) p.textContent = t(msg); }
+    else { el.removeAttribute("aria-invalid"); if (p) p.textContent = ""; }
+  }
+  const check = (f, n) => { const el = q(f, n), m = RULES[n](el); setErr(el, m); return m; };
+
+  function smsText(d){
+    return [t("Заявка з сайту"), t("Ім’я") + ": " + d.name, t("Телефон") + ": " + d.phoneText, t("Напрям") + ": " + t(d.area)]
+      .concat(d.message ? [t("Ситуація") + ": " + d.message] : []).join("\n");
+  }
+  async function post(d){
+    const payload = {name: d.name, phone: d.phone, area: d.area, message: d.message || "—", consent: "так", lang: LANGC,
+      subject: "Заявка з сайту: " + d.area, _subject: "Заявка з сайту: " + d.area};
+    if (CONTACTS.formAccessKey) payload.access_key = CONTACTS.formAccessKey;
+    const headers = {Accept: "application/json"}; let body;
+    if (CONTACTS.formFormat === "formdata") { body = new FormData(); Object.entries(payload).forEach(([k, v]) => body.append(k, v)); }
+    else { body = JSON.stringify(payload); headers["Content-Type"] = "application/json"; }
+    const ac = window.AbortController ? new AbortController() : null, tm = ac && setTimeout(() => ac.abort(), 15000);
+    try {
+      const r = await fetch(CONTACTS.formEndpoint, {method: "POST", headers, body, signal: ac ? ac.signal : undefined});
+      let j = null; try { j = await r.json(); } catch (er) {}
+      if (!r.ok || (j && j.success === false)) throw new Error("form service: " + r.status);
+    } finally { if (tm) clearTimeout(tm); }
+  }
+  function done(f, sms){
+    f.classList.add("is-done");
+    const box = f.querySelector(".lf-done"), sb = f.querySelector(".lf-sms");
+    box.hidden = false; sb.hidden = !sms;
+    if (sms) {
+      f._sms = sms.body; f.querySelector(".lf-sms-open").href = sms.href;
+      f.querySelector(".lf-sms-note").textContent = t(coarse ? "Ми відкрили SMS із вашою заявкою — залишилося лише надіслати його. Якщо воно не відкрилося, натисніть кнопку нижче." : "Щоб заявка дійшла, надішліть її SMS на цей номер (текст уже готовий) або просто зателефонуйте нам.");
+    }
+    Sound.resolve();
+    const r = box.getBoundingClientRect();
+    box.focus({preventScroll: true});
+    if (r.top < 70 || r.bottom > innerHeight) box.scrollIntoView({block: "center", behavior: reduce ? "auto" : "smooth"});
+  }
+  function reset(f){
+    f.reset(); f.classList.remove("is-done"); f._tried = false;
+    f.querySelector(".lf-done").hidden = true; f.querySelector(".f-status").textContent = "";
+    Object.keys(RULES).forEach(n => { const el = q(f, n); el._touched = false; setErr(el, ""); });
+    q(f, "name").focus();
+  }
+  async function submit(f){
+    f._tried = true;
+    const bad = Object.keys(RULES).filter(n => check(f, n)), st = f.querySelector(".f-status");
+    if (bad.length) {
+      st.textContent = t("Перевірте поля:") + " " + bad.map(n => t(LABEL[n])).join(", ");
+      q(f, bad[0]).focus();
+      const c = f.closest(".lf-card"); c.classList.remove("shake"); void c.offsetWidth; c.classList.add("shake");
+      return;
+    }
+    st.textContent = "";
+    const ph = norm(q(f, "phone").value), key = q(f, "area").value;
+    const d = {name: q(f, "name").value.trim(), phone: "+" + ph, phoneText: fmt(ph), area: (AREAS.find(a => a[0] === key) || ["", key])[1], message: q(f, "message").value.trim()};
+    /* spam traps: a filled hidden field or a form sent within 3 s of opening the page → show success, send nothing */
+    if (q(f, "website").value || Date.now() - t0 < 3000) { done(f, null); return; }
+    if (CONTACTS.formEndpoint) {
+      const btn = f.querySelector(".lf-submit"), lbl = btn.querySelector(".lf-go");
+      btn.setAttribute("aria-busy", "true"); lbl.textContent = t("Надсилаємо…");
+      try { await post(d); done(f, null); }
+      catch (er) { st.textContent = t("Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам."); }
+      finally { btn.removeAttribute("aria-busy"); lbl.textContent = t("Отримати консультацію"); }
+      return;
+    }
+    /* no form service yet: an SMS to the firm with the request already written */
+    const body = smsText(d), href = "sms:" + CONTACTS.phone + "?body=" + encodeURIComponent(body);
+    if (coarse) { const a = document.createElement("a"); a.href = href; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove(); }
+    done(f, {href, body});
+  }
+  const flash = (b, uk) => { b.textContent = t("Скопійовано"); setTimeout(() => b.textContent = t(uk), 1800); };
+  const copyTxt = (txt, b, uk, sel) => { try { navigator.clipboard.writeText(txt).then(() => flash(b, uk), sel); } catch (er) { sel(); } };
+  forms.forEach(f => {
+    const ph = q(f, "phone");
+    ph.addEventListener("focus", () => { if (!ph.value) { ph.value = "+380 "; ph._d = "380"; requestAnimationFrame(() => { try { ph.setSelectionRange(5, 5); } catch (er) {} }); } });
+    ph.addEventListener("input", e => mask(ph, e));
+    ph.addEventListener("blur", () => { if (norm(ph.value).length <= 3) ph.value = ""; else mask(ph); });
+    Object.keys(RULES).forEach(n => {
+      const el = q(f, n);
+      el.addEventListener("blur", () => { if (n === "consent") return; if (el.value && el.value !== "+380 ") el._touched = true; if (el._touched || f._tried) check(f, n); });
+      el.addEventListener(n === "area" || n === "consent" ? "change" : "input", () => { if (n === "area" || n === "consent") el._touched = true; if (el._touched || f._tried) check(f, n); });
+    });
+    /* Enter moves to the next field instead of submitting a half-filled form */
+    f.addEventListener("keydown", e => {
+      if (e.key !== "Enter" || e.target.tagName !== "INPUT" || e.target.type === "checkbox") return;
+      const order = ["name", "phone", "area", "message"], i = order.indexOf(e.target.name);
+      if (i >= 0 && i < order.length - 1) { e.preventDefault(); q(f, order[i + 1]).focus(); }
+    });
+    f.addEventListener("submit", e => { e.preventDefault(); submit(f); });
+    f.querySelector(".lf-again").addEventListener("click", () => reset(f));
+    const cp = f.querySelector(".lf-copy"), ct = f.querySelector(".lf-copy-text");
+    cp.addEventListener("click", () => copyTxt(CONTACTS.phone, cp, "Скопіювати номер", () => { const r = document.createRange(); r.selectNodeContents(cp.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }));
+    ct.addEventListener("click", () => copyTxt(f._sms || "", ct, "Скопіювати текст", () => {}));
+  });
+  /* phones: while typing, the bottom bar and the round button step aside so the keyboard does not cover the field */
+  document.addEventListener("focusin", e => { if (e.target.closest && e.target.closest(".lf")) document.documentElement.classList.add("kb-open"); });
+  document.addEventListener("focusout", () => setTimeout(() => { const a = document.activeElement; if (!(a && a.closest && a.closest(".lf"))) document.documentElement.classList.remove("kb-open"); }, 60));
+  /* the round contact button would cover the form's button: it steps aside while a form is on screen */
+  const seen = new Set();
+  const io = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)); document.documentElement.classList.toggle("form-in-view", seen.size > 0); }, {threshold:.25});
+  $$(".lf-card").forEach(c => io.observe(c));
+  return {forms, norm, fmt};
+})();
 
 /* ---------- Language: initial ---------- */
 (function(){
@@ -1977,6 +2330,7 @@ $("#mark").addEventListener("click", () => scrollTo({top:0, behavior: reduce ? "
   g.from("#film .hl", {y:18, opacity:0, duration:.9, ease:"power3.out", stagger:.1, delay:.7});
   g.from("#chapters", {opacity:0, y:-10, duration:.8, delay:1.1});
   g.from(".ticker", {opacity:0, duration:1, delay:1.2});
+  g.from("#lf-card-hero", {y:24, opacity:0, duration:1.1, ease:"power3.out", delay:.45, clearProps:"transform,opacity"});
   if (!window.ScrollTrigger) return;
   g.registerPlugin(window.ScrollTrigger);
   $$(".rv-title").forEach(h => g.from(h.querySelectorAll(".mask > span"), {yPercent:105, duration:1, ease:"power4.out", stagger:.1, scrollTrigger:{trigger:h, start:"top 86%", once:true}}));
@@ -1997,7 +2351,9 @@ $("#mark").addEventListener("click", () => scrollTo({top:0, behavior: reduce ? "
   g.from("#rvw-track .rvw-card", {y:56, opacity:0, rotation:(i) => (i % 2 ? 1.2 : -1.2), duration:1.1, ease:"power3.out", stagger:.1, clearProps:"transform,opacity", scrollTrigger:{trigger:"#rvw", start:"top 86%", once:true}});
   g.from(".rvw-row", {y:20, opacity:0, duration:.8, ease:"power3.out", clearProps:"transform,opacity", scrollTrigger:{trigger:".rvw-row", start:"top 92%", once:true}});
   g.from(".call, .soc li", {y:30, opacity:0, duration:.9, stagger:.08, ease:"power3.out", scrollTrigger:{trigger:".contacts", start:"top 88%", once:true}});
-  g.from("#mark .mask > span", {yPercent:105, duration:1.2, ease:"power4.out", stagger:.12, scrollTrigger:{trigger:"#mark", start:"top 95%", once:true}});
+  g.from(".foot > *", {y:30, opacity:0, duration:1, ease:"power3.out", stagger:.12, clearProps:"transform,opacity", scrollTrigger:{trigger:".foot", start:"top 94%", once:true}});
+  g.from(".apply-pts li, .apply-tel", {y:20, opacity:0, duration:.8, ease:"power3.out", stagger:.08, clearProps:"transform,opacity", scrollTrigger:{trigger:".apply-pts", start:"top 90%", once:true}});
+  g.from("#lf-card-apply", {y:50, opacity:0, duration:1.1, ease:"power3.out", clearProps:"transform,opacity", scrollTrigger:{trigger:"#lf-card-apply", start:"top 88%", once:true}});
   addEventListener("load", () => window.ScrollTrigger.refresh());
 })();
 </script>
