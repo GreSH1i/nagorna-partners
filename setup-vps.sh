@@ -12,7 +12,7 @@ apt-get install -y nginx git certbot python3-certbot-nginx
 echo "== 2/5 Файлы сайта =="
 rm -rf "$WEB"
 git clone --depth 1 -b deploy https://github.com/GreSH1i/nagorna-partners "$WEB"
-rm -rf "$WEB/.git" "$WEB/README.md"
+rm -rf "$WEB/.git" "$WEB/README.md" "$WEB/setup-vps.sh"
 chown -R www-data:www-data "$WEB"
 
 echo "== 3/5 Настройка nginx =="
